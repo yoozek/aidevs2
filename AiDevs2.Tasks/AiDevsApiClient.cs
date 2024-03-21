@@ -36,12 +36,11 @@ public class AiDevsApiClient
 
     public async Task SubmitAnswer(string token, string answer)
     {
+        Console.WriteLine("Wysyłanie odpowiedzi do tasks.aidevs.pl...");
         var response = await _httpClient.PostAsync($"https://tasks.aidevs.pl/answer/{token}",
             new StringContent(JsonSerializer.Serialize(new { answer }), Encoding.UTF8, "application/json"));
 
-        Console.WriteLine(response.IsSuccessStatusCode
-            ? "OK"
-            : "ERROR");
+        Console.WriteLine(response.IsSuccessStatusCode ? "OK" : "ERROR");
     }
 }
 
