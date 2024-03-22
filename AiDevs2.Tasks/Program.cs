@@ -48,13 +48,16 @@ internal class Program
         if (args.Any())
             return args[0];
 
+        var taskNames = Assembly.GetExecutingAssembly().GetTypes()
+            .Where(type =>
+                type is { IsClass: true, IsAbstract: false } 
+                && type.IsSubclassOf(typeof(AiDevsTaskBase)))
+            .Select(type => type.Name);
+
         return AnsiConsole.Prompt(
             new SelectionPrompt<string>()
                 .Title("Wybierz zadanie:")
-                .AddChoices(Assembly.GetExecutingAssembly().GetTypes()
-                    .Where(type =>
-                        type is { IsClass: true, IsAbstract: false } && type.IsSubclassOf(typeof(AiDevsTaskBase)))
-                    .Select(type => type.Name)));
+                .AddChoices(taskNames));
     }
 
     private static async Task RunTask(string taskName, ServiceProvider container)
