@@ -5,7 +5,7 @@ using Spectre.Console;
 using System.Reflection;
 
 namespace AiDevs2.Tasks;
-
+//TODO: Upgrade to .net 8
 class Program
 {
     static async Task Main(string[] args)
@@ -31,21 +31,14 @@ class Program
     private static string GetTaskName(string[] args)
     {
         if (args.Any())
-        {
             return args[0];
-        }
-
-        var baseType = typeof(AiDevsTaskBase);
-        var assembly = Assembly.GetExecutingAssembly();
-        var tasks = assembly.GetTypes()
-            .Where(type => type.IsClass && !type.IsAbstract && type.IsSubclassOf(baseType))
-            .Select(type => type.Name)
-            .ToList();
 
         return AnsiConsole.Prompt(
             new SelectionPrompt<string>()
                 .Title("Wybierz zadanie:")
-                .AddChoices(tasks));
+                .AddChoices(Assembly.GetExecutingAssembly().GetTypes()
+                    .Where(type => type is { IsClass: true, IsAbstract: false } && type.IsSubclassOf(typeof(AiDevsTaskBase)))
+                    .Select(type => type.Name)));
     }
 
     private static async Task RunTask(string taskName, ServiceProvider container)
