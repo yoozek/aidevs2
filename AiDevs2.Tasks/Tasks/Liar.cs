@@ -1,8 +1,7 @@
-﻿using Azure;
-using Azure.AI.OpenAI;
+﻿using Azure.AI.OpenAI;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
-using JsonSerializer = System.Text.Json.JsonSerializer;
+using Spectre.Console;
 
 namespace AiDevs2.Tasks.Tasks;
 
@@ -11,7 +10,7 @@ public class Liar(AiDevsService aiDevsService, OpenAIClient openAiClient, ILogge
 {
     public override async Task Run()
     {
-        var question = "What is capital of Poland?";
+        var question = AnsiConsole.Prompt(new TextPrompt<string>("Podaj swoje pytanie: "));
         var formData = new Dictionary<string, string>
         {
             { "question", question }
@@ -34,6 +33,10 @@ public class Liar(AiDevsService aiDevsService, OpenAIClient openAiClient, ILogge
         };
 
         var response = await openAiClient.GetChatCompletionsAsync(chatCompletionsOptions);
+        var checkResult = response.Value.Choices[0].Message.Content;
+        logger.LogInformation(checkResult == "YES"
+            ? "Odpowiedź jest na temat"
+            : "Odpowiedź nie jest na temat");
 
         await SubmitAnswer(response.Value.Choices[0].Message.Content);
     }

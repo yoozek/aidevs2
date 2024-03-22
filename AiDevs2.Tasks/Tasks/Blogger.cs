@@ -1,7 +1,6 @@
 ﻿using Azure.AI.OpenAI;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
-using JsonSerializer = System.Text.Json.JsonSerializer;
 
 namespace AiDevs2.Tasks.Tasks;
 
