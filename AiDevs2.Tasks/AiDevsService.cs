@@ -1,5 +1,4 @@
-﻿using System.Net.Http.Json;
-using System.Text;
+﻿using System.Text;
 using System.Text.Json;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -37,6 +36,7 @@ public class AiDevsService
     {
         var response = await _httpClient.GetAsync($"{BaseUrl}/task/{token}");
         response.EnsureSuccessStatusCode();
+        
         return await response.Content.ReadAsStringAsync();
     }
 
@@ -45,10 +45,7 @@ public class AiDevsService
         var response = await _httpClient.PostAsync($"{BaseUrl}/answer/{token}",
             new StringContent(JsonSerializer.Serialize(new { answer }), Encoding.UTF8, "application/json"));
 
-        var content = await response.Content.ReadAsStringAsync();
-        Console.WriteLine(response.IsSuccessStatusCode ? "OK" : "ERROR");
-
-        return JToken.Parse(content).ToString(Formatting.Indented);
+        return await response.Content.ReadAsStringAsync();
     }
 }
 

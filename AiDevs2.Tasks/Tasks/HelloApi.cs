@@ -1,10 +1,12 @@
-﻿using Newtonsoft.Json;
+﻿using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
 
 namespace AiDevs2.Tasks.Tasks;
 
 public class HelloApi : AiDevsTaskBase
 {
-    public HelloApi(AiDevsService aiDevsService) : base("helloapi", aiDevsService)
+    public HelloApi(AiDevsService aiDevsService, ILogger<HelloApi> logger) 
+        : base("helloapi", aiDevsService, logger)
     {
     }
 

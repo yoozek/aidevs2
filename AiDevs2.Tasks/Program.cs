@@ -3,6 +3,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Spectre.Console;
 using System.Reflection;
+using Serilog;
 
 namespace AiDevs2.Tasks;
 //TODO: Upgrade to .net 8
@@ -10,6 +11,13 @@ class Program
 {
     static async Task Main(string[] args)
     {
+        Log.Logger = new LoggerConfiguration()
+            .MinimumLevel.Debug()
+            .MinimumLevel.Override("System", Serilog.Events.LogEventLevel.Warning)
+            .MinimumLevel.Override("Microsoft", Serilog.Events.LogEventLevel.Warning)
+            .WriteTo.Console()
+            .CreateLogger();
+
         var taskName = GetTaskName(args);
 
         var configurationBuilder = new ConfigurationBuilder();
@@ -19,6 +27,7 @@ class Program
         var configuration = configurationBuilder.Build();
 
         IServiceCollection services = new ServiceCollection();
+        services.AddLogging(configure => configure.AddSerilog());
         services.AddSingleton<IConfiguration>(configuration);
         services.AddAiDevsApiClient();
         services.AddScoped<HelloApi>(); //TODO: Scrutor to register all tasks
