@@ -18,16 +18,14 @@ class Program
             .WriteTo.Console()
             .CreateLogger();
 
-        var taskName = GetTaskName(args);
-
         var configurationBuilder = new ConfigurationBuilder();
         configurationBuilder
             .AddJsonFile("appsettings.json", false);
-
         var configuration = configurationBuilder.Build();
 
         var provider = ConfigureServices(configuration);
 
+        var taskName = GetTaskName(args);
         await RunTask(taskName, provider);
     }
 
@@ -37,7 +35,11 @@ class Program
         services.AddLogging(configure => configure.AddSerilog());
         services.AddSingleton<IConfiguration>(configuration);
         services.AddAiDevsApiClient();
-        services.AddScoped<HelloApi>(); //TODO: Scrutor to register all tasks
+        services.Scan(scan => scan
+            .FromAssemblyOf<AiDevsTaskBase>()
+            .AddClasses(classes => classes.AssignableTo<AiDevsTaskBase>())
+            .AsSelf()
+            .WithScopedLifetime());
         return services.BuildServiceProvider();
     }
 
