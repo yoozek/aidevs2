@@ -24,9 +24,10 @@ public class AiDevsService(HttpClient httpClient, IConfiguration configuration)
         return json.GetProperty("token").GetString() ?? throw new InvalidOperationException("No token in response");
     }
 
-    public async Task<string> GetTask(string token)
+    public async Task<string> GetTask(string token, Dictionary<string, string>? formData = null)
     {
-        var response = await httpClient.GetAsync($"{BaseUrl}/task/{token}");
+        var formDataContent = new FormUrlEncodedContent(formData ?? new Dictionary<string, string>());
+        var response = await httpClient.PostAsync($"{BaseUrl}/task/{token}", formDataContent);
         response.EnsureSuccessStatusCode();
 
         return await response.Content.ReadAsStringAsync();

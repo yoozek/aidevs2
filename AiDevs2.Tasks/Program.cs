@@ -1,9 +1,7 @@
-﻿using System.Reflection;
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Serilog;
 using Serilog.Events;
-using Spectre.Console;
 
 namespace AiDevs2.Tasks;
 
@@ -23,10 +21,8 @@ internal class Program
             .AddJsonFile("appsettings.json", false);
         var configuration = configurationBuilder.Build();
 
-        var provider = ConfigureServices(configuration);
-
-        var taskName = GetTaskName(args);
-        await RunTask(taskName, provider);
+        var serviceProvider = ConfigureServices(configuration);
+        await serviceProvider.GetRequiredService<App>().Run(args);
     }
 
     private static ServiceProvider ConfigureServices(IConfigurationRoot configuration)
@@ -34,8 +30,10 @@ internal class Program
         var services = new ServiceCollection();
         services.AddLogging(configure => configure.AddSerilog());
         services.AddSingleton<IConfiguration>(configuration);
-        services.AddAiDevsApiClient();
 
+        services.AddSingleton<App>();
+
+        services.AddAiDevsApiClient();
         services.AddOpenAiService(configuration);
 
         services.Scan(scan => scan
@@ -44,31 +42,5 @@ internal class Program
             .AsSelf()
             .WithScopedLifetime());
         return services.BuildServiceProvider();
-    }
-
-    private static string GetTaskName(string[] args)
-    {
-        if (args.Any())
-            return args[0];
-
-        var taskNames = Assembly.GetExecutingAssembly().GetTypes()
-            .Where(type =>
-                type is { IsClass: true, IsAbstract: false }
-                && type.IsSubclassOf(typeof(AiDevsTaskBase)))
-            .Select(type => type.Name);
-
-        return AnsiConsole.Prompt(
-            new SelectionPrompt<string>()
-                .Title("Wybierz zadanie:")
-                .AddChoices(taskNames));
-    }
-
-    private static async Task RunTask(string taskName, ServiceProvider container)
-    {
-        var taskType = Type.GetType($"AiDevs2.Tasks.Tasks.{taskName}");
-        if (container.GetService(taskType ?? throw new InvalidOperationException()) is AiDevsTaskBase taskInstance)
-            await taskInstance.Run();
-        else
-            throw new InvalidOperationException($"Nie można uruchomić '{taskName}'.");
     }
 }

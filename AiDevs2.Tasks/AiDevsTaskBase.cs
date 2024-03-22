@@ -9,11 +9,11 @@ public abstract class AiDevsTaskBase(string taskName, AiDevsService aiDevsServic
 
     public abstract Task Run();
 
-    protected async Task<string> GetTask()
+    protected async Task<string> GetTask(Dictionary<string, string>? formData = null)
     {
         logger.LogInformation($"Pobieranie zadania '{TaskName}'");
         _token = await aiDevsService.GetAuthenticationToken(TaskName);
-        var task = await aiDevsService.GetTask(_token);
+        var task = await aiDevsService.GetTask(_token, formData);
         logger.LogInformation(task);
 
         return task;
