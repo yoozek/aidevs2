@@ -8,22 +8,15 @@ using JsonSerializer = System.Text.Json.JsonSerializer;
 
 namespace AiDevs2.Tasks;
 
-public class AiDevsService
+public class AiDevsService(HttpClient httpClient, IConfiguration configuration)
 {
-    private readonly HttpClient _httpClient;
-    private readonly string _apiKey;
+    private readonly string _apiKey = configuration["AiDevsTasks:ApiKey"] 
+                                      ?? throw new InvalidOperationException("Missing configurationAiDevsTasks:ApiKey");
     private const string BaseUrl = "https://tasks.aidevs.pl";
-
-    public AiDevsService(HttpClient httpClient, IConfiguration configuration)
-    {
-        _httpClient = httpClient;
-        _apiKey = configuration["AiDevsTasks:ApiKey"] 
-                  ?? throw new InvalidOperationException("Missing configurationAiDevsTasks:ApiKey");
-    }
 
     public async Task<string> GetAuthenticationToken(string taskName)
     {
-        var response = await _httpClient.PostAsync($"{BaseUrl}/token/{taskName}",
+        var response = await httpClient.PostAsync($"{BaseUrl}/token/{taskName}",
             new StringContent(JsonSerializer.Serialize(new { apikey = _apiKey }), Encoding.UTF8, "application/json"));
         response.EnsureSuccessStatusCode();
 
@@ -34,7 +27,7 @@ public class AiDevsService
 
     public async Task<string> GetTask(string token)
     {
-        var response = await _httpClient.GetAsync($"{BaseUrl}/task/{token}");
+        var response = await httpClient.GetAsync($"{BaseUrl}/task/{token}");
         response.EnsureSuccessStatusCode();
         
         return await response.Content.ReadAsStringAsync();
@@ -42,7 +35,7 @@ public class AiDevsService
 
     public async Task<string> SubmitAnswer(string token, string answer)
     {
-        var response = await _httpClient.PostAsync($"{BaseUrl}/answer/{token}",
+        var response = await httpClient.PostAsync($"{BaseUrl}/answer/{token}",
             new StringContent(JsonSerializer.Serialize(new { answer }), Encoding.UTF8, "application/json"));
 
         return await response.Content.ReadAsStringAsync();

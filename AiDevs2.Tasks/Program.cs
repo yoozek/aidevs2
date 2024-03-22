@@ -6,7 +6,7 @@ using System.Reflection;
 using Serilog;
 
 namespace AiDevs2.Tasks;
-//TODO: Upgrade to .net 8
+
 class Program
 {
     static async Task Main(string[] args)
@@ -26,15 +26,19 @@ class Program
 
         var configuration = configurationBuilder.Build();
 
-        IServiceCollection services = new ServiceCollection();
+        var provider = ConfigureServices(configuration);
+
+        await RunTask(taskName, provider);
+    }
+
+    private static ServiceProvider ConfigureServices(IConfigurationRoot configuration)
+    {
+        var services = new ServiceCollection();
         services.AddLogging(configure => configure.AddSerilog());
         services.AddSingleton<IConfiguration>(configuration);
         services.AddAiDevsApiClient();
         services.AddScoped<HelloApi>(); //TODO: Scrutor to register all tasks
-
-        var container = services.BuildServiceProvider();
-
-        await RunTask(taskName, container);
+        return services.BuildServiceProvider();
     }
 
     private static string GetTaskName(string[] args)

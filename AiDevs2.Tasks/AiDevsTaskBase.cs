@@ -2,27 +2,18 @@
 
 namespace AiDevs2.Tasks;
 
-public abstract class AiDevsTaskBase
+public abstract class AiDevsTaskBase(string taskName, AiDevsService aiDevsService, ILogger<AiDevsTaskBase> logger)
 {
-    protected string TaskName;
-    private readonly AiDevsService _aiDevsService;
-    private readonly ILogger<AiDevsTaskBase> _logger;
+    protected string TaskName = taskName;
     private string? _token;
-
-    protected AiDevsTaskBase(string taskName, AiDevsService aiDevsService, ILogger<AiDevsTaskBase> logger)
-    {
-        TaskName = taskName;
-        _aiDevsService = aiDevsService;
-        _logger = logger;
-    }
 
     public abstract Task Run();
 
     protected async Task<string> GetTask()
     {
-        _logger.LogInformation($"Pobieranie zadania '{TaskName}'");
-        _token = await _aiDevsService.GetAuthenticationToken(TaskName);
-        return await _aiDevsService.GetTask(_token);
+        logger.LogInformation($"Pobieranie zadania '{TaskName}'");
+        _token = await aiDevsService.GetAuthenticationToken(TaskName);
+        return await aiDevsService.GetTask(_token);
     }
 
     protected async Task<string> SubmitAnswer(string answer)
@@ -32,7 +23,7 @@ public abstract class AiDevsTaskBase
             throw new InvalidOperationException("Najpierw pobierz zadanie");
         }
 
-        _logger.LogInformation("Wysyłanie odpowiedzi");
-        return await _aiDevsService.SubmitAnswer(_token, answer);
+        logger.LogInformation("Wysyłanie odpowiedzi");
+        return await aiDevsService.SubmitAnswer(_token, answer);
     }
 }

@@ -3,13 +3,9 @@ using Newtonsoft.Json;
 
 namespace AiDevs2.Tasks.Tasks;
 
-public class HelloApi : AiDevsTaskBase
+public class HelloApi(AiDevsService aiDevsService, ILogger<HelloApi> logger)
+    : AiDevsTaskBase("helloapi", aiDevsService, logger)
 {
-    public HelloApi(AiDevsService aiDevsService, ILogger<HelloApi> logger) 
-        : base("helloapi", aiDevsService, logger)
-    {
-    }
-
     public override async Task Run()
     {
         var task = await GetTask();
