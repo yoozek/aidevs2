@@ -4,8 +4,8 @@ namespace AiDevs2.Tasks;
 
 public abstract class AiDevsTaskBase(string taskName, AiDevsService aiDevsService, ILogger<AiDevsTaskBase> logger)
 {
-    protected string TaskName = taskName;
     private string? _token;
+    protected string TaskName = taskName;
 
     public abstract Task Run();
 
@@ -18,10 +18,7 @@ public abstract class AiDevsTaskBase(string taskName, AiDevsService aiDevsServic
 
     protected async Task<string> SubmitAnswer(string answer)
     {
-        if (_token == null)
-        {
-            throw new InvalidOperationException("Najpierw pobierz zadanie");
-        }
+        if (_token == null) throw new InvalidOperationException("Najpierw pobierz zadanie");
 
         logger.LogInformation("Wysyłanie odpowiedzi");
         return await aiDevsService.SubmitAnswer(_token, answer);

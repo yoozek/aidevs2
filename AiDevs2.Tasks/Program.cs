@@ -1,20 +1,20 @@
-﻿using AiDevs2.Tasks.Tasks;
+﻿using System.Reflection;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Spectre.Console;
-using System.Reflection;
 using Serilog;
+using Serilog.Events;
+using Spectre.Console;
 
 namespace AiDevs2.Tasks;
 
-class Program
+internal class Program
 {
-    static async Task Main(string[] args)
+    private static async Task Main(string[] args)
     {
         Log.Logger = new LoggerConfiguration()
             .MinimumLevel.Debug()
-            .MinimumLevel.Override("System", Serilog.Events.LogEventLevel.Warning)
-            .MinimumLevel.Override("Microsoft", Serilog.Events.LogEventLevel.Warning)
+            .MinimumLevel.Override("System", LogEventLevel.Warning)
+            .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
             .WriteTo.Console()
             .CreateLogger();
 
@@ -52,7 +52,8 @@ class Program
             new SelectionPrompt<string>()
                 .Title("Wybierz zadanie:")
                 .AddChoices(Assembly.GetExecutingAssembly().GetTypes()
-                    .Where(type => type is { IsClass: true, IsAbstract: false } && type.IsSubclassOf(typeof(AiDevsTaskBase)))
+                    .Where(type =>
+                        type is { IsClass: true, IsAbstract: false } && type.IsSubclassOf(typeof(AiDevsTaskBase)))
                     .Select(type => type.Name)));
     }
 

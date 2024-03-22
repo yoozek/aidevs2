@@ -2,17 +2,16 @@
 using System.Text.Json;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 using JsonSerializer = System.Text.Json.JsonSerializer;
 
 namespace AiDevs2.Tasks;
 
 public class AiDevsService(HttpClient httpClient, IConfiguration configuration)
 {
-    private readonly string _apiKey = configuration["AiDevsTasks:ApiKey"] 
-                                      ?? throw new InvalidOperationException("Missing configurationAiDevsTasks:ApiKey");
     private const string BaseUrl = "https://tasks.aidevs.pl";
+
+    private readonly string _apiKey = configuration["AiDevsTasks:ApiKey"]
+                                      ?? throw new InvalidOperationException("Missing configurationAiDevsTasks:ApiKey");
 
     public async Task<string> GetAuthenticationToken(string taskName)
     {
@@ -29,7 +28,7 @@ public class AiDevsService(HttpClient httpClient, IConfiguration configuration)
     {
         var response = await httpClient.GetAsync($"{BaseUrl}/task/{token}");
         response.EnsureSuccessStatusCode();
-        
+
         return await response.Content.ReadAsStringAsync();
     }
 
@@ -49,4 +48,3 @@ public static class ServiceCollectionExtensions
         services.AddHttpClient<AiDevsService>();
     }
 }
-
