@@ -1,7 +1,7 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using System.Text;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
-using System.Text;
 using JsonSerializer = System.Text.Json.JsonSerializer;
 
 namespace AiDevs2.Tasks.Tasks;
@@ -21,7 +21,7 @@ public class Moderation(AiDevsService aiDevsService, IConfiguration configuratio
             moderationCheckResults.Add(moderateResponse.Results.First().Flagged ? 1 : 0);
         }
 
-        var answer = JsonSerializer.Serialize(new {answer = moderationCheckResults});
+        var answer = JsonSerializer.Serialize(new { answer = moderationCheckResults });
         await SubmitAnswer(answer);
     }
 
@@ -31,7 +31,7 @@ public class Moderation(AiDevsService aiDevsService, IConfiguration configuratio
                      ?? throw new InvalidOperationException("Missing configuration OpenAi:ApiKey");
 
         // Convert your data to JSON
-        string json = JsonConvert.SerializeObject(new
+        var json = JsonConvert.SerializeObject(new
         {
             input = text
         });
@@ -43,19 +43,20 @@ public class Moderation(AiDevsService aiDevsService, IConfiguration configuratio
 
         // Send the request
         using var client = new HttpClient();
-        HttpResponseMessage response = await client.SendAsync(requestMessage);
+        var response = await client.SendAsync(requestMessage);
 
         // Ensure we got a successful response
         response.EnsureSuccessStatusCode();
 
         // Read the response content as a string
-        string content = await response.Content.ReadAsStringAsync();
+        var content = await response.Content.ReadAsStringAsync();
         var responseResult = JsonConvert.DeserializeObject<ModerateApiResponse>(content)!;
 
         return responseResult;
     }
 
     private record ModerateTaskResponse(List<string> Input);
+
     private record ModerateApiResponse(List<ModerateApiResult> Results);
 
     public record ModerateApiResult(bool Flagged);

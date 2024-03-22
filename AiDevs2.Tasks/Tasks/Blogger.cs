@@ -1,5 +1,4 @@
-﻿using Azure;
-using Azure.AI.OpenAI;
+﻿using Azure.AI.OpenAI;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using JsonSerializer = System.Text.Json.JsonSerializer;
@@ -12,20 +11,18 @@ public class Blogger(AiDevsService aiDevsService, OpenAIClient openAiClient, ILo
     public override async Task Run()
     {
         var task = await GetTask();
-
         var taskResponse = JsonConvert.DeserializeObject<BloggerTaskResponse>(task)!;
 
         var generatedParagraphs = new List<string>();
-
         foreach (var subject in taskResponse.Blog)
         {
-
             var chatCompletionsOptions = new ChatCompletionsOptions
             {
                 DeploymentName = "gpt-3.5-turbo",
                 Messages =
                 {
-                    new ChatRequestSystemMessage("Napisz wpis na bloga (w języku polskim) na temat przyrządzania pizzy Margherity. Użytkownik podaje temat a twoim zadaniem jest zwrócić rozdział."),
+                    new ChatRequestSystemMessage(
+                        "Napisz wpis na bloga (w języku polskim) na temat przyrządzania pizzy Margherity. Użytkownik podaje temat a twoim zadaniem jest zwrócić rozdział."),
                     new ChatRequestUserMessage(subject)
                 }
             };
@@ -34,8 +31,7 @@ public class Blogger(AiDevsService aiDevsService, OpenAIClient openAiClient, ILo
             generatedParagraphs.Add(response.Value.Choices[0].Message.Content);
         }
 
-        var answer = JsonSerializer.Serialize(new { answer = generatedParagraphs });
-        await SubmitAnswer(answer);
+        await SubmitAnswer(JsonSerializer.Serialize(new { answer = generatedParagraphs }));
     }
 }
 

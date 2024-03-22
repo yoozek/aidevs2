@@ -53,7 +53,7 @@ internal class Program
 
         var taskNames = Assembly.GetExecutingAssembly().GetTypes()
             .Where(type =>
-                type is { IsClass: true, IsAbstract: false } 
+                type is { IsClass: true, IsAbstract: false }
                 && type.IsSubclassOf(typeof(AiDevsTaskBase)))
             .Select(type => type.Name);
 

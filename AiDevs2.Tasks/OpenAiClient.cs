@@ -8,7 +8,7 @@ public static class OpenAiServiceCollectionExtensions
 {
     public static void AddOpenAiService(this IServiceCollection services, IConfiguration configuration)
     {
-        var apiKey = configuration["OpenAi:ApiKey"] 
+        var apiKey = configuration["OpenAi:ApiKey"]
                      ?? throw new InvalidOperationException("Missing configuration OpenAi:ApiKey");
 
         services.AddSingleton(new OpenAIClient(apiKey));
