@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using System.Text;
+using JsonSerializer = System.Text.Json.JsonSerializer;
 
 namespace AiDevs2.Tasks.Tasks;
 
@@ -20,7 +21,8 @@ public class Moderation(AiDevsService aiDevsService, IConfiguration configuratio
             moderationCheckResults.Add(moderateResponse.Results.First().Flagged ? 1 : 0);
         }
 
-        await SubmitAnswer(moderationCheckResults);
+        var answer = JsonSerializer.Serialize(new {answer = moderationCheckResults});
+        await SubmitAnswer(answer);
     }
 
     private async Task<ModerateApiResponse> ModerateText(string text)

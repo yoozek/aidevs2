@@ -19,7 +19,7 @@ public abstract class AiDevsTaskBase(string taskName, AiDevsService aiDevsServic
         return task;
     }
 
-    protected async Task<string> SubmitAnswer(object answer)
+    protected async Task<string> SubmitAnswer(string answer)
     {
         if (_token == null) throw new InvalidOperationException("Najpierw pobierz zadanie");
 
@@ -27,6 +27,6 @@ public abstract class AiDevsTaskBase(string taskName, AiDevsService aiDevsServic
         var response = await aiDevsService.SubmitAnswer(_token, answer);
         logger.LogInformation(response);
 
-        return await aiDevsService.SubmitAnswer(_token, answer);
+        return response;
     }
 }
