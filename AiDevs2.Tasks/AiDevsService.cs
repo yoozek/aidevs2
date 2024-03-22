@@ -41,7 +41,7 @@ public class AiDevsService(HttpClient httpClient, IConfiguration configuration)
     }
 }
 
-public static class ServiceCollectionExtensions
+public static class AiDevsServiceCollectionExtensions
 {
     public static void AddAiDevsApiClient(this IServiceCollection services)
     {

@@ -1,5 +1,8 @@
 {
     "AiDevsTasks": {
         "ApiKey": "AI_DEVS_KEY"
+    },
+    "OpenAi": {
+        "ApiKey": "OPEN_AI_API_KEY"
     }
 }

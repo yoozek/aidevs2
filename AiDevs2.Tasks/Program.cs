@@ -35,6 +35,9 @@ internal class Program
         services.AddLogging(configure => configure.AddSerilog());
         services.AddSingleton<IConfiguration>(configuration);
         services.AddAiDevsApiClient();
+
+        services.AddOpenAiService(configuration);
+
         services.Scan(scan => scan
             .FromAssemblyOf<AiDevsTaskBase>()
             .AddClasses(classes => classes.AssignableTo<AiDevsTaskBase>())
