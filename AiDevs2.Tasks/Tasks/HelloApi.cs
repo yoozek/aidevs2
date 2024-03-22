@@ -9,10 +9,8 @@ public class HelloApi(AiDevsService aiDevsService, ILogger<HelloApi> logger)
     public override async Task Run()
     {
         var task = await GetTask();
-        Console.WriteLine(task);
 
         var jsonObj = JsonConvert.DeserializeObject<dynamic>(task)!;
-        var response = await SubmitAnswer(jsonObj.cookie.ToString());
-        Console.WriteLine(response);
+        await SubmitAnswer(jsonObj.cookie.ToString());
     }
 }

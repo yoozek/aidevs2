@@ -32,7 +32,7 @@ public class AiDevsService(HttpClient httpClient, IConfiguration configuration)
         return await response.Content.ReadAsStringAsync();
     }
 
-    public async Task<string> SubmitAnswer(string token, string answer)
+    public async Task<string> SubmitAnswer(string token, object answer)
     {
         var response = await httpClient.PostAsync($"{BaseUrl}/answer/{token}",
             new StringContent(JsonSerializer.Serialize(new { answer }), Encoding.UTF8, "application/json"));

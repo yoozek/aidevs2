@@ -13,14 +13,20 @@ public abstract class AiDevsTaskBase(string taskName, AiDevsService aiDevsServic
     {
         logger.LogInformation($"Pobieranie zadania '{TaskName}'");
         _token = await aiDevsService.GetAuthenticationToken(TaskName);
-        return await aiDevsService.GetTask(_token);
+        var task = await aiDevsService.GetTask(_token);
+        logger.LogInformation(task);
+
+        return task;
     }
 
-    protected async Task<string> SubmitAnswer(string answer)
+    protected async Task<string> SubmitAnswer(object answer)
     {
         if (_token == null) throw new InvalidOperationException("Najpierw pobierz zadanie");
 
         logger.LogInformation("Wysyłanie odpowiedzi");
+        var response = await aiDevsService.SubmitAnswer(_token, answer);
+        logger.LogInformation(response);
+
         return await aiDevsService.SubmitAnswer(_token, answer);
     }
 }
