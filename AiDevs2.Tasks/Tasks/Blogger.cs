@@ -31,7 +31,7 @@ public class Blogger(AiDevsService aiDevsService, OpenAIClient openAiClient, ILo
             generatedParagraphs.Add(response.Value.Choices[0].Message.Content);
         }
 
-        await SubmitAnswer(JsonSerializer.Serialize(new { answer = generatedParagraphs }));
+        await SubmitAnswer(generatedParagraphs);
     }
 }
 

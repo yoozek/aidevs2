@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using System.Text.Json;
+using Microsoft.Extensions.Logging;
 
 namespace AiDevs2.Tasks;
 
@@ -19,12 +20,12 @@ public abstract class AiDevsTaskBase(string taskName, AiDevsService aiDevsServic
         return task;
     }
 
-    protected async Task<string> SubmitAnswer(string answer)
+    protected async Task<string> SubmitAnswer(object answer)
     {
         if (_token == null) throw new InvalidOperationException("Najpierw pobierz zadanie");
 
         logger.LogInformation("Wysyłanie odpowiedzi");
-        var response = await aiDevsService.SubmitAnswer(_token, answer);
+        var response = await aiDevsService.SubmitAnswer(_token, JsonSerializer.Serialize(new { answer }));
         logger.LogInformation(response);
 
         return response;

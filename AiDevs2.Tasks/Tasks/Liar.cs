@@ -1,4 +1,5 @@
-﻿using Azure.AI.OpenAI;
+﻿using Azure;
+using Azure.AI.OpenAI;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using JsonSerializer = System.Text.Json.JsonSerializer;
@@ -34,7 +35,7 @@ public class Liar(AiDevsService aiDevsService, OpenAIClient openAiClient, ILogge
 
         var response = await openAiClient.GetChatCompletionsAsync(chatCompletionsOptions);
 
-        await SubmitAnswer(JsonSerializer.Serialize(new { answer = response.Value.Choices[0].Message.Content }));
+        await SubmitAnswer(response.Value.Choices[0].Message.Content);
     }
 }
 

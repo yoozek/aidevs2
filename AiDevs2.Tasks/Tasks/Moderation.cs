@@ -21,8 +21,7 @@ public class Moderation(AiDevsService aiDevsService, IConfiguration configuratio
             moderationCheckResults.Add(moderateResponse.Results.First().Flagged ? 1 : 0);
         }
 
-        var answer = JsonSerializer.Serialize(new { answer = moderationCheckResults });
-        await SubmitAnswer(answer);
+        await SubmitAnswer(moderationCheckResults);
     }
 
     private async Task<ModerateApiResponse> ModerateText(string text)
