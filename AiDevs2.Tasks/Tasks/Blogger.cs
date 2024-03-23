@@ -12,23 +12,27 @@ public class Blogger(AiDevsClient aiDevsClient, OpenAIClient openAiClient, ILogg
     {
         var task = await GetTask();
         var taskResponse = JsonSerializer.Deserialize<BloggerTaskResponse>(task, JsonSerializerOptions)!;
+        var prompt = """
+                     Napisz wpis na bloga (w języku polskim) na temat przyrządzania pizzy Margherity.
+                     Użytkownik podaje temat pomiędzy tagami <subject> i </subject>
+                     Twoim zadaniem jest wygenerować tekst rozdziału dla tematu podanego przez użytkownika (10 zdań).
+                     """;
 
         var generatedParagraphs = new List<string>();
         foreach (var subject in taskResponse.Blog)
         {
             logger.LogInformation($"OpenAI generuje '{subject}'");
-            var chatCompletionsOptions = new ChatCompletionsOptions
+
+            var response = await openAiClient.GetChatCompletionsAsync(new ChatCompletionsOptions
             {
                 DeploymentName = "gpt-3.5-turbo",
                 Messages =
                 {
-                    new ChatRequestSystemMessage(
-                        "Napisz wpis na bloga (w języku polskim) na temat przyrządzania pizzy Margherity. Użytkownik podaje temat a twoim zadaniem jest zwrócić rozdział (10 zdań)."),
-                    new ChatRequestUserMessage(subject)
+                    new ChatRequestSystemMessage(prompt),
+                    new ChatRequestUserMessage($"<subject>{subject}</subject>")
                 }
-            };
+            });
 
-            var response = await openAiClient.GetChatCompletionsAsync(chatCompletionsOptions);
             generatedParagraphs.Add(response.Value.Choices[0].Message.Content);
         }
 
