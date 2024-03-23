@@ -1,5 +1,6 @@
 {
     "AiDevsTasks": {
+        "BaseUrl": "https://tasks.aidevs.pl",
         "ApiKey": "AI_DEVS_KEY"
     },
     "OpenAi": {

@@ -1,16 +1,16 @@
-﻿using Microsoft.Extensions.Logging;
-using Newtonsoft.Json;
+﻿using System.Text.Json;
+using AiDevs2.Tasks.ApiClients;
+using Microsoft.Extensions.Logging;
 
 namespace AiDevs2.Tasks.Tasks;
 
-public class HelloApi(AiDevsService aiDevsService, ILogger<HelloApi> logger)
-    : AiDevsTaskBase("helloapi", aiDevsService, logger)
+public class HelloApi(AiDevsClient aiDevsClient, ILogger<HelloApi> logger)
+    : AiDevsTaskBase("helloapi", aiDevsClient, logger)
 {
     public override async Task Run()
     {
         var task = await GetTask();
-
-        var jsonObj = JsonConvert.DeserializeObject<dynamic>(task)!;
-        await SubmitAnswer(jsonObj.cookie.ToString());
+        var cookie = JsonDocument.Parse(task).RootElement.GetProperty("cookie").ToString();
+        await SubmitAnswer(cookie);
     }
 }

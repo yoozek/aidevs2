@@ -1,4 +1,5 @@
 ﻿using System.Reflection;
+using AiDevs2.Tasks.Tasks;
 using Microsoft.Extensions.DependencyInjection;
 using Spectre.Console;
 
@@ -6,13 +7,15 @@ namespace AiDevs2.Tasks;
 
 public class App(IServiceScopeFactory scopeFactory)
 {
+    private const string ExitMessage = "Zakończ program";
+
     public async Task Run(string[] args)
     {
         using var scope = scopeFactory.CreateScope();
         do
         {
             var taskName = GetTaskName(args);
-            if (taskName == "Zakończ program") return;
+            if (taskName == ExitMessage) return;
             await RunTask(taskName, scope);
         } while (true);
     }
@@ -26,12 +29,12 @@ public class App(IServiceScopeFactory scopeFactory)
             .Where(type =>
                 type is { IsClass: true, IsAbstract: false }
                 && type.IsSubclassOf(typeof(AiDevsTaskBase)))
-            .Select(type => type.Name);
+            .Select(type => $"{type.Name}");
 
         return AnsiConsole.Prompt(
             new SelectionPrompt<string>()
                 .Title("Wybierz zadanie:")
-                .AddChoices([.. taskNames, "Zakończ program"]));
+                .AddChoices([.. taskNames, ExitMessage]));
     }
 
     private static async Task RunTask(string taskName, IServiceScope container)

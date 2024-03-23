@@ -1,12 +1,13 @@
-﻿using Azure.AI.OpenAI;
+﻿using System.Text.Json;
+using AiDevs2.Tasks.ApiClients;
+using Azure.AI.OpenAI;
 using Microsoft.Extensions.Logging;
-using Newtonsoft.Json;
 using Spectre.Console;
 
 namespace AiDevs2.Tasks.Tasks;
 
-public class Liar(AiDevsService aiDevsService, OpenAIClient openAiClient, ILogger<HelloApi> logger)
-    : AiDevsTaskBase("liar", aiDevsService, logger)
+public class Liar(AiDevsClient aiDevsClient, OpenAIClient openAiClient, ILogger<HelloApi> logger)
+    : AiDevsTaskBase("liar", aiDevsClient, logger)
 {
     public override async Task Run()
     {
@@ -16,7 +17,7 @@ public class Liar(AiDevsService aiDevsService, OpenAIClient openAiClient, ILogge
             { "question", question }
         };
         var task = await GetTask(formData);
-        var taskResponse = JsonConvert.DeserializeObject<LiarTaskResponse>(task)!;
+        var taskResponse = JsonSerializer.Deserialize<LiarTaskResponse>(task, JsonSerializerOptions)!;
         var chatCompletionsOptions = new ChatCompletionsOptions
         {
             DeploymentName = "gpt-3.5-turbo",
@@ -40,6 +41,6 @@ public class Liar(AiDevsService aiDevsService, OpenAIClient openAiClient, ILogge
 
         await SubmitAnswer(response.Value.Choices[0].Message.Content);
     }
-}
 
-public record LiarTaskResponse(string Answer);
+    private record LiarTaskResponse(string Answer);
+}

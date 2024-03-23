@@ -1,18 +1,18 @@
 ﻿using System.Text;
-using Microsoft.Extensions.Configuration;
+using System.Text.Json;
+using AiDevs2.Tasks.ApiClients;
 using Microsoft.Extensions.Logging;
-using Newtonsoft.Json;
 
 namespace AiDevs2.Tasks.Tasks;
 
-public class Moderation(AiDevsService aiDevsService, IConfiguration configuration, ILogger<Moderation> logger)
-    : AiDevsTaskBase("moderation", aiDevsService, logger)
+public class Moderation(AiDevsClient aiDevsClient, OpenAiClientConfiguration openAiConfig, ILogger<Moderation> logger)
+    : AiDevsTaskBase("moderation", aiDevsClient, logger)
 {
     public override async Task Run()
     {
         var task = await GetTask();
 
-        var taskResponse = JsonConvert.DeserializeObject<ModerateTaskResponse>(task)!;
+        var taskResponse = JsonSerializer.Deserialize<ModerateTaskResponse>(task, JsonSerializerOptions)!;
         var moderationCheckResults = new List<int>();
         foreach (var inputMessage in taskResponse.Input)
         {
@@ -25,16 +25,10 @@ public class Moderation(AiDevsService aiDevsService, IConfiguration configuratio
 
     private async Task<ModerateApiResponse> ModerateText(string text)
     {
-        var apiKey = configuration["OpenAi:ApiKey"]
-                     ?? throw new InvalidOperationException("Missing configuration OpenAi:ApiKey");
-
-        var json = JsonConvert.SerializeObject(new
-        {
-            input = text
-        });
+        var json = JsonSerializer.Serialize(new { input = text }, JsonSerializerOptions);
 
         using var requestMessage = new HttpRequestMessage(HttpMethod.Post, "https://api.openai.com/v1/moderations");
-        requestMessage.Headers.Add("Authorization", $"Bearer {apiKey}");
+        requestMessage.Headers.Add("Authorization", $"Bearer {openAiConfig.ApiKey}");
         requestMessage.Content = new StringContent(json, Encoding.UTF8, "application/json");
 
         using var client = new HttpClient();
@@ -42,7 +36,7 @@ public class Moderation(AiDevsService aiDevsService, IConfiguration configuratio
         response.EnsureSuccessStatusCode();
         var content = await response.Content.ReadAsStringAsync();
 
-        return JsonConvert.DeserializeObject<ModerateApiResponse>(content)!;
+        return JsonSerializer.Deserialize<ModerateApiResponse>(content, JsonSerializerOptions)!;
     }
 
     private record ModerateTaskResponse(List<string> Input);
