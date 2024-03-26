@@ -86,9 +86,9 @@ public class InPrompt(AiDevsClient aiDevsClient, OpenAIClient openAiClient, ILog
             {
                 new ChatRequestSystemMessage(
                     $"""
-                         Twoim zadaniem jest odpwiedzieć pełnym zdaniem na pytanie w <question>
-                         bazując wyłącznie na wiedzy podanej poniżej która dotyczy tej osoby w <facts>
-                         <facts>{facts}</facts>
+                         bazując wyłącznie na wiedzy podanej poniżej
+                         <wiedza>{facts}</wiedza>
+                         Twoim zadaniem jest odpwiedzieć pełnym zdaniem na pytanie poniżej
                      """
                 ),
                 new ChatRequestUserMessage($"<question>{question}</question>")
