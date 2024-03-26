@@ -1,5 +1,5 @@
-﻿using System.Text.Json;
-using AiDevs2.Tasks.ApiClients;
+﻿using AiDevs2.Tasks.ApiClients;
+using Azure;
 using Azure.AI.OpenAI;
 using Microsoft.Extensions.Logging;
 
@@ -10,36 +10,33 @@ public class Blogger(AiDevsClient aiDevsClient, OpenAIClient openAiClient, ILogg
 {
     public override async Task Run()
     {
-        var task = await GetTask();
-        var taskResponse = JsonSerializer.Deserialize<BloggerTaskResponse>(task, JsonSerializerOptions)!;
-        var prompt = """
+        var task = await GetTask<BloggerTaskResponse>();
+
+        var paragraphs = await Task.WhenAll(task.Blog.Select(GenerateParagraph).ToList());
+
+        logger.LogInformation(string.Join(Environment.NewLine, paragraphs));
+
+        await SubmitAnswer(paragraphs);
+    }
+
+    private async Task<string> GenerateParagraph(string subject)
+    {
+        logger.LogInformation($"Generowanie paragrafu dla '{subject}'");
+        var response = await openAiClient.GetChatCompletionsAsync(new ChatCompletionsOptions
+        {
+            DeploymentName = "gpt-3.5-turbo",
+            Messages =
+            {
+                new ChatRequestSystemMessage("""
                      Napisz wpis na bloga (w języku polskim) na temat przyrządzania pizzy Margherity.
                      Użytkownik podaje temat pomiędzy tagami <subject> i </subject>
                      Twoim zadaniem jest wygenerować tekst rozdziału dla tematu podanego przez użytkownika (10 zdań).
-                     """;
-
-        var generatedParagraphs = new List<string>();
-        foreach (var subject in taskResponse.Blog)
-        {
-            logger.LogInformation($"OpenAI generuje '{subject}'");
-
-            var response = await openAiClient.GetChatCompletionsAsync(new ChatCompletionsOptions
-            {
-                DeploymentName = "gpt-3.5-turbo",
-                Messages =
-                {
-                    new ChatRequestSystemMessage(prompt),
-                    new ChatRequestUserMessage($"<subject>{subject}</subject>")
-                }
-            });
-
-            generatedParagraphs.Add(response.Value.Choices[0].Message.Content);
-        }
-
-        logger.LogInformation(string.Join(Environment.NewLine, generatedParagraphs));
-
-        await SubmitAnswer(generatedParagraphs);
+                     """),
+                new ChatRequestUserMessage($"<subject>{subject}</subject>")
+            }
+        });
+        return response.Value.Choices[0].Message.Content;
     }
 
-    private record BloggerTaskResponse(int Code, string Msg, List<string> Blog);
+    private record BloggerTaskResponse(List<string> Blog);
 }

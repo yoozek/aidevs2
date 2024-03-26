@@ -16,9 +16,9 @@ public abstract class AiDevsTaskBase(string taskName, AiDevsClient aiDevsClient,
 
     public abstract Task Run();
 
-    protected async Task<T> GetTask<T>()
+    protected async Task<T> GetTask<T>(Dictionary<string, string>? formData = null)
     {
-        return JsonSerializer.Deserialize<T>(await GetTask(), JsonSerializerOptions)!;
+        return JsonSerializer.Deserialize<T>(await GetTask(formData), JsonSerializerOptions)!;
     }
 
     protected async Task<string> GetTask(Dictionary<string, string>? formData = null)

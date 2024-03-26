@@ -10,11 +10,10 @@ public class Moderation(AiDevsClient aiDevsClient, OpenAiClientConfiguration ope
 {
     public override async Task Run()
     {
-        var task = await GetTask();
+        var task = await GetTask<ModerateTaskResponse>();
 
-        var taskResponse = JsonSerializer.Deserialize<ModerateTaskResponse>(task, JsonSerializerOptions)!;
         var moderationCheckResults = new List<int>();
-        foreach (var inputMessage in taskResponse.Input)
+        foreach (var inputMessage in task.Input)
         {
             var moderateResponse = await ModerateText(inputMessage);
             moderationCheckResults.Add(moderateResponse.Results.First().Flagged ? 1 : 0);
