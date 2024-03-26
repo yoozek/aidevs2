@@ -15,7 +15,7 @@ public class InPrompt(AiDevsClient aiDevsClient, OpenAIClient openAiClient, ILog
 
         logger.LogInformation("Generowanie bazy wiedzy..");
         var peopleFacts = await Task.WhenAll(task.Input.Select(ExtractPersonFactDocument));
-        
+
         logger.LogInformation("Ustalanie kogo dotyczy pytanie..");
         var name = await GetNameFromQuestion(task.Question);
         logger.LogInformation($"Pytanie dotyczy osoby o imieniu '{name}'.");

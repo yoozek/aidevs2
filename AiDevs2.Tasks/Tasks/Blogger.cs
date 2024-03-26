@@ -1,5 +1,4 @@
 ﻿using AiDevs2.Tasks.ApiClients;
-using Azure;
 using Azure.AI.OpenAI;
 using Microsoft.Extensions.Logging;
 
@@ -28,10 +27,10 @@ public class Blogger(AiDevsClient aiDevsClient, OpenAIClient openAiClient, ILogg
             Messages =
             {
                 new ChatRequestSystemMessage("""
-                     Napisz wpis na bloga (w języku polskim) na temat przyrządzania pizzy Margherity.
-                     Użytkownik podaje temat pomiędzy tagami <subject> i </subject>
-                     Twoim zadaniem jest wygenerować tekst rozdziału dla tematu podanego przez użytkownika (10 zdań).
-                     """),
+                                             Napisz wpis na bloga (w języku polskim) na temat przyrządzania pizzy Margherity.
+                                             Użytkownik podaje temat pomiędzy tagami <subject> i </subject>
+                                             Twoim zadaniem jest wygenerować tekst rozdziału dla tematu podanego przez użytkownika (10 zdań).
+                                             """),
                 new ChatRequestUserMessage($"<subject>{subject}</subject>")
             }
         });

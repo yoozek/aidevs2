@@ -34,7 +34,7 @@ public class Liar(AiDevsClient aiDevsClient, OpenAIClient openAiClient, ILogger<
             }
         });
         var checkResult = response.Value.Choices[0].Message.Content;
-        
+
         logger.LogInformation(checkResult == "YES"
             ? "Odpowiedź jest na temat"
             : "Odpowiedź nie jest na temat");
