@@ -8,7 +8,8 @@ public abstract class AiDevsTaskBase(string taskName, AiDevsClient aiDevsClient,
 {
     protected readonly JsonSerializerOptions JsonSerializerOptions = new()
     {
-        PropertyNamingPolicy = JsonNamingPolicy.CamelCase
+        PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+        WriteIndented = true
     };
 
     private string? _token;

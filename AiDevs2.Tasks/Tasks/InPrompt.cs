@@ -1,4 +1,5 @@
-﻿using AiDevs2.Tasks.ApiClients;
+﻿using System.Text.Json;
+using AiDevs2.Tasks.ApiClients;
 using AiDevs2.Tasks.Extensions;
 using Azure.AI.OpenAI;
 using Microsoft.Extensions.Logging;
@@ -8,13 +9,15 @@ namespace AiDevs2.Tasks.Tasks;
 public class InPrompt(AiDevsClient aiDevsClient, OpenAIClient openAiClient, ILogger<HelloApi> logger)
     : AiDevsTaskBase("inprompt", aiDevsClient, logger)
 {
+    private readonly string _filePath = "Data/inprompt_knowledge.json";
+
     public override async Task Run()
     {
         var task = await GetTask<InPromptResponse>();
         logger.LogInformation($"[Zadanie] Pytanie: {task.Question}");
 
         logger.LogInformation("Generowanie bazy wiedzy..");
-        var peopleFacts = await Task.WhenAll(task.Input.Select(ExtractPersonFactDocument));
+        var peopleFacts = await GetPeopleFacts(task);
 
         logger.LogInformation("Ustalanie kogo dotyczy pytanie..");
         var name = await GetNameFromQuestion(task.Question);
@@ -26,6 +29,27 @@ public class InPrompt(AiDevsClient aiDevsClient, OpenAIClient openAiClient, ILog
 
         logger.LogInformation($"Odpowiedź to: '{answer}'");
         await SubmitAnswer(answer);
+    }
+
+    private async Task<List<PersonFactDocument?>> GetPeopleFacts(InPromptResponse task)
+    {
+        List<PersonFactDocument?> documents;
+        if (File.Exists(_filePath))
+        {
+            logger.LogInformation($"Wczytywanie danych z pliku {_filePath}");
+            var documentsText = await File.ReadAllTextAsync(_filePath);
+            documents = JsonSerializer.Deserialize<List<PersonFactDocument?>>(documentsText, JsonSerializerOptions)!;
+        }
+        else
+        {
+            logger.LogInformation("Konwertowanie bazy danych na JSON z użyciem GPT");
+            documents = (await Task.WhenAll(task.Input.Select(ExtractPersonFactDocument))).ToList();
+
+            logger.LogInformation($"Zapisywaie danych do pliku {_filePath}");
+            await File.WriteAllTextAsync(_filePath, JsonSerializer.Serialize(documents, JsonSerializerOptions));
+        }
+
+        return documents.Where(x => x != null).ToList();
     }
 
     private async Task<PersonFactDocument?> ExtractPersonFactDocument(string personFactText)
