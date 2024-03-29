@@ -8,17 +8,12 @@ public class Whisper(AiDevsClient aiDevsClient, OpenAIClient openAiClient, ILogg
     : AiDevsTaskBase("whisper", aiDevsClient, logger)
 {
 
-    private string _fileUrl = "https://tasks.aidevs.pl/data/mateusz.mp3";
+    private readonly string _fileUrl = "https://tasks.aidevs.pl/data/mateusz.mp3";
     public override async Task Run()
     {
-        var task = await GetTask();
-        using var httpClient = new HttpClient();
-        using var httpResponse = await httpClient.GetAsync(_fileUrl, HttpCompletionOption.ResponseHeadersRead);
-        httpResponse.EnsureSuccessStatusCode();
-        
-        await using var audioStream = await httpResponse.Content.ReadAsStreamAsync();
-        
-        
+        await GetTask();
+        await using var audioStream = await GetHttpFileStream(_fileUrl);
+
         var response = await openAiClient.GetAudioTranscriptionAsync(new AudioTranscriptionOptions()
         {
             DeploymentName = "whisper-1",

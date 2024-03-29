@@ -42,4 +42,12 @@ public abstract class AiDevsTaskBase(string taskName, AiDevsClient aiDevsClient,
 
         return response;
     }
+
+    protected async Task<Stream> GetHttpFileStream(string fileUri)
+    {
+        using var httpClient = new HttpClient();
+        using var httpResponse = await httpClient.GetAsync(fileUri, HttpCompletionOption.ResponseHeadersRead);
+        httpResponse.EnsureSuccessStatusCode();
+        return await httpResponse.Content.ReadAsStreamAsync();
+    }
 }
