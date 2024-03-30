@@ -9,7 +9,8 @@ public abstract class AiDevsTaskBase(string taskName, AiDevsClient aiDevsClient,
     protected readonly JsonSerializerOptions JsonSerializerOptions = new()
     {
         PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
-        WriteIndented = true
+        WriteIndented = true,
+        
     };
 
     private string? _token;
@@ -30,6 +31,15 @@ public abstract class AiDevsTaskBase(string taskName, AiDevsClient aiDevsClient,
         logger.LogDebug(task);
 
         return task;
+    }
+
+    protected async Task<string?> GetHint()
+    {
+        logger.LogInformation($"Pobieranie podpowiedzi '{TaskName}'");
+        var hint = await aiDevsClient.GetHint(TaskName);
+        logger.LogDebug(hint);
+
+        return hint;
     }
 
     protected async Task<string> SubmitAnswer(object answer)
