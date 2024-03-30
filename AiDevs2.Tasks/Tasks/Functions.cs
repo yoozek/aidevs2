@@ -1,5 +1,4 @@
-﻿using System.Text.Json;
-using AiDevs2.Tasks.ApiClients;
+﻿using AiDevs2.Tasks.ApiClients;
 using Azure.AI.OpenAI;
 using Microsoft.Extensions.Logging;
 
@@ -42,7 +41,7 @@ public class Functions(AiDevsClient aiDevsClient, OpenAIClient openAiClient, ILo
         };
         await SubmitAnswer(functionDefinition);
 
-        // Poniżej zabawa z OpenAi
+        // Poniżej zabawa z użyciem Azure.AI.OpenAI
         var addUserFunctionDefinition = new ChatCompletionsFunctionToolDefinition
         {
             Name = functionDefinition.name,
@@ -57,17 +56,29 @@ public class Functions(AiDevsClient aiDevsClient, OpenAIClient openAiClient, ILo
             Parameters = BinaryData.FromObjectAsJson(functionDefinition.parameters, JsonSerializerOptions)
         };
 
+        await SendChatMessage("Czy możesz dodać użytkownika Łukasz Jóźwik urodzonego w 1993 ", 
+            addUserFunctionDefinition, 
+            removeUserFunctionDefinition); 
+
+        await SendChatMessage("ユーザー Andrzej Duda を削除してください。1972 年生まれです。",
+            addUserFunctionDefinition,
+            removeUserFunctionDefinition);
+    }
+
+    private async Task SendChatMessage(string message, ChatCompletionsFunctionToolDefinition addUserFunctionDefinition,
+        ChatCompletionsFunctionToolDefinition removeUserFunctionDefinition)
+    {
         var response = await openAiClient.GetChatCompletionsAsync(new ChatCompletionsOptions
         {
             DeploymentName = "gpt-4",
-            Messages = { new ChatRequestUserMessage("Could you please add user for Mark Adamson born in 1993?") },
-            Tools = { addUserFunctionDefinition, removeUserFunctionDefinition },
-            ToolChoice = ChatCompletionsToolChoice.Auto
+            Messages =
+            {
+                new ChatRequestUserMessage(message)
+            },
+            Tools = { addUserFunctionDefinition, removeUserFunctionDefinition }
         });
 
-        foreach (var toolCall in response.Value.Choices[0].Message.ToolCalls)
-        {
-            logger.LogInformation($"Calling {JsonSerializer.Serialize(toolCall, JsonSerializerOptions)}");
-        }
+        var call = response.Value.Choices[0].Message.ToolCalls[0] as ChatCompletionsFunctionToolCall;
+        logger.LogInformation($"Wykonuję {call?.Name}({call?.Arguments})");
     }
 }
