@@ -36,18 +36,14 @@ public class Scraper(AiDevsClient aiDevsClient, OpenAIClient openAiClient, ILogg
         await SubmitAnswer(answer);
     }
 
-    static async Task<string> DownloadFileWithRetryAsync(string url)
+    private async Task<string> DownloadFileWithRetryAsync(string url)
     {
-        var retryPolicy = Policy
-            .Handle<HttpRequestException>()
-            .WaitAndRetryAsync(3, retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)));
-
         using var httpClient = new HttpClient();
         httpClient.DefaultRequestHeaders.UserAgent.ParseAdd("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3");
 
-        return await retryPolicy.ExecuteAsync(async () =>
+        return await RetryPolicy.ExecuteAsync(async () =>
         {
-            HttpResponseMessage response = await httpClient.GetAsync(url);
+            var response = await httpClient.GetAsync(url);
             response.EnsureSuccessStatusCode();
             return await response.Content.ReadAsStringAsync();
         });

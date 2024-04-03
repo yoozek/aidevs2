@@ -43,7 +43,7 @@ internal class Program
             .FromAssemblyOf<AiDevsTaskBase>()
             .AddClasses(classes => classes.AssignableTo<AiDevsTaskBase>())
             .AsSelf()
-            .WithScopedLifetime());
+            .WithTransientLifetime());
 
         return services.BuildServiceProvider();
     }
