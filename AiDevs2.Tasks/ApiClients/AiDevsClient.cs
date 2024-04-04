@@ -2,7 +2,6 @@
 using System.Text.Json;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using JsonSerializer = System.Text.Json.JsonSerializer;
 
 namespace AiDevs2.Tasks.ApiClients;
 

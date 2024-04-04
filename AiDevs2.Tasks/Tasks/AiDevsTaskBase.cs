@@ -74,6 +74,14 @@ public abstract class AiDevsTaskBase(string taskName, AiDevsClient aiDevsClient,
         return await httpResponse.Content.ReadAsStreamAsync();
     }
 
+    protected async Task<string> GetHttpFileText(string fileUri)
+    {
+        using var httpClient = new HttpClient();
+        using var httpResponse = await httpClient.GetAsync(fileUri, HttpCompletionOption.ResponseHeadersRead);
+        httpResponse.EnsureSuccessStatusCode();
+        return await httpResponse.Content.ReadAsStringAsync();
+    }
+
     public void Dispose()
     {
         _token = null;

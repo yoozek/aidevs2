@@ -4,7 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace AiDevs2.Tasks.ApiClients;
 
-public record OpenAiClientConfiguration(Uri ApiKey);
+public record OpenAiClientConfiguration(string ApiKey);
 
 public static class OpenAiClientServiceCollectionExtensions
 {
@@ -14,6 +14,6 @@ public static class OpenAiClientServiceCollectionExtensions
                      ?? throw new InvalidOperationException($"{nameof(OpenAiClientConfiguration)} is missing");
         services.AddSingleton(config);
 
-        services.AddSingleton(new OpenAIClient(config.ApiKey.ToString()));
+        services.AddSingleton(new OpenAIClient(config.ApiKey));
     }
 }
