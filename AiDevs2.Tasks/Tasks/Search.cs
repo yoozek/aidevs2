@@ -9,6 +9,7 @@ public class Search(AiDevsClient aiDevsClient, ILogger<HelloApi> logger, OpenAiC
     : AiDevsTaskBase("search", aiDevsClient, logger)
 {
     private readonly string _sourceUrl = "https://unknow.news/archiwum_aidevs.json";
+    private readonly bool _importData = false;
 
     public override async Task Run()
     {
@@ -18,7 +19,7 @@ public class Search(AiDevsClient aiDevsClient, ILogger<HelloApi> logger, OpenAiC
             .WithOpenAI(new OpenAIConfig
             {
                 APIKey = openAiConfig.ApiKey,
-                EmbeddingModel = "text-embedding-3-large",
+                EmbeddingModel = "text-embedding-3-small",
                 EmbeddingModelMaxTokenTotal = 8191,
                 MaxRetries = 3,
                 TextModel = "gpt-4",
@@ -27,20 +28,19 @@ public class Search(AiDevsClient aiDevsClient, ILogger<HelloApi> logger, OpenAiC
             .WithQdrantMemoryDb("http://localhost:6333/")
             .Build<MemoryServerless>();
 
-        var fileName = _sourceUrl.Split('/').Last();
+        var indexName = _sourceUrl.Split('/').Last();
 
-        var importData = false;
-        if (importData)
-            await ImportText(memory, fileName);
+        if (_importData)
+            await ImportLinks(memory, indexName);
 
         logger.LogInformation($"Pytanie: {task.Question}");
         var response = await memory.AskAsync(
-            $"Odpowiedz na pytanie zwracając tylko URL i nic więcej <pytanie>{task.Question}</pytanie>", fileName);
+            $"Odpowiedz na pytanie zwracając tylko URL i nic więcej <pytanie>{task.Question}</pytanie>", indexName);
         logger.LogInformation($"Powiązany link: {response.Result}");
         await SubmitAnswer(response.Result);
     }
 
-    private async Task ImportText(MemoryServerless memory, string fileName)
+    private async Task ImportLinks(MemoryServerless memory, string fileName)
     {
         var jsonString = await GetHttpFileText(_sourceUrl);
         var links = JsonSerializer.Deserialize<List<BookmarkEntry>>(jsonString, JsonSerializerOptions);

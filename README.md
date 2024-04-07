@@ -19,3 +19,5 @@ Jeśli chcesz wykonać konkretne zadanie określ je w argumentach polecenia np.
 ```
 dotnet run HelloApi
 ```
+
+Do niektórych zadań niezbędne jest uruchomienie [Qdrant](https://qdrant.tech/) na domyślnych portach
