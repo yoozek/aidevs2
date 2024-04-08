@@ -7,8 +7,7 @@ using Microsoft.SemanticKernel.Connectors.OpenAI;
 
 namespace AiDevs2.Tasks.Tasks;
 
-public class Knowledge
-    : AiDevsTaskBase
+public class Knowledge : AiDevsTaskBase
 {
     private readonly ILogger<Knowledge> _logger;
     private readonly Kernel _kernel;
