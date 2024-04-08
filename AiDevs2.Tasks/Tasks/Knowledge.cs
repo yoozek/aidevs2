@@ -9,12 +9,12 @@ namespace AiDevs2.Tasks.Tasks;
 
 public class Knowledge : AiDevsTaskBase
 {
-    private readonly ILogger<Knowledge> _logger;
     private readonly Kernel _kernel;
+    private readonly ILogger<Knowledge> _logger;
 
-    public Knowledge(AiDevsClient aiDevsClient, 
-        OpenAiClientConfiguration openAiConfig, 
-        ILogger<Knowledge> logger) 
+    public Knowledge(AiDevsClient aiDevsClient,
+        OpenAiClientConfiguration openAiConfig,
+        ILogger<Knowledge> logger)
         : base("knowledge", aiDevsClient, logger)
     {
         _logger = logger;
@@ -32,19 +32,19 @@ public class Knowledge : AiDevsTaskBase
 
     public override async Task Run()
     {
-        var task = await GetTask< KnowledgeTaskResponse>();
+        var task = await GetTask<KnowledgeTaskResponse>();
 
         _logger.LogInformation($"Question: {task.Question}");
 
         var prompt = _kernel.CreateFunctionFromPrompt(task.Question,
             new OpenAIPromptExecutionSettings
             {
-                ToolCallBehavior = ToolCallBehavior.AutoInvokeKernelFunctions,
+                ToolCallBehavior = ToolCallBehavior.AutoInvokeKernelFunctions
             });
 
         var answer = await _kernel.InvokeAsync(prompt, new KernelArguments
         {
-            { "question", task.Question}
+            { "question", task.Question }
         });
 
         _logger.LogInformation($"Answer: {answer}");

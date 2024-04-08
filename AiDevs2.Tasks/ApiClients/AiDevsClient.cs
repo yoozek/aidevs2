@@ -33,7 +33,8 @@ public class AiDevsClient(HttpClient httpClient, AiDevsClientConfiguration confi
 
     public async Task<string?> GetHint(string taskName)
     {
-        var response = await httpClient.PostAsync($"hint/{taskName}", new StringContent(JsonSerializer.Serialize(new { apikey = configuration.ApiKey }), Encoding.UTF8,
+        var response = await httpClient.PostAsync($"hint/{taskName}", new StringContent(
+            JsonSerializer.Serialize(new { apikey = configuration.ApiKey }), Encoding.UTF8,
             "application/json"));
         response.EnsureSuccessStatusCode();
 

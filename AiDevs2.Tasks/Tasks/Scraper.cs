@@ -2,7 +2,6 @@
 using AiDevs2.Tasks.Tasks.Common;
 using Azure.AI.OpenAI;
 using Microsoft.Extensions.Logging;
-using Polly;
 
 namespace AiDevs2.Tasks.Tasks;
 
@@ -23,11 +22,11 @@ public class Scraper(AiDevsClient aiDevsClient, OpenAIClient openAiClient, ILogg
             {
                 new ChatRequestSystemMessage(
                     $"""
-                        Return answer for the question in POLISH language, based on provided article. 
-                        Maximum length for the answer is 200 characters
-                        <article>{articleText}</article>
-                        <question>{task.Question}</question>
-                    """)
+                         Return answer for the question in POLISH language, based on provided article.
+                         Maximum length for the answer is 200 characters
+                         <article>{articleText}</article>
+                         <question>{task.Question}</question>
+                     """)
             }
         });
 
@@ -40,7 +39,8 @@ public class Scraper(AiDevsClient aiDevsClient, OpenAIClient openAiClient, ILogg
     private async Task<string> DownloadFileWithRetryAsync(string url)
     {
         using var httpClient = new HttpClient();
-        httpClient.DefaultRequestHeaders.UserAgent.ParseAdd("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3");
+        httpClient.DefaultRequestHeaders.UserAgent.ParseAdd(
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3");
 
         return await RetryPolicy.ExecuteAsync(async () =>
         {

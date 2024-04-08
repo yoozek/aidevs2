@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
-using Microsoft.SemanticKernel;
 using System.Text.Json;
+using Microsoft.SemanticKernel;
 using Refit;
 
 namespace AiDevs2.Tasks.Tasks.KnowledgeTask;
@@ -9,7 +9,8 @@ public class NbpApiPlugin
 {
     private INbpApi Client => RestService.For<INbpApi>("http://api.nbp.pl");
 
-    [KernelFunction, Description("Gets the list of all exchange rates")]
+    [KernelFunction]
+    [Description("Gets the list of all exchange rates")]
     [return: Description("List of exchange rates")]
     public async Task<string> GetExchangeRates()
     {
@@ -17,9 +18,10 @@ public class NbpApiPlugin
         return JsonSerializer.Serialize(exchangeRates);
     }
 
-    [KernelFunction, Description("Gets the list of all exchange rates")]
+    [KernelFunction]
+    [Description("Gets the list of all exchange rates")]
     [return: Description("List of exchange rates")]
-    public async Task<string> GetExchangeRateForCurrency([Description("The Code of currency")]string currencyCode)
+    public async Task<string> GetExchangeRateForCurrency([Description("The Code of currency")] string currencyCode)
     {
         var exchangeRates = await Client.GetExchangeRateForCurrency("a", currencyCode);
         return JsonSerializer.Serialize(exchangeRates);

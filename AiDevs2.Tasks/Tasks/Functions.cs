@@ -25,17 +25,17 @@ public class Functions(AiDevsClient aiDevsClient, OpenAIClient openAiClient, ILo
                     name = new
                     {
                         type = "string",
-                        description = "User's name",
+                        description = "User's name"
                     },
                     surname = new
                     {
                         type = "string",
-                        description = "User's surname",
+                        description = "User's surname"
                     },
                     year = new
                     {
                         type = "integer",
-                        description = "integer",
+                        description = "integer"
                     }
                 }
             }
@@ -57,9 +57,9 @@ public class Functions(AiDevsClient aiDevsClient, OpenAIClient openAiClient, ILo
             Parameters = BinaryData.FromObjectAsJson(functionDefinition.parameters, JsonSerializerOptions)
         };
 
-        await SendChatMessage("Czy możesz dodać użytkownika Łukasz Jóźwik urodzonego w 1993 ", 
-            addUserFunctionDefinition, 
-            removeUserFunctionDefinition); 
+        await SendChatMessage("Czy możesz dodać użytkownika Łukasz Jóźwik urodzonego w 1993 ",
+            addUserFunctionDefinition,
+            removeUserFunctionDefinition);
 
         await SendChatMessage("ユーザー Andrzej Duda を削除してください。1972 年生まれです。",
             addUserFunctionDefinition,

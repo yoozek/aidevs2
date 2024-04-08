@@ -25,11 +25,11 @@ public class Whoami(AiDevsClient aiDevsClient, OpenAIClient openAiClient, ILogge
                 Messages =
                 {
                     new ChatRequestSystemMessage("""
-                                                    We play in 'Who is this?' game. 
+                                                    We play in 'Who is this?' game.
                                                     User provides a list of facts about person.
                                                     Your task is to return person's name based on provided facts.
                                                     Return person name and nothing more only if you are really sure about it.
-                                                    If you are not sure to determine person based on provided facts 
+                                                    If you are not sure to determine person based on provided facts
                                                     or you have multiple possible answers just answer NO
                                                  """),
                     new ChatRequestUserMessage($"<subject>{string.Join(Environment.NewLine, hints)}</subject>")
@@ -41,7 +41,8 @@ public class Whoami(AiDevsClient aiDevsClient, OpenAIClient openAiClient, ILogge
 
         if (personName == null)
         {
-            logger.LogInformation($"Cannot determine person name with provided hints: \n {string.Join(Environment.NewLine, hints)}");
+            logger.LogInformation(
+                $"Cannot determine person name with provided hints: \n {string.Join(Environment.NewLine, hints)}");
             return;
         }
 

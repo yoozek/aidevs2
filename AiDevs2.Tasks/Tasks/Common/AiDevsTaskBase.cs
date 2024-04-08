@@ -6,22 +6,27 @@ using Polly.Retry;
 
 namespace AiDevs2.Tasks.Tasks.Common;
 
-public abstract class AiDevsTaskBase(string taskName, AiDevsClient aiDevsClient, ILogger<AiDevsTaskBase> logger) : IDisposable
+public abstract class AiDevsTaskBase(string taskName, AiDevsClient aiDevsClient, ILogger<AiDevsTaskBase> logger)
+    : IDisposable
 {
+    protected static readonly JsonSerializerOptions JsonSerializerOptions = new()
+    {
+        PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+        WriteIndented = true
+    };
+
+    private string? _token;
+
     protected AsyncRetryPolicy RetryPolicy = Policy
         .Handle<HttpRequestException>()
         .WaitAndRetryAsync(3, retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)));
 
-    protected static readonly JsonSerializerOptions JsonSerializerOptions = new()
-    {
-
-        PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
-        WriteIndented = true,
-
-    };
-
-    private string? _token;
     protected string TaskName = taskName;
+
+    public void Dispose()
+    {
+        _token = null;
+    }
 
     public abstract Task Run();
 
@@ -42,6 +47,7 @@ public abstract class AiDevsTaskBase(string taskName, AiDevsClient aiDevsClient,
             return task;
         });
     }
+
     protected async Task<string> SubmitAnswer(object answer)
     {
         if (_token == null) throw new InvalidOperationException("Najpierw pobierz zadanie");
@@ -80,10 +86,5 @@ public abstract class AiDevsTaskBase(string taskName, AiDevsClient aiDevsClient,
         using var httpResponse = await httpClient.GetAsync(fileUri, HttpCompletionOption.ResponseHeadersRead);
         httpResponse.EnsureSuccessStatusCode();
         return await httpResponse.Content.ReadAsStringAsync();
-    }
-
-    public void Dispose()
-    {
-        _token = null;
     }
 }

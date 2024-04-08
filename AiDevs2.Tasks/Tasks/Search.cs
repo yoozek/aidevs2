@@ -9,8 +9,8 @@ namespace AiDevs2.Tasks.Tasks;
 public class Search(AiDevsClient aiDevsClient, ILogger<Search> logger, OpenAiClientConfiguration openAiConfig)
     : AiDevsTaskBase("search", aiDevsClient, logger)
 {
-    private readonly string _sourceUrl = "https://unknow.news/archiwum_aidevs.json";
     private readonly bool _importData = false;
+    private readonly string _sourceUrl = "https://unknow.news/archiwum_aidevs.json";
 
     public override async Task Run()
     {
@@ -47,14 +47,13 @@ public class Search(AiDevsClient aiDevsClient, ILogger<Search> logger, OpenAiCli
         var links = JsonSerializer.Deserialize<List<BookmarkEntry>>(jsonString, JsonSerializerOptions);
         if (links != null)
             foreach (var link in links)
-            {
-                await memory.ImportTextAsync($"<url>{link.Url}</url>\n {link.Info}", index: fileName, tags: new TagCollection
-                {
-                    {"title", link.Title},
-                    {"url", link.Url},
-                    {"date", link.Date.ToString()}
-                });
-            }
+                await memory.ImportTextAsync($"<url>{link.Url}</url>\n {link.Info}", index: fileName,
+                    tags: new TagCollection
+                    {
+                        { "title", link.Title },
+                        { "url", link.Url },
+                        { "date", link.Date.ToString() }
+                    });
     }
 
     private record SearchTaskResponse(string Question);

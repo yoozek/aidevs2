@@ -10,8 +10,8 @@ namespace AiDevs2.Tasks.Tasks;
 public class People(AiDevsClient aiDevsClient, ILogger<People> logger, OpenAiClientConfiguration openAiConfig)
     : AiDevsTaskBase("people", aiDevsClient, logger)
 {
-    private readonly string _sourceUrl = "https://tasks.aidevs.pl/data/people.json";
     private readonly bool _importData = false;
+    private readonly string _sourceUrl = "https://tasks.aidevs.pl/data/people.json";
 
     public override async Task Run()
     {
@@ -57,30 +57,31 @@ public class People(AiDevsClient aiDevsClient, ILogger<People> logger, OpenAiCli
 
     private record PeopleTaskResponse(string Question);
 
-    public class PersonEntry(string imie, string nazwisko, int wiek, string oMnie, string ulubionaPostacZKapitanaBomby, string ulubionySerial, string ulubionyFilm, string ulubionyKolor)
+    public class PersonEntry(
+        string imie,
+        string nazwisko,
+        int wiek,
+        string oMnie,
+        string ulubionaPostacZKapitanaBomby,
+        string ulubionySerial,
+        string ulubionyFilm,
+        string ulubionyKolor)
     {
-        [JsonPropertyName("imie")]
-        public string Imie { get; init; } = imie;
+        [JsonPropertyName("imie")] public string Imie { get; init; } = imie;
 
-        [JsonPropertyName("nazwisko")]
-        public string Nazwisko { get; init; } = nazwisko;
+        [JsonPropertyName("nazwisko")] public string Nazwisko { get; init; } = nazwisko;
 
-        [JsonPropertyName("wiek")]
-        public int Wiek { get; init; } = wiek;
+        [JsonPropertyName("wiek")] public int Wiek { get; init; } = wiek;
 
-        [JsonPropertyName("o_mnie")]
-        public string OMnie { get; init; } = oMnie;
+        [JsonPropertyName("o_mnie")] public string OMnie { get; init; } = oMnie;
 
         [JsonPropertyName("ulubiona_postac_z_kapitana_bomby")]
         public string UlubionaPostacZKapitanaBomby { get; init; } = ulubionaPostacZKapitanaBomby;
 
-        [JsonPropertyName("ulubiony_serial")]
-        public string UlubionySerial { get; init; } = ulubionySerial;
+        [JsonPropertyName("ulubiony_serial")] public string UlubionySerial { get; init; } = ulubionySerial;
 
-        [JsonPropertyName("ulubiony_film")]
-        public string UlubionyFilm { get; init; } = ulubionyFilm;
+        [JsonPropertyName("ulubiony_film")] public string UlubionyFilm { get; init; } = ulubionyFilm;
 
-        [JsonPropertyName("ulubiony_kolor")]
-        public string UlubionyKolor { get; init; } = ulubionyKolor;
+        [JsonPropertyName("ulubiony_kolor")] public string UlubionyKolor { get; init; } = ulubionyKolor;
     }
 }
