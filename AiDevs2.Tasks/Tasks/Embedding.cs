@@ -5,7 +5,7 @@ using Microsoft.Extensions.Logging;
 
 namespace AiDevs2.Tasks.Tasks;
 
-public class Embedding(AiDevsClient aiDevsClient, OpenAIClient openAiClient, ILogger<HelloApi> logger)
+public class Embedding(AiDevsClient aiDevsClient, OpenAIClient openAiClient, ILogger<Embedding> logger)
     : AiDevsTaskBase("embedding", aiDevsClient, logger)
 {
     public override async Task Run()

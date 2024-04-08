@@ -7,7 +7,7 @@ using Microsoft.KernelMemory;
 
 namespace AiDevs2.Tasks.Tasks;
 
-public class People(AiDevsClient aiDevsClient, ILogger<HelloApi> logger, OpenAiClientConfiguration openAiConfig)
+public class People(AiDevsClient aiDevsClient, ILogger<People> logger, OpenAiClientConfiguration openAiConfig)
     : AiDevsTaskBase("people", aiDevsClient, logger)
 {
     private readonly string _sourceUrl = "https://tasks.aidevs.pl/data/people.json";

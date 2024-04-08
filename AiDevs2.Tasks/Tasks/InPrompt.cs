@@ -7,7 +7,7 @@ using Microsoft.Extensions.Logging;
 
 namespace AiDevs2.Tasks.Tasks;
 
-public class InPrompt(AiDevsClient aiDevsClient, OpenAIClient openAiClient, ILogger<HelloApi> logger)
+public class InPrompt(AiDevsClient aiDevsClient, OpenAIClient openAiClient, ILogger<InPrompt> logger)
     : AiDevsTaskBase("inprompt", aiDevsClient, logger)
 {
     private readonly string _filePath = "Data/inprompt_knowledge.json";

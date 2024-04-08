@@ -5,7 +5,7 @@ using Microsoft.Extensions.Logging;
 
 namespace AiDevs2.Tasks.Tasks;
 
-public class Blogger(AiDevsClient aiDevsClient, OpenAIClient openAiClient, ILogger<HelloApi> logger)
+public class Blogger(AiDevsClient aiDevsClient, OpenAIClient openAiClient, ILogger<Blogger> logger)
     : AiDevsTaskBase("blogger", aiDevsClient, logger)
 {
     public override async Task Run()

@@ -5,7 +5,7 @@ using Microsoft.Extensions.Logging;
 
 namespace AiDevs2.Tasks.Tasks;
 
-public class Whisper(AiDevsClient aiDevsClient, OpenAIClient openAiClient, ILogger<HelloApi> logger)
+public class Whisper(AiDevsClient aiDevsClient, OpenAIClient openAiClient, ILogger<Whisper> logger)
     : AiDevsTaskBase("whisper", aiDevsClient, logger)
 {
 

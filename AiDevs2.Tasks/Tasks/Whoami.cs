@@ -5,7 +5,7 @@ using Microsoft.Extensions.Logging;
 
 namespace AiDevs2.Tasks.Tasks;
 
-public class Whoami(AiDevsClient aiDevsClient, OpenAIClient openAiClient, ILogger<HelloApi> logger)
+public class Whoami(AiDevsClient aiDevsClient, OpenAIClient openAiClient, ILogger<Whoami> logger)
     : AiDevsTaskBase("whoami", aiDevsClient, logger)
 {
     public override async Task Run()

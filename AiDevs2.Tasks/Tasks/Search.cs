@@ -6,7 +6,7 @@ using Microsoft.KernelMemory;
 
 namespace AiDevs2.Tasks.Tasks;
 
-public class Search(AiDevsClient aiDevsClient, ILogger<HelloApi> logger, OpenAiClientConfiguration openAiConfig)
+public class Search(AiDevsClient aiDevsClient, ILogger<Search> logger, OpenAiClientConfiguration openAiConfig)
     : AiDevsTaskBase("search", aiDevsClient, logger)
 {
     private readonly string _sourceUrl = "https://unknow.news/archiwum_aidevs.json";

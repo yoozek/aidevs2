@@ -5,7 +5,7 @@ using Microsoft.Extensions.Logging;
 
 namespace AiDevs2.Tasks.Tasks;
 
-public class Rodo(AiDevsClient aiDevsClient, OpenAIClient openAiClient, ILogger<HelloApi> logger)
+public class Rodo(AiDevsClient aiDevsClient, OpenAIClient openAiClient, ILogger<Rodo> logger)
     : AiDevsTaskBase("rodo", aiDevsClient, logger)
 {
     public override async Task Run()

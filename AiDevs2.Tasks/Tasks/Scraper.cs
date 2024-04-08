@@ -6,7 +6,7 @@ using Polly;
 
 namespace AiDevs2.Tasks.Tasks;
 
-public class Scraper(AiDevsClient aiDevsClient, OpenAIClient openAiClient, ILogger<HelloApi> logger)
+public class Scraper(AiDevsClient aiDevsClient, OpenAIClient openAiClient, ILogger<Scraper> logger)
     : AiDevsTaskBase("scraper", aiDevsClient, logger)
 {
     public override async Task Run()

@@ -6,7 +6,7 @@ using Spectre.Console;
 
 namespace AiDevs2.Tasks.Tasks;
 
-public class Liar(AiDevsClient aiDevsClient, OpenAIClient openAiClient, ILogger<HelloApi> logger)
+public class Liar(AiDevsClient aiDevsClient, OpenAIClient openAiClient, ILogger<Liar> logger)
     : AiDevsTaskBase("liar", aiDevsClient, logger)
 {
     public override async Task Run()
