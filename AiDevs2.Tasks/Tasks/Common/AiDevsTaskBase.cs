@@ -4,7 +4,7 @@ using Microsoft.Extensions.Logging;
 using Polly;
 using Polly.Retry;
 
-namespace AiDevs2.Tasks.Tasks;
+namespace AiDevs2.Tasks.Tasks.Common;
 
 public abstract class AiDevsTaskBase(string taskName, AiDevsClient aiDevsClient, ILogger<AiDevsTaskBase> logger) : IDisposable
 {
@@ -12,7 +12,7 @@ public abstract class AiDevsTaskBase(string taskName, AiDevsClient aiDevsClient,
         .Handle<HttpRequestException>()
         .WaitAndRetryAsync(3, retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)));
 
-    protected readonly JsonSerializerOptions JsonSerializerOptions = new()
+    protected static readonly JsonSerializerOptions JsonSerializerOptions = new()
     {
 
         PropertyNamingPolicy = JsonNamingPolicy.CamelCase,

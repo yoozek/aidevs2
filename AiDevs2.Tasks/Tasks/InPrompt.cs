@@ -1,6 +1,7 @@
 ﻿using System.Text.Json;
 using AiDevs2.Tasks.ApiClients;
 using AiDevs2.Tasks.Extensions;
+using AiDevs2.Tasks.Tasks.Common;
 using Azure.AI.OpenAI;
 using Microsoft.Extensions.Logging;
 

@@ -1,6 +1,7 @@
 ﻿using System.Text;
 using AiDevs2.Tasks.ApiClients;
 using AiDevs2.Tasks.Tasks;
+using AiDevs2.Tasks.Tasks.Common;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Serilog;

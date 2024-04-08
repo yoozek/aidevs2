@@ -1,5 +1,6 @@
 ﻿using System.Text.Json;
 using AiDevs2.Tasks.ApiClients;
+using AiDevs2.Tasks.Tasks.Common;
 using Microsoft.Extensions.Logging;
 using Microsoft.KernelMemory;
 
