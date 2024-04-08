@@ -29,24 +29,9 @@ public class NbpApiPlugin
 public interface INbpApi
 {
     [Get("/api/exchangerates/tables/{table}")]
-    Task<List<ExchangeRate>> GetExchangeRates(string table, [AliasAs("format")] string format = "json");
+    Task<dynamic> GetExchangeRates(string table, [AliasAs("format")] string format = "json");
 
 
     [Get("/api/exchangerates/rates/{table}/{code}")]
-    Task<ExchangeRate> GetExchangeRateForCurrency(string table, string code, [AliasAs("format")] string format = "json");
-}
-
-public class ExchangeRate
-{
-    public string Table { get; set; }
-    public string No { get; set; }
-    public string EffectiveDate { get; set; }
-    public List<Rate> Rates { get; set; }
-}
-
-public class Rate
-{
-    public string Currency { get; set; }
-    public string Code { get; set; }
-    public double Mid { get; set; }
+    Task<dynamic> GetExchangeRateForCurrency(string table, string code, [AliasAs("format")] string format = "json");
 }

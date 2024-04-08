@@ -13,16 +13,6 @@ public class Knowledge
     private readonly ILogger<Knowledge> _logger;
     private readonly Kernel _kernel;
 
-    private readonly KernelFunction _questionPrompt;
-    private readonly string _questionPromptText =
-        """
-        Odpowiedz na pytanie. 
-        Jeśli odpowiedź jest wartością liczbową lub walutową, zwróć tylko liczbę lub walutę.
-        
-        Pytanie:
-        {{$question}}
-        """;
-
     public Knowledge(AiDevsClient aiDevsClient, 
         OpenAiClientConfiguration openAiConfig, 
         ILogger<Knowledge> logger) 
@@ -39,12 +29,6 @@ public class Knowledge
         builder.Plugins.AddFromType<RestCountriesPlugin>();
 
         _kernel = builder.Build();
-
-        _questionPrompt = _kernel.CreateFunctionFromPrompt(_questionPromptText,
-            new OpenAIPromptExecutionSettings
-            {
-                ToolCallBehavior = ToolCallBehavior.AutoInvokeKernelFunctions,
-            });
     }
 
     public override async Task Run()
@@ -53,7 +37,13 @@ public class Knowledge
 
         _logger.LogInformation($"Question: {task.Question}");
 
-        var answer = await _kernel.InvokeAsync(_questionPrompt, new KernelArguments
+        var prompt = _kernel.CreateFunctionFromPrompt(task.Question,
+            new OpenAIPromptExecutionSettings
+            {
+                ToolCallBehavior = ToolCallBehavior.AutoInvokeKernelFunctions,
+            });
+
+        var answer = await _kernel.InvokeAsync(prompt, new KernelArguments
         {
             { "question", task.Question}
         });
