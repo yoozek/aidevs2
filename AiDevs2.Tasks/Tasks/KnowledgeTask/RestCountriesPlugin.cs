@@ -5,6 +5,7 @@ using Refit;
 
 namespace AiDevs2.Tasks.Tasks.KnowledgeTask;
 
+[Description("Plugin for retrieving country data like population or area.")]
 public class RestCountriesPlugin
 {
     private IRestCountriesApi Client => RestService.For<IRestCountriesApi>("https://restcountries.com");
