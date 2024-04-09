@@ -1,9 +1,11 @@
 ﻿using AiDevs2.Tasks.ApiClients;
 using AiDevs2.Tasks.Tasks.Common;
 using AiDevs2.Tasks.Tasks.KnowledgeTask;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.SemanticKernel;
 using Microsoft.SemanticKernel.Connectors.OpenAI;
+using Refit;
 
 namespace AiDevs2.Tasks.Tasks;
 
@@ -24,8 +26,8 @@ public class Knowledge : AiDevsTaskBase
             "gpt-3.5-turbo",
             openAiConfig.ApiKey);
 
-        builder.Plugins.AddFromType<NbpApiPlugin>();
-        builder.Plugins.AddFromType<RestCountriesPlugin>();
+        builder.AddNbpApiPlugin();
+        builder.AddRestCountriesPlugin();
 
         _kernel = builder.Build();
     }
