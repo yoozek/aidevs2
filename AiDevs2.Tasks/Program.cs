@@ -18,6 +18,8 @@ internal class Program
             .MinimumLevel.Debug()
             .MinimumLevel.Override("System", LogEventLevel.Warning)
             .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
+            .MinimumLevel.Override("Microsoft.SemanticKernel", LogEventLevel.Debug)
+            .MinimumLevel.Override("Azure.AI.OpenAI", LogEventLevel.Debug)
             .WriteTo.Console()
             .CreateLogger();
 
