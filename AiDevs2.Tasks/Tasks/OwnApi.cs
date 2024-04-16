@@ -4,7 +4,7 @@ using Microsoft.Extensions.Logging;
 
 namespace AiDevs2.Tasks.Tasks;
 
-public class OwnApi(AiDevsClient aiDevsClient, ILogger<Functions> logger) 
+public class OwnApi(AiDevsClient aiDevsClient, ILogger<Functions> logger)
     : AiDevsTaskBase("ownapi", aiDevsClient, logger)
 {
     public override async Task Run()

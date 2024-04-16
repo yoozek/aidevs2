@@ -1,11 +1,9 @@
 ﻿using AiDevs2.Tasks.ApiClients;
 using AiDevs2.Tasks.Tasks.Common;
 using AiDevs2.Tasks.Tasks.KnowledgeTask;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.SemanticKernel;
 using Microsoft.SemanticKernel.Connectors.OpenAI;
-using Refit;
 
 namespace AiDevs2.Tasks.Tasks;
 

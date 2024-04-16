@@ -2,13 +2,16 @@
 using AiDevs2.Tasks.Tasks.Common;
 using Azure.AI.OpenAI;
 using Microsoft.Extensions.Logging;
-using Microsoft.KernelMemory;
 using Microsoft.SemanticKernel;
 using Microsoft.SemanticKernel.ChatCompletion;
 
 namespace AiDevs2.Tasks.Tasks;
 
-public class Gnome(AiDevsClient aiDevsClient, OpenAIClient openAiClient, OpenAiClientConfiguration openAiConfig, ILogger<Gnome> logger)
+public class Gnome(
+    AiDevsClient aiDevsClient,
+    OpenAIClient openAiClient,
+    OpenAiClientConfiguration openAiConfig,
+    ILogger<Gnome> logger)
     : AiDevsTaskBase("gnome", aiDevsClient, logger)
 {
     public override async Task Run()
@@ -26,14 +29,10 @@ public class Gnome(AiDevsClient aiDevsClient, OpenAIClient openAiClient, OpenAiC
         chatHistory.AddUserMessage([
             new ImageContent(task.Url, metadata: new Dictionary<string, object?> { { "detail", "low" } })
         ]);
-
-
-
     }
 
     private async Task OpenAIClientSolution(GnomeTaskResponse task)
     {
-
         var response = await openAiClient.GetChatCompletionsAsync(new ChatCompletionsOptions
         {
             DeploymentName = "gpt-4-turbo",

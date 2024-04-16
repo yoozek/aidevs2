@@ -5,5 +5,13 @@
     },
     "OpenAi": {
         "ApiKey": "OPEN_AI_API_KEY"
+    },
+    "Qdrant": {
+        "CollectionName": "test",
+        "Endpoint": "http://localhost:6333/"
+    },
+    "RenderForm": {
+        "ApiKey": "RENDER_FORM_IO_API_KEY",
+        "TemplateId": "TEMPLATE_ID"
     }
 }
