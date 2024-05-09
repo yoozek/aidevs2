@@ -39,7 +39,7 @@ internal class Program
 
         services.AddAiDevsApiClient(configuration);
         services.AddOpenAiApiClient(configuration);
-        services.AddRenderFormClient(configuration, Log.Logger);
+       // services.AddRenderFormClient(configuration, Log.Logger);
 
         services.AddSingleton<App>();
         services.Scan(scan => scan
