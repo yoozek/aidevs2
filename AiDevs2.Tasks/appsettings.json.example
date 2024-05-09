@@ -13,5 +13,8 @@
     "RenderForm": {
         "ApiKey": "RENDER_FORM_IO_API_KEY",
         "TemplateId": "TEMPLATE_ID"
+    },
+    "Bing": {
+        "ApiKey": "BING_API_KEY"
     }
 }

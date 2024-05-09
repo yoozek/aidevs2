@@ -9,8 +9,7 @@ public record RenderFormClientConfig(string ApiKey, string TemplateId);
 
 public static class RenderFormClientServiceCollectionExtensions
 {
-    public static void AddRenderFormClient(this IServiceCollection services, IConfiguration configuration,
-        ILogger logger)
+    public static void AddRenderFormClient(this IServiceCollection services, IConfiguration configuration)
     {
         var config = configuration.GetSection("RenderForm").Get<RenderFormClientConfig>()
                      ?? throw new InvalidOperationException($"{nameof(RenderFormClientConfig)} is missing");

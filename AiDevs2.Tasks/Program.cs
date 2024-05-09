@@ -35,13 +35,16 @@ internal class Program
     private static ServiceProvider ConfigureServices(IConfiguration configuration)
     {
         var services = new ServiceCollection();
+
+        services.AddSingleton(configuration);
         services.AddLogging(configure => configure.AddSerilog());
 
         services.AddAiDevsApiClient(configuration);
         services.AddOpenAiApiClient(configuration);
-        services.AddRenderFormClient(configuration, Log.Logger);
+        services.AddRenderFormClient(configuration);
 
         services.AddSingleton<App>();
+
         services.Scan(scan => scan
             .FromAssemblyOf<AiDevsTaskBase>()
             .AddClasses(classes => classes.AssignableTo<AiDevsTaskBase>())
