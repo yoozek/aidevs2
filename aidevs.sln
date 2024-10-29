@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AiDevs2.Tasks", "AiDevs2.Tasks\AiDevs2.Tasks.csproj", "{F58F7442-BAB8-40C2-90F2-17E5E344DC19}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AiDevs3.Poligon", "AiDevs3.Poligon\AiDevs3.Poligon.csproj", "{8C0C092B-549D-408A-8743-8A0AA642C293}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{F58F7442-BAB8-40C2-90F2-17E5E344DC19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F58F7442-BAB8-40C2-90F2-17E5E344DC19}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F58F7442-BAB8-40C2-90F2-17E5E344DC19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C0C092B-549D-408A-8743-8A0AA642C293}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C0C092B-549D-408A-8743-8A0AA642C293}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C0C092B-549D-408A-8743-8A0AA642C293}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C0C092B-549D-408A-8743-8A0AA642C293}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
