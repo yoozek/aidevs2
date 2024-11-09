@@ -34,6 +34,9 @@ internal class Program
         var aiDevsConfig = config.GetSection(nameof(AiDevsConfig)).Get<AiDevsConfig>();
         services.AddSingleton(aiDevsConfig);
 
+        var openAiConfig = config.GetSection(nameof(OpenAiConfig)).Get<OpenAiConfig>();
+        services.AddSingleton(openAiConfig);
+
         services.Scan(scan => scan
             .FromAssemblyOf<PoligonTask>()
             .AddClasses(classes => classes.AssignableTo<PoligonTask>())
@@ -45,3 +48,4 @@ internal class Program
 }
 
 public record AiDevsConfig(string ApiKey);
+public record OpenAiConfig(string ApiKey);

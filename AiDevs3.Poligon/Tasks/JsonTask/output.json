@@ -1,0 +1,8571 @@
+{
+    "apikey": "xxxxx",
+    "description": "This is simple calibration data used for testing purposes. Do not use it in production environment!",
+    "copyright": "Copyright (C) 2238 by BanAN Technologies Inc.",
+    "test-data": [
+        {
+            "question": "72 + 81",
+            "answer": 153
+        },
+        {
+            "question": "84 + 12",
+            "answer": 96
+        },
+        {
+            "question": "84 + 11",
+            "answer": 95
+        },
+        {
+            "question": "43 + 15",
+            "answer": 58
+        },
+        {
+            "question": "46 + 92",
+            "answer": 138
+        },
+        {
+            "question": "55 + 5",
+            "answer": 60
+        },
+        {
+            "question": "12 + 43",
+            "answer": 55
+        },
+        {
+            "question": "64 + 69",
+            "answer": 133
+        },
+        {
+            "question": "59 + 25",
+            "answer": 84
+        },
+        {
+            "question": "26 + 72",
+            "answer": 98
+        },
+        {
+            "question": "23 + 26",
+            "answer": 49
+        },
+        {
+            "question": "47 + 65",
+            "answer": 112
+        },
+        {
+            "question": "37 + 26",
+            "answer": 63
+        },
+        {
+            "question": "69 + 98",
+            "answer": 167
+        },
+        {
+            "question": "5 + 84",
+            "answer": 89
+        },
+        {
+            "question": "16 + 35",
+            "answer": 51
+        },
+        {
+            "question": "83 + 24",
+            "answer": 107
+        },
+        {
+            "question": "39 + 48",
+            "answer": 87
+        },
+        {
+            "question": "40 + 20",
+            "answer": 60
+        },
+        {
+            "question": "94 + 35",
+            "answer": 129
+        },
+        {
+            "question": "62 + 80",
+            "answer": 142
+        },
+        {
+            "question": "15 + 63",
+            "answer": 78
+        },
+        {
+            "question": "84 + 87",
+            "answer": 171
+        },
+        {
+            "question": "84 + 91",
+            "answer": 175
+        },
+        {
+            "question": "58 + 4",
+            "answer": 62
+        },
+        {
+            "question": "65 + 1",
+            "answer": 66
+        },
+        {
+            "question": "80 + 60",
+            "answer": 140
+        },
+        {
+            "question": "40 + 40",
+            "answer": 80
+        },
+        {
+            "question": "48 + 24",
+            "answer": 72
+        },
+        {
+            "question": "85 + 9",
+            "answer": 94
+        },
+        {
+            "question": "80 + 82",
+            "answer": 162
+        },
+        {
+            "question": "57 + 45",
+            "answer": 102
+        },
+        {
+            "question": "13 + 56",
+            "answer": 69
+        },
+        {
+            "question": "32 + 52",
+            "answer": 84
+        },
+        {
+            "question": "67 + 1",
+            "answer": 68
+        },
+        {
+            "question": "54 + 84",
+            "answer": 138
+        },
+        {
+            "question": "3 + 19",
+            "answer": 22
+        },
+        {
+            "question": "9 + 68",
+            "answer": 77
+        },
+        {
+            "question": "64 + 62",
+            "answer": 126
+        },
+        {
+            "question": "78 + 49",
+            "answer": 127
+        },
+        {
+            "question": "49 + 20",
+            "answer": 69
+        },
+        {
+            "question": "22 + 88",
+            "answer": 110
+        },
+        {
+            "question": "34 + 88",
+            "answer": 122,
+            "test": {
+                "q": "What is the capital city of Poland?",
+                "a": "The capital city of Poland is Warsaw."
+            }
+        },
+        {
+            "question": "12 + 91",
+            "answer": 103
+        },
+        {
+            "question": "99 + 81",
+            "answer": 180
+        },
+        {
+            "question": "76 + 1",
+            "answer": 77
+        },
+        {
+            "question": "57 + 74",
+            "answer": 131
+        },
+        {
+            "question": "78 + 76",
+            "answer": 154
+        },
+        {
+            "question": "43 + 18",
+            "answer": 61
+        },
+        {
+            "question": "34 + 16",
+            "answer": 50
+        },
+        {
+            "question": "23 + 91",
+            "answer": 114
+        },
+        {
+            "question": "1 + 26",
+            "answer": 27
+        },
+        {
+            "question": "75 + 64",
+            "answer": 139
+        },
+        {
+            "question": "65 + 88",
+            "answer": 153
+        },
+        {
+            "question": "2 + 37",
+            "answer": 39
+        },
+        {
+            "question": "40 + 90",
+            "answer": 130
+        },
+        {
+            "question": "26 + 23",
+            "answer": 49
+        },
+        {
+            "question": "12 + 12",
+            "answer": 24
+        },
+        {
+            "question": "7 + 31",
+            "answer": 38
+        },
+        {
+            "question": "10 + 67",
+            "answer": 77
+        },
+        {
+            "question": "98 + 83",
+            "answer": 181
+        },
+        {
+            "question": "62 + 52",
+            "answer": 114
+        },
+        {
+            "question": "88 + 44",
+            "answer": 132
+        },
+        {
+            "question": "23 + 71",
+            "answer": 94
+        },
+        {
+            "question": "66 + 66",
+            "answer": 132
+        },
+        {
+            "question": "27 + 91",
+            "answer": 118
+        },
+        {
+            "question": "10 + 64",
+            "answer": 74
+        },
+        {
+            "question": "100 + 10",
+            "answer": 110
+        },
+        {
+            "question": "37 + 87",
+            "answer": 124
+        },
+        {
+            "question": "65 + 55",
+            "answer": 120,
+            "test": {
+                "q": "What is the capital city of France?",
+                "a": "The capital city of France is Paris."
+            }
+        },
+        {
+            "question": "76 + 24",
+            "answer": 100
+        },
+        {
+            "question": "96 + 40",
+            "answer": 136
+        },
+        {
+            "question": "43 + 16",
+            "answer": 59
+        },
+        {
+            "question": "79 + 83",
+            "answer": 162
+        },
+        {
+            "question": "84 + 25",
+            "answer": 109
+        },
+        {
+            "question": "65 + 2",
+            "answer": 67
+        },
+        {
+            "question": "21 + 97",
+            "answer": 118
+        },
+        {
+            "question": "50 + 55",
+            "answer": 105
+        },
+        {
+            "question": "23 + 24",
+            "answer": 47
+        },
+        {
+            "question": "27 + 42",
+            "answer": 69
+        },
+        {
+            "question": "28 + 94",
+            "answer": 122
+        },
+        {
+            "question": "97 + 99",
+            "answer": 196
+        },
+        {
+            "question": "64 + 67",
+            "answer": 131
+        },
+        {
+            "question": "74 + 25",
+            "answer": 99
+        },
+        {
+            "question": "55 + 98",
+            "answer": 153
+        },
+        {
+            "question": "80 + 78",
+            "answer": 158
+        },
+        {
+            "question": "72 + 89",
+            "answer": 161
+        },
+        {
+            "question": "6 + 36",
+            "answer": 42
+        },
+        {
+            "question": "18 + 71",
+            "answer": 89
+        },
+        {
+            "question": "27 + 39",
+            "answer": 66
+        },
+        {
+            "question": "42 + 86",
+            "answer": 128
+        },
+        {
+            "question": "96 + 44",
+            "answer": 140
+        },
+        {
+            "question": "71 + 89",
+            "answer": 160
+        },
+        {
+            "question": "41 + 23",
+            "answer": 64
+        },
+        {
+            "question": "41 + 73",
+            "answer": 114
+        },
+        {
+            "question": "30 + 70",
+            "answer": 100
+        },
+        {
+            "question": "51 + 10",
+            "answer": 61
+        },
+        {
+            "question": "13 + 33",
+            "answer": 46
+        },
+        {
+            "question": "46 + 18",
+            "answer": 64
+        },
+        {
+            "question": "53 + 76",
+            "answer": 129
+        },
+        {
+            "question": "29 + 33",
+            "answer": 62
+        },
+        {
+            "question": "54 + 70",
+            "answer": 124
+        },
+        {
+            "question": "31 + 13",
+            "answer": 44
+        },
+        {
+            "question": "77 + 85",
+            "answer": 162
+        },
+        {
+            "question": "2 + 95",
+            "answer": 97
+        },
+        {
+            "question": "3 + 10",
+            "answer": 13
+        },
+        {
+            "question": "61 + 61",
+            "answer": 122
+        },
+        {
+            "question": "25 + 97",
+            "answer": 122
+        },
+        {
+            "question": "1 + 1",
+            "answer": 2
+        },
+        {
+            "question": "36 + 12",
+            "answer": 48
+        },
+        {
+            "question": "17 + 61",
+            "answer": 78
+        },
+        {
+            "question": "8 + 61",
+            "answer": 69
+        },
+        {
+            "question": "40 + 98",
+            "answer": 138
+        },
+        {
+            "question": "63 + 99",
+            "answer": 162
+        },
+        {
+            "question": "79 + 2",
+            "answer": 81
+        },
+        {
+            "question": "54 + 3",
+            "answer": 57
+        },
+        {
+            "question": "38 + 75",
+            "answer": 113
+        },
+        {
+            "question": "19 + 39",
+            "answer": 58
+        },
+        {
+            "question": "21 + 27",
+            "answer": 48
+        },
+        {
+            "question": "18 + 91",
+            "answer": 109
+        },
+        {
+            "question": "67 + 7",
+            "answer": 74
+        },
+        {
+            "question": "12 + 74",
+            "answer": 86
+        },
+        {
+            "question": "5 + 57",
+            "answer": 62
+        },
+        {
+            "question": "83 + 46",
+            "answer": 129
+        },
+        {
+            "question": "73 + 44",
+            "answer": 117
+        },
+        {
+            "question": "60 + 70",
+            "answer": 130
+        },
+        {
+            "question": "25 + 93",
+            "answer": 118
+        },
+        {
+            "question": "51 + 47",
+            "answer": 98
+        },
+        {
+            "question": "37 + 53",
+            "answer": 90
+        },
+        {
+            "question": "67 + 63",
+            "answer": 130
+        },
+        {
+            "question": "57 + 39",
+            "answer": 96
+        },
+        {
+            "question": "90 + 37",
+            "answer": 127
+        },
+        {
+            "question": "12 + 4",
+            "answer": 16
+        },
+        {
+            "question": "81 + 46",
+            "answer": 127
+        },
+        {
+            "question": "11 + 67",
+            "answer": 78
+        },
+        {
+            "question": "59 + 16",
+            "answer": 75
+        },
+        {
+            "question": "65 + 35",
+            "answer": 100
+        },
+        {
+            "question": "53 + 37",
+            "answer": 90
+        },
+        {
+            "question": "47 + 6",
+            "answer": 53
+        },
+        {
+            "question": "70 + 93",
+            "answer": 163
+        },
+        {
+            "question": "21 + 57",
+            "answer": 78
+        },
+        {
+            "question": "70 + 62",
+            "answer": 132
+        },
+        {
+            "question": "34 + 71",
+            "answer": 105
+        },
+        {
+            "question": "32 + 58",
+            "answer": 90
+        },
+        {
+            "question": "20 + 12",
+            "answer": 32
+        },
+        {
+            "question": "30 + 36",
+            "answer": 66
+        },
+        {
+            "question": "81 + 100",
+            "answer": 181
+        },
+        {
+            "question": "20 + 10",
+            "answer": 30
+        },
+        {
+            "question": "23 + 42",
+            "answer": 65
+        },
+        {
+            "question": "94 + 4",
+            "answer": 98
+        },
+        {
+            "question": "5 + 36",
+            "answer": 41
+        },
+        {
+            "question": "73 + 99",
+            "answer": 172
+        },
+        {
+            "question": "82 + 68",
+            "answer": 150
+        },
+        {
+            "question": "20 + 51",
+            "answer": 71
+        },
+        {
+            "question": "56 + 44",
+            "answer": 100
+        },
+        {
+            "question": "29 + 8",
+            "answer": 37
+        },
+        {
+            "question": "19 + 26",
+            "answer": 45
+        },
+        {
+            "question": "46 + 37",
+            "answer": 83
+        },
+        {
+            "question": "94 + 84",
+            "answer": 178
+        },
+        {
+            "question": "62 + 98",
+            "answer": 160
+        },
+        {
+            "question": "91 + 70",
+            "answer": 161
+        },
+        {
+            "question": "91 + 88",
+            "answer": 179
+        },
+        {
+            "question": "24 + 90",
+            "answer": 114
+        },
+        {
+            "question": "30 + 94",
+            "answer": 124
+        },
+        {
+            "question": "4 + 65",
+            "answer": 69
+        },
+        {
+            "question": "70 + 47",
+            "answer": 117
+        },
+        {
+            "question": "24 + 17",
+            "answer": 41
+        },
+        {
+            "question": "58 + 76",
+            "answer": 134
+        },
+        {
+            "question": "65 + 1",
+            "answer": 66
+        },
+        {
+            "question": "18 + 71",
+            "answer": 89
+        },
+        {
+            "question": "80 + 58",
+            "answer": 138
+        },
+        {
+            "question": "22 + 90",
+            "answer": 112
+        },
+        {
+            "question": "15 + 29",
+            "answer": 44
+        },
+        {
+            "question": "62 + 59",
+            "answer": 121
+        },
+        {
+            "question": "18 + 66",
+            "answer": 84
+        },
+        {
+            "question": "75 + 98",
+            "answer": 173
+        },
+        {
+            "question": "83 + 28",
+            "answer": 111
+        },
+        {
+            "question": "62 + 41",
+            "answer": 103
+        },
+        {
+            "question": "10 + 2",
+            "answer": 12
+        },
+        {
+            "question": "11 + 49",
+            "answer": 60
+        },
+        {
+            "question": "83 + 86",
+            "answer": 169
+        },
+        {
+            "question": "47 + 94",
+            "answer": 141
+        },
+        {
+            "question": "35 + 64",
+            "answer": 99
+        },
+        {
+            "question": "24 + 1",
+            "answer": 25
+        },
+        {
+            "question": "16 + 84",
+            "answer": 100
+        },
+        {
+            "question": "2 + 92",
+            "answer": 94
+        },
+        {
+            "question": "88 + 78",
+            "answer": 166
+        },
+        {
+            "question": "63 + 77",
+            "answer": 140
+        },
+        {
+            "question": "96 + 95",
+            "answer": 191
+        },
+        {
+            "question": "66 + 57",
+            "answer": 123
+        },
+        {
+            "question": "88 + 77",
+            "answer": 165
+        },
+        {
+            "question": "74 + 85",
+            "answer": 159
+        },
+        {
+            "question": "68 + 37",
+            "answer": 105
+        },
+        {
+            "question": "21 + 31",
+            "answer": 52
+        },
+        {
+            "question": "74 + 76",
+            "answer": 150
+        },
+        {
+            "question": "19 + 84",
+            "answer": 103
+        },
+        {
+            "question": "4 + 26",
+            "answer": 30
+        },
+        {
+            "question": "84 + 44",
+            "answer": 128
+        },
+        {
+            "question": "71 + 26",
+            "answer": 97
+        },
+        {
+            "question": "45 + 81",
+            "answer": 126
+        },
+        {
+            "question": "85 + 54",
+            "answer": 139
+        },
+        {
+            "question": "17 + 95",
+            "answer": 112
+        },
+        {
+            "question": "63 + 52",
+            "answer": 115
+        },
+        {
+            "question": "95 + 53",
+            "answer": 148
+        },
+        {
+            "question": "4 + 87",
+            "answer": 91
+        },
+        {
+            "question": "56 + 13",
+            "answer": 69
+        },
+        {
+            "question": "56 + 15",
+            "answer": 71
+        },
+        {
+            "question": "42 + 82",
+            "answer": 124
+        },
+        {
+            "question": "77 + 91",
+            "answer": 168
+        },
+        {
+            "question": "14 + 1",
+            "answer": 15
+        },
+        {
+            "question": "63 + 74",
+            "answer": 137
+        },
+        {
+            "question": "97 + 43",
+            "answer": 140
+        },
+        {
+            "question": "22 + 54",
+            "answer": 76
+        },
+        {
+            "question": "12 + 11",
+            "answer": 23
+        },
+        {
+            "question": "94 + 47",
+            "answer": 141
+        },
+        {
+            "question": "54 + 11",
+            "answer": 65
+        },
+        {
+            "question": "49 + 53",
+            "answer": 102
+        },
+        {
+            "question": "50 + 54",
+            "answer": 104
+        },
+        {
+            "question": "79 + 48",
+            "answer": 127
+        },
+        {
+            "question": "31 + 97",
+            "answer": 128
+        },
+        {
+            "question": "72 + 17",
+            "answer": 89
+        },
+        {
+            "question": "78 + 58",
+            "answer": 136
+        },
+        {
+            "question": "79 + 52",
+            "answer": 131
+        },
+        {
+            "question": "27 + 22",
+            "answer": 49
+        },
+        {
+            "question": "78 + 94",
+            "answer": 172
+        },
+        {
+            "question": "25 + 23",
+            "answer": 48
+        },
+        {
+            "question": "44 + 96",
+            "answer": 140
+        },
+        {
+            "question": "68 + 78",
+            "answer": 146
+        },
+        {
+            "question": "28 + 92",
+            "answer": 120
+        },
+        {
+            "question": "74 + 27",
+            "answer": 101
+        },
+        {
+            "question": "47 + 44",
+            "answer": 91
+        },
+        {
+            "question": "57 + 83",
+            "answer": 140
+        },
+        {
+            "question": "78 + 33",
+            "answer": 111
+        },
+        {
+            "question": "22 + 57",
+            "answer": 79
+        },
+        {
+            "question": "6 + 80",
+            "answer": 86
+        },
+        {
+            "question": "85 + 80",
+            "answer": 165
+        },
+        {
+            "question": "95 + 66",
+            "answer": 161
+        },
+        {
+            "question": "39 + 45",
+            "answer": 84
+        },
+        {
+            "question": "58 + 88",
+            "answer": 146
+        },
+        {
+            "question": "92 + 13",
+            "answer": 105
+        },
+        {
+            "question": "86 + 46",
+            "answer": 132
+        },
+        {
+            "question": "34 + 58",
+            "answer": 92
+        },
+        {
+            "question": "19 + 46",
+            "answer": 65
+        },
+        {
+            "question": "67 + 68",
+            "answer": 135
+        },
+        {
+            "question": "53 + 84",
+            "answer": 137
+        },
+        {
+            "question": "16 + 93",
+            "answer": 109
+        },
+        {
+            "question": "92 + 96",
+            "answer": 188
+        },
+        {
+            "question": "88 + 3",
+            "answer": 91
+        },
+        {
+            "question": "23 + 15",
+            "answer": 38
+        },
+        {
+            "question": "22 + 49",
+            "answer": 71
+        },
+        {
+            "question": "22 + 85",
+            "answer": 107
+        },
+        {
+            "question": "3 + 85",
+            "answer": 88
+        },
+        {
+            "question": "40 + 80",
+            "answer": 120
+        },
+        {
+            "question": "74 + 88",
+            "answer": 162
+        },
+        {
+            "question": "47 + 38",
+            "answer": 85
+        },
+        {
+            "question": "72 + 23",
+            "answer": 95
+        },
+        {
+            "question": "87 + 74",
+            "answer": 161
+        },
+        {
+            "question": "59 + 3",
+            "answer": 62
+        },
+        {
+            "question": "42 + 90",
+            "answer": 132
+        },
+        {
+            "question": "17 + 76",
+            "answer": 93
+        },
+        {
+            "question": "25 + 90",
+            "answer": 115
+        },
+        {
+            "question": "53 + 30",
+            "answer": 83
+        },
+        {
+            "question": "73 + 90",
+            "answer": 163
+        },
+        {
+            "question": "8 + 91",
+            "answer": 99
+        },
+        {
+            "question": "12 + 42",
+            "answer": 54
+        },
+        {
+            "question": "29 + 96",
+            "answer": 125
+        },
+        {
+            "question": "55 + 81",
+            "answer": 136
+        },
+        {
+            "question": "94 + 22",
+            "answer": 116
+        },
+        {
+            "question": "10 + 48",
+            "answer": 58
+        },
+        {
+            "question": "97 + 13",
+            "answer": 110
+        },
+        {
+            "question": "82 + 34",
+            "answer": 116
+        },
+        {
+            "question": "38 + 38",
+            "answer": 76
+        },
+        {
+            "question": "22 + 18",
+            "answer": 40
+        },
+        {
+            "question": "7 + 9",
+            "answer": 16
+        },
+        {
+            "question": "49 + 98",
+            "answer": 147
+        },
+        {
+            "question": "75 + 95",
+            "answer": 170
+        },
+        {
+            "question": "48 + 13",
+            "answer": 61
+        },
+        {
+            "question": "93 + 91",
+            "answer": 184
+        },
+        {
+            "question": "78 + 81",
+            "answer": 159
+        },
+        {
+            "question": "4 + 11",
+            "answer": 15
+        },
+        {
+            "question": "56 + 13",
+            "answer": 69
+        },
+        {
+            "question": "26 + 24",
+            "answer": 50
+        },
+        {
+            "question": "38 + 32",
+            "answer": 70
+        },
+        {
+            "question": "13 + 43",
+            "answer": 56
+        },
+        {
+            "question": "11 + 52",
+            "answer": 63
+        },
+        {
+            "question": "50 + 4",
+            "answer": 54
+        },
+        {
+            "question": "70 + 77",
+            "answer": 147
+        },
+        {
+            "question": "30 + 51",
+            "answer": 81
+        },
+        {
+            "question": "66 + 71",
+            "answer": 137
+        },
+        {
+            "question": "90 + 33",
+            "answer": 123
+        },
+        {
+            "question": "27 + 17",
+            "answer": 44
+        },
+        {
+            "question": "88 + 16",
+            "answer": 104
+        },
+        {
+            "question": "96 + 30",
+            "answer": 126
+        },
+        {
+            "question": "49 + 52",
+            "answer": 101
+        },
+        {
+            "question": "7 + 21",
+            "answer": 28
+        },
+        {
+            "question": "89 + 55",
+            "answer": 144
+        },
+        {
+            "question": "21 + 95",
+            "answer": 116
+        },
+        {
+            "question": "65 + 44",
+            "answer": 109
+        },
+        {
+            "question": "90 + 1",
+            "answer": 91
+        },
+        {
+            "question": "76 + 9",
+            "answer": 85
+        },
+        {
+            "question": "95 + 58",
+            "answer": 153
+        },
+        {
+            "question": "16 + 86",
+            "answer": 102
+        },
+        {
+            "question": "72 + 26",
+            "answer": 98
+        },
+        {
+            "question": "99 + 70",
+            "answer": 169
+        },
+        {
+            "question": "43 + 87",
+            "answer": 130
+        },
+        {
+            "question": "54 + 75",
+            "answer": 129
+        },
+        {
+            "question": "57 + 89",
+            "answer": 146
+        },
+        {
+            "question": "80 + 17",
+            "answer": 97
+        },
+        {
+            "question": "87 + 33",
+            "answer": 120
+        },
+        {
+            "question": "94 + 77",
+            "answer": 171
+        },
+        {
+            "question": "12 + 47",
+            "answer": 59
+        },
+        {
+            "question": "39 + 4",
+            "answer": 43
+        },
+        {
+            "question": "45 + 76",
+            "answer": 121
+        },
+        {
+            "question": "100 + 98",
+            "answer": 198
+        },
+        {
+            "question": "48 + 36",
+            "answer": 84
+        },
+        {
+            "question": "96 + 47",
+            "answer": 143
+        },
+        {
+            "question": "14 + 60",
+            "answer": 74
+        },
+        {
+            "question": "57 + 66",
+            "answer": 123
+        },
+        {
+            "question": "62 + 19",
+            "answer": 81
+        },
+        {
+            "question": "35 + 1",
+            "answer": 36
+        },
+        {
+            "question": "8 + 96",
+            "answer": 104
+        },
+        {
+            "question": "90 + 26",
+            "answer": 116
+        },
+        {
+            "question": "43 + 91",
+            "answer": 134
+        },
+        {
+            "question": "88 + 84",
+            "answer": 172
+        },
+        {
+            "question": "48 + 32",
+            "answer": 80
+        },
+        {
+            "question": "73 + 92",
+            "answer": 165
+        },
+        {
+            "question": "2 + 94",
+            "answer": 96
+        },
+        {
+            "question": "27 + 29",
+            "answer": 56
+        },
+        {
+            "question": "66 + 36",
+            "answer": 102
+        },
+        {
+            "question": "67 + 47",
+            "answer": 114
+        },
+        {
+            "question": "54 + 77",
+            "answer": 131
+        },
+        {
+            "question": "38 + 73",
+            "answer": 111
+        },
+        {
+            "question": "21 + 43",
+            "answer": 64
+        },
+        {
+            "question": "29 + 7",
+            "answer": 36
+        },
+        {
+            "question": "63 + 28",
+            "answer": 91
+        },
+        {
+            "question": "30 + 3",
+            "answer": 33
+        },
+        {
+            "question": "49 + 22",
+            "answer": 71
+        },
+        {
+            "question": "32 + 95",
+            "answer": 127
+        },
+        {
+            "question": "23 + 72",
+            "answer": 95
+        },
+        {
+            "question": "86 + 56",
+            "answer": 142
+        },
+        {
+            "question": "11 + 43",
+            "answer": 54
+        },
+        {
+            "question": "29 + 91",
+            "answer": 120
+        },
+        {
+            "question": "6 + 70",
+            "answer": 76
+        },
+        {
+            "question": "71 + 23",
+            "answer": 94
+        },
+        {
+            "question": "73 + 80",
+            "answer": 153
+        },
+        {
+            "question": "84 + 51",
+            "answer": 135
+        },
+        {
+            "question": "68 + 10",
+            "answer": 78
+        },
+        {
+            "question": "15 + 81",
+            "answer": 96
+        },
+        {
+            "question": "33 + 50",
+            "answer": 83
+        },
+        {
+            "question": "87 + 33",
+            "answer": 120
+        },
+        {
+            "question": "95 + 90",
+            "answer": 185
+        },
+        {
+            "question": "81 + 54",
+            "answer": 135
+        },
+        {
+            "question": "85 + 25",
+            "answer": 110
+        },
+        {
+            "question": "78 + 13",
+            "answer": 91
+        },
+        {
+            "question": "78 + 83",
+            "answer": 161
+        },
+        {
+            "question": "90 + 31",
+            "answer": 121
+        },
+        {
+            "question": "78 + 61",
+            "answer": 139
+        },
+        {
+            "question": "41 + 54",
+            "answer": 95
+        },
+        {
+            "question": "80 + 34",
+            "answer": 114
+        },
+        {
+            "question": "44 + 86",
+            "answer": 130
+        },
+        {
+            "question": "62 + 95",
+            "answer": 157
+        },
+        {
+            "question": "77 + 90",
+            "answer": 167
+        },
+        {
+            "question": "1 + 72",
+            "answer": 73
+        },
+        {
+            "question": "10 + 22",
+            "answer": 32
+        },
+        {
+            "question": "52 + 57",
+            "answer": 109
+        },
+        {
+            "question": "92 + 30",
+            "answer": 122
+        },
+        {
+            "question": "94 + 5",
+            "answer": 99
+        },
+        {
+            "question": "72 + 11",
+            "answer": 83
+        },
+        {
+            "question": "74 + 55",
+            "answer": 129
+        },
+        {
+            "question": "33 + 38",
+            "answer": 71
+        },
+        {
+            "question": "39 + 55",
+            "answer": 94
+        },
+        {
+            "question": "76 + 25",
+            "answer": 101
+        },
+        {
+            "question": "71 + 57",
+            "answer": 128
+        },
+        {
+            "question": "72 + 67",
+            "answer": 139
+        },
+        {
+            "question": "13 + 59",
+            "answer": 72
+        },
+        {
+            "question": "67 + 51",
+            "answer": 118
+        },
+        {
+            "question": "78 + 80",
+            "answer": 158
+        },
+        {
+            "question": "94 + 65",
+            "answer": 159
+        },
+        {
+            "question": "75 + 96",
+            "answer": 171
+        },
+        {
+            "question": "11 + 30",
+            "answer": 41
+        },
+        {
+            "question": "22 + 69",
+            "answer": 91
+        },
+        {
+            "question": "65 + 26",
+            "answer": 91
+        },
+        {
+            "question": "79 + 13",
+            "answer": 92
+        },
+        {
+            "question": "65 + 8",
+            "answer": 73
+        },
+        {
+            "question": "91 + 24",
+            "answer": 115
+        },
+        {
+            "question": "91 + 91",
+            "answer": 182
+        },
+        {
+            "question": "60 + 43",
+            "answer": 103
+        },
+        {
+            "question": "82 + 96",
+            "answer": 178
+        },
+        {
+            "question": "78 + 36",
+            "answer": 114
+        },
+        {
+            "question": "21 + 93",
+            "answer": 114
+        },
+        {
+            "question": "52 + 74",
+            "answer": 126
+        },
+        {
+            "question": "72 + 87",
+            "answer": 159
+        },
+        {
+            "question": "3 + 53",
+            "answer": 56
+        },
+        {
+            "question": "56 + 24",
+            "answer": 80
+        },
+        {
+            "question": "68 + 58",
+            "answer": 126
+        },
+        {
+            "question": "58 + 52",
+            "answer": 110
+        },
+        {
+            "question": "48 + 78",
+            "answer": 126
+        },
+        {
+            "question": "19 + 33",
+            "answer": 52
+        },
+        {
+            "question": "75 + 55",
+            "answer": 130
+        },
+        {
+            "question": "46 + 41",
+            "answer": 87
+        },
+        {
+            "question": "55 + 35",
+            "answer": 90
+        },
+        {
+            "question": "92 + 32",
+            "answer": 124
+        },
+        {
+            "question": "61 + 3",
+            "answer": 64
+        },
+        {
+            "question": "42 + 21",
+            "answer": 63
+        },
+        {
+            "question": "34 + 87",
+            "answer": 121
+        },
+        {
+            "question": "21 + 35",
+            "answer": 56
+        },
+        {
+            "question": "95 + 77",
+            "answer": 172
+        },
+        {
+            "question": "30 + 60",
+            "answer": 90
+        },
+        {
+            "question": "90 + 50",
+            "answer": 140
+        },
+        {
+            "question": "71 + 97",
+            "answer": 168
+        },
+        {
+            "question": "37 + 33",
+            "answer": 70
+        },
+        {
+            "question": "96 + 70",
+            "answer": 166
+        },
+        {
+            "question": "17 + 47",
+            "answer": 64
+        },
+        {
+            "question": "32 + 40",
+            "answer": 72
+        },
+        {
+            "question": "59 + 98",
+            "answer": 157
+        },
+        {
+            "question": "76 + 18",
+            "answer": 94
+        },
+        {
+            "question": "38 + 73",
+            "answer": 111
+        },
+        {
+            "question": "15 + 17",
+            "answer": 32
+        },
+        {
+            "question": "76 + 3",
+            "answer": 79
+        },
+        {
+            "question": "98 + 2",
+            "answer": 100
+        },
+        {
+            "question": "48 + 48",
+            "answer": 96
+        },
+        {
+            "question": "78 + 19",
+            "answer": 97
+        },
+        {
+            "question": "81 + 36",
+            "answer": 117
+        },
+        {
+            "question": "96 + 71",
+            "answer": 167
+        },
+        {
+            "question": "90 + 9",
+            "answer": 99
+        },
+        {
+            "question": "45 + 22",
+            "answer": 67
+        },
+        {
+            "question": "26 + 55",
+            "answer": 81
+        },
+        {
+            "question": "75 + 59",
+            "answer": 134
+        },
+        {
+            "question": "28 + 72",
+            "answer": 100
+        },
+        {
+            "question": "11 + 11",
+            "answer": 22
+        },
+        {
+            "question": "19 + 60",
+            "answer": 79
+        },
+        {
+            "question": "91 + 11",
+            "answer": 102
+        },
+        {
+            "question": "40 + 5",
+            "answer": 45
+        },
+        {
+            "question": "71 + 78",
+            "answer": 149
+        },
+        {
+            "question": "8 + 38",
+            "answer": 46
+        },
+        {
+            "question": "89 + 5",
+            "answer": 94
+        },
+        {
+            "question": "64 + 71",
+            "answer": 135
+        },
+        {
+            "question": "95 + 31",
+            "answer": 126
+        },
+        {
+            "question": "6 + 4",
+            "answer": 10
+        },
+        {
+            "question": "26 + 7",
+            "answer": 33
+        },
+        {
+            "question": "6 + 68",
+            "answer": 74
+        },
+        {
+            "question": "65 + 83",
+            "answer": 148
+        },
+        {
+            "question": "86 + 64",
+            "answer": 150
+        },
+        {
+            "question": "80 + 90",
+            "answer": 170
+        },
+        {
+            "question": "92 + 55",
+            "answer": 147
+        },
+        {
+            "question": "12 + 9",
+            "answer": 21
+        },
+        {
+            "question": "73 + 1",
+            "answer": 74
+        },
+        {
+            "question": "98 + 93",
+            "answer": 191
+        },
+        {
+            "question": "18 + 15",
+            "answer": 33
+        },
+        {
+            "question": "11 + 52",
+            "answer": 63
+        },
+        {
+            "question": "15 + 37",
+            "answer": 52
+        },
+        {
+            "question": "25 + 3",
+            "answer": 28
+        },
+        {
+            "question": "72 + 16",
+            "answer": 88
+        },
+        {
+            "question": "83 + 25",
+            "answer": 108
+        },
+        {
+            "question": "67 + 11",
+            "answer": 78
+        },
+        {
+            "question": "77 + 65",
+            "answer": 142
+        },
+        {
+            "question": "33 + 31",
+            "answer": 64
+        },
+        {
+            "question": "3 + 8",
+            "answer": 11
+        },
+        {
+            "question": "98 + 66",
+            "answer": 164
+        },
+        {
+            "question": "24 + 44",
+            "answer": 68
+        },
+        {
+            "question": "44 + 22",
+            "answer": 66
+        },
+        {
+            "question": "53 + 10",
+            "answer": 63
+        },
+        {
+            "question": "93 + 28",
+            "answer": 121
+        },
+        {
+            "question": "26 + 62",
+            "answer": 88
+        },
+        {
+            "question": "44 + 53",
+            "answer": 97
+        },
+        {
+            "question": "6 + 34",
+            "answer": 40
+        },
+        {
+            "question": "77 + 3",
+            "answer": 80
+        },
+        {
+            "question": "38 + 97",
+            "answer": 135
+        },
+        {
+            "question": "47 + 14",
+            "answer": 61
+        },
+        {
+            "question": "42 + 75",
+            "answer": 117
+        },
+        {
+            "question": "16 + 88",
+            "answer": 104
+        },
+        {
+            "question": "62 + 53",
+            "answer": 115
+        },
+        {
+            "question": "2 + 40",
+            "answer": 42
+        },
+        {
+            "question": "63 + 76",
+            "answer": 139
+        },
+        {
+            "question": "14 + 58",
+            "answer": 72
+        },
+        {
+            "question": "26 + 59",
+            "answer": 85
+        },
+        {
+            "question": "82 + 88",
+            "answer": 170
+        },
+        {
+            "question": "78 + 59",
+            "answer": 137
+        },
+        {
+            "question": "29 + 85",
+            "answer": 114
+        },
+        {
+            "question": "70 + 46",
+            "answer": 116
+        },
+        {
+            "question": "53 + 77",
+            "answer": 130
+        },
+        {
+            "question": "56 + 14",
+            "answer": 70
+        },
+        {
+            "question": "12 + 22",
+            "answer": 34
+        },
+        {
+            "question": "27 + 41",
+            "answer": 68
+        },
+        {
+            "question": "40 + 13",
+            "answer": 53
+        },
+        {
+            "question": "12 + 7",
+            "answer": 19
+        },
+        {
+            "question": "87 + 31",
+            "answer": 118
+        },
+        {
+            "question": "12 + 11",
+            "answer": 23
+        },
+        {
+            "question": "62 + 70",
+            "answer": 132
+        },
+        {
+            "question": "43 + 25",
+            "answer": 68
+        },
+        {
+            "question": "31 + 88",
+            "answer": 119
+        },
+        {
+            "question": "9 + 44",
+            "answer": 53
+        },
+        {
+            "question": "62 + 16",
+            "answer": 78
+        },
+        {
+            "question": "67 + 26",
+            "answer": 93
+        },
+        {
+            "question": "6 + 67",
+            "answer": 73
+        },
+        {
+            "question": "78 + 81",
+            "answer": 159
+        },
+        {
+            "question": "87 + 4",
+            "answer": 91
+        },
+        {
+            "question": "28 + 40",
+            "answer": 68
+        },
+        {
+            "question": "24 + 40",
+            "answer": 64
+        },
+        {
+            "question": "59 + 5",
+            "answer": 64
+        },
+        {
+            "question": "16 + 7",
+            "answer": 23
+        },
+        {
+            "question": "48 + 32",
+            "answer": 80
+        },
+        {
+            "question": "74 + 69",
+            "answer": 143
+        },
+        {
+            "question": "6 + 28",
+            "answer": 34
+        },
+        {
+            "question": "24 + 48",
+            "answer": 72
+        },
+        {
+            "question": "65 + 89",
+            "answer": 154
+        },
+        {
+            "question": "61 + 40",
+            "answer": 101
+        },
+        {
+            "question": "79 + 37",
+            "answer": 116
+        },
+        {
+            "question": "47 + 47",
+            "answer": 94
+        },
+        {
+            "question": "77 + 70",
+            "answer": 147
+        },
+        {
+            "question": "14 + 33",
+            "answer": 47
+        },
+        {
+            "question": "40 + 20",
+            "answer": 60
+        },
+        {
+            "question": "15 + 50",
+            "answer": 65
+        },
+        {
+            "question": "47 + 15",
+            "answer": 62
+        },
+        {
+            "question": "30 + 65",
+            "answer": 95
+        },
+        {
+            "question": "75 + 43",
+            "answer": 118
+        },
+        {
+            "question": "84 + 38",
+            "answer": 122
+        },
+        {
+            "question": "75 + 1",
+            "answer": 76
+        },
+        {
+            "question": "70 + 3",
+            "answer": 73
+        },
+        {
+            "question": "58 + 30",
+            "answer": 88
+        },
+        {
+            "question": "36 + 70",
+            "answer": 106
+        },
+        {
+            "question": "57 + 84",
+            "answer": 141
+        },
+        {
+            "question": "33 + 95",
+            "answer": 128
+        },
+        {
+            "question": "46 + 52",
+            "answer": 98
+        },
+        {
+            "question": "3 + 95",
+            "answer": 98
+        },
+        {
+            "question": "2 + 80",
+            "answer": 82
+        },
+        {
+            "question": "68 + 23",
+            "answer": 91
+        },
+        {
+            "question": "23 + 50",
+            "answer": 73
+        },
+        {
+            "question": "13 + 69",
+            "answer": 82
+        },
+        {
+            "question": "26 + 90",
+            "answer": 116
+        },
+        {
+            "question": "64 + 59",
+            "answer": 123
+        },
+        {
+            "question": "100 + 35",
+            "answer": 135
+        },
+        {
+            "question": "100 + 21",
+            "answer": 121
+        },
+        {
+            "question": "10 + 87",
+            "answer": 97
+        },
+        {
+            "question": "42 + 30",
+            "answer": 72
+        },
+        {
+            "question": "37 + 7",
+            "answer": 44
+        },
+        {
+            "question": "8 + 41",
+            "answer": 49
+        },
+        {
+            "question": "53 + 31",
+            "answer": 84
+        },
+        {
+            "question": "22 + 98",
+            "answer": 120
+        },
+        {
+            "question": "17 + 49",
+            "answer": 66
+        },
+        {
+            "question": "82 + 39",
+            "answer": 121
+        },
+        {
+            "question": "39 + 86",
+            "answer": 125
+        },
+        {
+            "question": "98 + 88",
+            "answer": 186
+        },
+        {
+            "question": "47 + 12",
+            "answer": 59
+        },
+        {
+            "question": "92 + 18",
+            "answer": 110
+        },
+        {
+            "question": "57 + 5",
+            "answer": 62
+        },
+        {
+            "question": "100 + 24",
+            "answer": 124
+        },
+        {
+            "question": "51 + 87",
+            "answer": 138
+        },
+        {
+            "question": "22 + 33",
+            "answer": 55
+        },
+        {
+            "question": "74 + 98",
+            "answer": 172
+        },
+        {
+            "question": "43 + 39",
+            "answer": 82
+        },
+        {
+            "question": "32 + 88",
+            "answer": 120
+        },
+        {
+            "question": "80 + 76",
+            "answer": 156
+        },
+        {
+            "question": "6 + 41",
+            "answer": 47
+        },
+        {
+            "question": "66 + 73",
+            "answer": 139
+        },
+        {
+            "question": "44 + 43",
+            "answer": 87
+        },
+        {
+            "question": "82 + 67",
+            "answer": 149
+        },
+        {
+            "question": "23 + 98",
+            "answer": 121
+        },
+        {
+            "question": "95 + 95",
+            "answer": 190
+        },
+        {
+            "question": "80 + 33",
+            "answer": 113
+        },
+        {
+            "question": "99 + 12",
+            "answer": 111
+        },
+        {
+            "question": "77 + 99",
+            "answer": 176
+        },
+        {
+            "question": "93 + 62",
+            "answer": 155
+        },
+        {
+            "question": "49 + 48",
+            "answer": 97
+        },
+        {
+            "question": "58 + 64",
+            "answer": 122
+        },
+        {
+            "question": "84 + 42",
+            "answer": 126
+        },
+        {
+            "question": "85 + 54",
+            "answer": 139
+        },
+        {
+            "question": "32 + 73",
+            "answer": 105
+        },
+        {
+            "question": "10 + 80",
+            "answer": 90
+        },
+        {
+            "question": "43 + 57",
+            "answer": 100
+        },
+        {
+            "question": "78 + 14",
+            "answer": 92
+        },
+        {
+            "question": "66 + 69",
+            "answer": 135
+        },
+        {
+            "question": "47 + 5",
+            "answer": 52
+        },
+        {
+            "question": "68 + 23",
+            "answer": 91
+        },
+        {
+            "question": "53 + 26",
+            "answer": 79
+        },
+        {
+            "question": "80 + 34",
+            "answer": 114
+        },
+        {
+            "question": "44 + 19",
+            "answer": 63
+        },
+        {
+            "question": "95 + 99",
+            "answer": 194
+        },
+        {
+            "question": "3 + 2",
+            "answer": 5
+        },
+        {
+            "question": "73 + 49",
+            "answer": 122
+        },
+        {
+            "question": "27 + 9",
+            "answer": 36
+        },
+        {
+            "question": "67 + 8",
+            "answer": 75
+        },
+        {
+            "question": "55 + 58",
+            "answer": 113
+        },
+        {
+            "question": "14 + 14",
+            "answer": 28
+        },
+        {
+            "question": "93 + 62",
+            "answer": 155
+        },
+        {
+            "question": "98 + 81",
+            "answer": 179
+        },
+        {
+            "question": "47 + 50",
+            "answer": 97
+        },
+        {
+            "question": "28 + 14",
+            "answer": 42
+        },
+        {
+            "question": "9 + 98",
+            "answer": 107
+        },
+        {
+            "question": "2 + 14",
+            "answer": 16
+        },
+        {
+            "question": "90 + 15",
+            "answer": 105
+        },
+        {
+            "question": "43 + 48",
+            "answer": 91
+        },
+        {
+            "question": "27 + 65",
+            "answer": 92
+        },
+        {
+            "question": "88 + 51",
+            "answer": 139
+        },
+        {
+            "question": "8 + 81",
+            "answer": 89
+        },
+        {
+            "question": "90 + 91",
+            "answer": 181
+        },
+        {
+            "question": "31 + 63",
+            "answer": 94
+        },
+        {
+            "question": "82 + 6",
+            "answer": 88
+        },
+        {
+            "question": "76 + 81",
+            "answer": 157
+        },
+        {
+            "question": "14 + 80",
+            "answer": 94
+        },
+        {
+            "question": "13 + 68",
+            "answer": 81
+        },
+        {
+            "question": "93 + 6",
+            "answer": 99
+        },
+        {
+            "question": "91 + 78",
+            "answer": 169
+        },
+        {
+            "question": "56 + 41",
+            "answer": 97
+        },
+        {
+            "question": "89 + 97",
+            "answer": 186
+        },
+        {
+            "question": "13 + 70",
+            "answer": 83
+        },
+        {
+            "question": "27 + 27",
+            "answer": 54
+        },
+        {
+            "question": "4 + 6",
+            "answer": 10
+        },
+        {
+            "question": "7 + 16",
+            "answer": 23
+        },
+        {
+            "question": "83 + 54",
+            "answer": 137
+        },
+        {
+            "question": "43 + 1",
+            "answer": 44
+        },
+        {
+            "question": "75 + 99",
+            "answer": 174
+        },
+        {
+            "question": "77 + 33",
+            "answer": 110
+        },
+        {
+            "question": "97 + 60",
+            "answer": 157
+        },
+        {
+            "question": "39 + 55",
+            "answer": 94
+        },
+        {
+            "question": "44 + 57",
+            "answer": 101
+        },
+        {
+            "question": "99 + 95",
+            "answer": 194
+        },
+        {
+            "question": "65 + 48",
+            "answer": 113
+        },
+        {
+            "question": "23 + 39",
+            "answer": 62
+        },
+        {
+            "question": "76 + 36",
+            "answer": 112
+        },
+        {
+            "question": "85 + 27",
+            "answer": 112
+        },
+        {
+            "question": "9 + 8",
+            "answer": 17
+        },
+        {
+            "question": "98 + 87",
+            "answer": 185
+        },
+        {
+            "question": "19 + 56",
+            "answer": 75
+        },
+        {
+            "question": "8 + 60",
+            "answer": 68
+        },
+        {
+            "question": "62 + 64",
+            "answer": 126
+        },
+        {
+            "question": "65 + 67",
+            "answer": 132
+        },
+        {
+            "question": "96 + 76",
+            "answer": 172
+        },
+        {
+            "question": "76 + 3",
+            "answer": 79
+        },
+        {
+            "question": "46 + 13",
+            "answer": 59
+        },
+        {
+            "question": "45 + 80",
+            "answer": 125
+        },
+        {
+            "question": "5 + 35",
+            "answer": 40
+        },
+        {
+            "question": "35 + 65",
+            "answer": 100
+        },
+        {
+            "question": "62 + 83",
+            "answer": 145
+        },
+        {
+            "question": "98 + 87",
+            "answer": 185
+        },
+        {
+            "question": "45 + 52",
+            "answer": 97
+        },
+        {
+            "question": "59 + 27",
+            "answer": 86
+        },
+        {
+            "question": "51 + 46",
+            "answer": 97
+        },
+        {
+            "question": "82 + 17",
+            "answer": 99
+        },
+        {
+            "question": "100 + 26",
+            "answer": 126
+        },
+        {
+            "question": "13 + 26",
+            "answer": 39
+        },
+        {
+            "question": "62 + 73",
+            "answer": 135
+        },
+        {
+            "question": "68 + 49",
+            "answer": 117
+        },
+        {
+            "question": "76 + 44",
+            "answer": 120
+        },
+        {
+            "question": "74 + 96",
+            "answer": 170
+        },
+        {
+            "question": "13 + 15",
+            "answer": 28
+        },
+        {
+            "question": "98 + 74",
+            "answer": 172
+        },
+        {
+            "question": "96 + 22",
+            "answer": 118
+        },
+        {
+            "question": "48 + 28",
+            "answer": 76
+        },
+        {
+            "question": "75 + 23",
+            "answer": 98
+        },
+        {
+            "question": "36 + 82",
+            "answer": 118
+        },
+        {
+            "question": "39 + 78",
+            "answer": 117
+        },
+        {
+            "question": "15 + 18",
+            "answer": 33
+        },
+        {
+            "question": "51 + 20",
+            "answer": 71
+        },
+        {
+            "question": "74 + 4",
+            "answer": 78
+        },
+        {
+            "question": "94 + 46",
+            "answer": 140
+        },
+        {
+            "question": "99 + 16",
+            "answer": 115
+        },
+        {
+            "question": "3 + 78",
+            "answer": 81
+        },
+        {
+            "question": "12 + 48",
+            "answer": 60
+        },
+        {
+            "question": "25 + 48",
+            "answer": 73
+        },
+        {
+            "question": "40 + 16",
+            "answer": 56
+        },
+        {
+            "question": "6 + 76",
+            "answer": 82
+        },
+        {
+            "question": "67 + 55",
+            "answer": 122
+        },
+        {
+            "question": "46 + 20",
+            "answer": 66
+        },
+        {
+            "question": "20 + 39",
+            "answer": 59
+        },
+        {
+            "question": "94 + 64",
+            "answer": 158
+        },
+        {
+            "question": "53 + 19",
+            "answer": 72
+        },
+        {
+            "question": "9 + 29",
+            "answer": 38
+        },
+        {
+            "question": "41 + 53",
+            "answer": 94
+        },
+        {
+            "question": "71 + 99",
+            "answer": 170
+        },
+        {
+            "question": "28 + 21",
+            "answer": 49
+        },
+        {
+            "question": "89 + 94",
+            "answer": 183
+        },
+        {
+            "question": "55 + 79",
+            "answer": 134
+        },
+        {
+            "question": "28 + 30",
+            "answer": 58
+        },
+        {
+            "question": "4 + 12",
+            "answer": 16
+        },
+        {
+            "question": "98 + 60",
+            "answer": 158
+        },
+        {
+            "question": "2 + 53",
+            "answer": 55
+        },
+        {
+            "question": "58 + 43",
+            "answer": 101
+        },
+        {
+            "question": "91 + 43",
+            "answer": 134
+        },
+        {
+            "question": "89 + 89",
+            "answer": 178
+        },
+        {
+            "question": "71 + 67",
+            "answer": 138
+        },
+        {
+            "question": "2 + 22",
+            "answer": 24
+        },
+        {
+            "question": "37 + 84",
+            "answer": 121
+        },
+        {
+            "question": "57 + 36",
+            "answer": 93
+        },
+        {
+            "question": "32 + 100",
+            "answer": 132
+        },
+        {
+            "question": "77 + 47",
+            "answer": 124
+        },
+        {
+            "question": "27 + 18",
+            "answer": 45
+        },
+        {
+            "question": "9 + 34",
+            "answer": 43
+        },
+        {
+            "question": "31 + 61",
+            "answer": 92
+        },
+        {
+            "question": "72 + 71",
+            "answer": 143
+        },
+        {
+            "question": "16 + 61",
+            "answer": 77
+        },
+        {
+            "question": "67 + 99",
+            "answer": 166
+        },
+        {
+            "question": "47 + 10",
+            "answer": 57
+        },
+        {
+            "question": "49 + 19",
+            "answer": 68
+        },
+        {
+            "question": "75 + 29",
+            "answer": 104
+        },
+        {
+            "question": "46 + 72",
+            "answer": 118
+        },
+        {
+            "question": "10 + 98",
+            "answer": 108
+        },
+        {
+            "question": "70 + 75",
+            "answer": 145
+        },
+        {
+            "question": "18 + 67",
+            "answer": 85
+        },
+        {
+            "question": "50 + 84",
+            "answer": 134
+        },
+        {
+            "question": "74 + 56",
+            "answer": 130
+        },
+        {
+            "question": "46 + 42",
+            "answer": 88
+        },
+        {
+            "question": "32 + 70",
+            "answer": 102
+        },
+        {
+            "question": "23 + 29",
+            "answer": 52
+        },
+        {
+            "question": "42 + 5",
+            "answer": 47
+        },
+        {
+            "question": "14 + 49",
+            "answer": 63
+        },
+        {
+            "question": "4 + 79",
+            "answer": 83
+        },
+        {
+            "question": "97 + 67",
+            "answer": 164
+        },
+        {
+            "question": "57 + 46",
+            "answer": 103
+        },
+        {
+            "question": "6 + 49",
+            "answer": 55
+        },
+        {
+            "question": "25 + 15",
+            "answer": 40
+        },
+        {
+            "question": "36 + 17",
+            "answer": 53
+        },
+        {
+            "question": "91 + 36",
+            "answer": 127
+        },
+        {
+            "question": "72 + 67",
+            "answer": 139
+        },
+        {
+            "question": "29 + 20",
+            "answer": 49
+        },
+        {
+            "question": "70 + 39",
+            "answer": 109
+        },
+        {
+            "question": "4 + 37",
+            "answer": 41
+        },
+        {
+            "question": "36 + 48",
+            "answer": 84
+        },
+        {
+            "question": "84 + 66",
+            "answer": 150
+        },
+        {
+            "question": "81 + 89",
+            "answer": 170
+        },
+        {
+            "question": "47 + 19",
+            "answer": 66
+        },
+        {
+            "question": "14 + 55",
+            "answer": 69
+        },
+        {
+            "question": "60 + 50",
+            "answer": 110
+        },
+        {
+            "question": "47 + 1",
+            "answer": 48
+        },
+        {
+            "question": "3 + 56",
+            "answer": 59
+        },
+        {
+            "question": "68 + 15",
+            "answer": 83
+        },
+        {
+            "question": "31 + 4",
+            "answer": 35
+        },
+        {
+            "question": "13 + 97",
+            "answer": 110
+        },
+        {
+            "question": "20 + 49",
+            "answer": 69
+        },
+        {
+            "question": "57 + 22",
+            "answer": 79
+        },
+        {
+            "question": "10 + 63",
+            "answer": 73
+        },
+        {
+            "question": "44 + 33",
+            "answer": 77
+        },
+        {
+            "question": "22 + 42",
+            "answer": 64
+        },
+        {
+            "question": "98 + 72",
+            "answer": 170
+        },
+        {
+            "question": "17 + 61",
+            "answer": 78
+        },
+        {
+            "question": "59 + 51",
+            "answer": 110
+        },
+        {
+            "question": "96 + 2",
+            "answer": 98
+        },
+        {
+            "question": "21 + 41",
+            "answer": 62
+        },
+        {
+            "question": "76 + 35",
+            "answer": 111
+        },
+        {
+            "question": "74 + 36",
+            "answer": 110
+        },
+        {
+            "question": "69 + 82",
+            "answer": 151
+        },
+        {
+            "question": "54 + 21",
+            "answer": 75
+        },
+        {
+            "question": "73 + 48",
+            "answer": 121
+        },
+        {
+            "question": "14 + 59",
+            "answer": 73
+        },
+        {
+            "question": "68 + 83",
+            "answer": 151
+        },
+        {
+            "question": "30 + 69",
+            "answer": 99
+        },
+        {
+            "question": "59 + 8",
+            "answer": 67
+        },
+        {
+            "question": "3 + 72",
+            "answer": 75
+        },
+        {
+            "question": "58 + 65",
+            "answer": 123
+        },
+        {
+            "question": "99 + 53",
+            "answer": 152
+        },
+        {
+            "question": "35 + 38",
+            "answer": 73
+        },
+        {
+            "question": "50 + 100",
+            "answer": 150
+        },
+        {
+            "question": "68 + 43",
+            "answer": 111
+        },
+        {
+            "question": "73 + 36",
+            "answer": 109
+        },
+        {
+            "question": "35 + 9",
+            "answer": 44
+        },
+        {
+            "question": "8 + 15",
+            "answer": 23
+        },
+        {
+            "question": "14 + 3",
+            "answer": 17
+        },
+        {
+            "question": "97 + 59",
+            "answer": 156
+        },
+        {
+            "question": "1 + 3",
+            "answer": 4
+        },
+        {
+            "question": "37 + 93",
+            "answer": 130
+        },
+        {
+            "question": "43 + 83",
+            "answer": 126
+        },
+        {
+            "question": "96 + 73",
+            "answer": 169
+        },
+        {
+            "question": "38 + 20",
+            "answer": 58
+        },
+        {
+            "question": "44 + 31",
+            "answer": 75
+        },
+        {
+            "question": "3 + 73",
+            "answer": 76
+        },
+        {
+            "question": "89 + 85",
+            "answer": 174
+        },
+        {
+            "question": "8 + 73",
+            "answer": 81
+        },
+        {
+            "question": "86 + 72",
+            "answer": 158
+        },
+        {
+            "question": "46 + 66",
+            "answer": 112
+        },
+        {
+            "question": "23 + 74",
+            "answer": 97
+        },
+        {
+            "question": "47 + 91",
+            "answer": 138
+        },
+        {
+            "question": "84 + 88",
+            "answer": 172
+        },
+        {
+            "question": "42 + 77",
+            "answer": 119
+        },
+        {
+            "question": "42 + 86",
+            "answer": 128
+        },
+        {
+            "question": "3 + 79",
+            "answer": 82
+        },
+        {
+            "question": "98 + 100",
+            "answer": 198
+        },
+        {
+            "question": "40 + 6",
+            "answer": 46
+        },
+        {
+            "question": "88 + 50",
+            "answer": 138
+        },
+        {
+            "question": "65 + 40",
+            "answer": 105
+        },
+        {
+            "question": "60 + 38",
+            "answer": 98
+        },
+        {
+            "question": "5 + 89",
+            "answer": 94
+        },
+        {
+            "question": "53 + 38",
+            "answer": 91
+        },
+        {
+            "question": "33 + 84",
+            "answer": 117
+        },
+        {
+            "question": "58 + 100",
+            "answer": 158
+        },
+        {
+            "question": "44 + 23",
+            "answer": 67
+        },
+        {
+            "question": "11 + 86",
+            "answer": 97
+        },
+        {
+            "question": "36 + 61",
+            "answer": 97
+        },
+        {
+            "question": "5 + 54",
+            "answer": 59
+        },
+        {
+            "question": "68 + 63",
+            "answer": 131
+        },
+        {
+            "question": "75 + 69",
+            "answer": 144
+        },
+        {
+            "question": "40 + 29",
+            "answer": 69
+        },
+        {
+            "question": "20 + 2",
+            "answer": 22
+        },
+        {
+            "question": "94 + 28",
+            "answer": 122
+        },
+        {
+            "question": "88 + 79",
+            "answer": 167
+        },
+        {
+            "question": "84 + 25",
+            "answer": 109
+        },
+        {
+            "question": "2 + 45",
+            "answer": 47
+        },
+        {
+            "question": "21 + 5",
+            "answer": 26
+        },
+        {
+            "question": "91 + 31",
+            "answer": 122
+        },
+        {
+            "question": "49 + 14",
+            "answer": 63
+        },
+        {
+            "question": "63 + 40",
+            "answer": 103
+        },
+        {
+            "question": "73 + 75",
+            "answer": 148
+        },
+        {
+            "question": "81 + 35",
+            "answer": 116
+        },
+        {
+            "question": "29 + 32",
+            "answer": 61
+        },
+        {
+            "question": "85 + 13",
+            "answer": 98
+        },
+        {
+            "question": "97 + 26",
+            "answer": 123
+        },
+        {
+            "question": "66 + 58",
+            "answer": 124
+        },
+        {
+            "question": "65 + 16",
+            "answer": 81
+        },
+        {
+            "question": "75 + 49",
+            "answer": 124
+        },
+        {
+            "question": "39 + 51",
+            "answer": 90
+        },
+        {
+            "question": "2 + 98",
+            "answer": 100
+        },
+        {
+            "question": "95 + 5",
+            "answer": 100
+        },
+        {
+            "question": "71 + 98",
+            "answer": 169
+        },
+        {
+            "question": "3 + 22",
+            "answer": 25
+        },
+        {
+            "question": "32 + 31",
+            "answer": 63
+        },
+        {
+            "question": "34 + 33",
+            "answer": 67
+        },
+        {
+            "question": "47 + 78",
+            "answer": 125
+        },
+        {
+            "question": "63 + 57",
+            "answer": 120
+        },
+        {
+            "question": "19 + 10",
+            "answer": 29
+        },
+        {
+            "question": "73 + 5",
+            "answer": 78
+        },
+        {
+            "question": "42 + 32",
+            "answer": 74
+        },
+        {
+            "question": "82 + 11",
+            "answer": 93
+        },
+        {
+            "question": "32 + 4",
+            "answer": 36
+        },
+        {
+            "question": "28 + 85",
+            "answer": 113
+        },
+        {
+            "question": "93 + 90",
+            "answer": 183
+        },
+        {
+            "question": "87 + 15",
+            "answer": 102
+        },
+        {
+            "question": "79 + 28",
+            "answer": 107
+        },
+        {
+            "question": "62 + 33",
+            "answer": 95
+        },
+        {
+            "question": "85 + 18",
+            "answer": 103
+        },
+        {
+            "question": "74 + 31",
+            "answer": 105
+        },
+        {
+            "question": "96 + 15",
+            "answer": 111
+        },
+        {
+            "question": "90 + 52",
+            "answer": 142
+        },
+        {
+            "question": "26 + 50",
+            "answer": 76
+        },
+        {
+            "question": "29 + 20",
+            "answer": 49
+        },
+        {
+            "question": "85 + 67",
+            "answer": 152
+        },
+        {
+            "question": "16 + 33",
+            "answer": 49
+        },
+        {
+            "question": "44 + 63",
+            "answer": 107
+        },
+        {
+            "question": "92 + 18",
+            "answer": 110
+        },
+        {
+            "question": "73 + 20",
+            "answer": 93
+        },
+        {
+            "question": "62 + 96",
+            "answer": 158
+        },
+        {
+            "question": "71 + 37",
+            "answer": 108
+        },
+        {
+            "question": "49 + 13",
+            "answer": 62
+        },
+        {
+            "question": "5 + 73",
+            "answer": 78
+        },
+        {
+            "question": "62 + 88",
+            "answer": 150
+        },
+        {
+            "question": "60 + 23",
+            "answer": 83
+        },
+        {
+            "question": "25 + 36",
+            "answer": 61
+        },
+        {
+            "question": "43 + 84",
+            "answer": 127
+        },
+        {
+            "question": "55 + 53",
+            "answer": 108
+        },
+        {
+            "question": "6 + 17",
+            "answer": 23
+        },
+        {
+            "question": "4 + 36",
+            "answer": 40
+        },
+        {
+            "question": "61 + 13",
+            "answer": 74
+        },
+        {
+            "question": "81 + 81",
+            "answer": 162
+        },
+        {
+            "question": "38 + 14",
+            "answer": 52
+        },
+        {
+            "question": "88 + 37",
+            "answer": 125
+        },
+        {
+            "question": "5 + 29",
+            "answer": 34
+        },
+        {
+            "question": "36 + 79",
+            "answer": 115
+        },
+        {
+            "question": "7 + 58",
+            "answer": 65
+        },
+        {
+            "question": "87 + 46",
+            "answer": 133
+        },
+        {
+            "question": "34 + 21",
+            "answer": 55
+        },
+        {
+            "question": "90 + 84",
+            "answer": 174
+        },
+        {
+            "question": "73 + 65",
+            "answer": 138
+        },
+        {
+            "question": "62 + 56",
+            "answer": 118
+        },
+        {
+            "question": "74 + 21",
+            "answer": 95
+        },
+        {
+            "question": "80 + 69",
+            "answer": 149
+        },
+        {
+            "question": "37 + 36",
+            "answer": 73
+        },
+        {
+            "question": "81 + 95",
+            "answer": 176
+        },
+        {
+            "question": "59 + 95",
+            "answer": 154
+        },
+        {
+            "question": "60 + 90",
+            "answer": 150
+        },
+        {
+            "question": "72 + 5",
+            "answer": 77
+        },
+        {
+            "question": "91 + 27",
+            "answer": 118
+        },
+        {
+            "question": "90 + 87",
+            "answer": 177
+        },
+        {
+            "question": "97 + 12",
+            "answer": 109
+        },
+        {
+            "question": "41 + 4",
+            "answer": 45
+        },
+        {
+            "question": "45 + 49",
+            "answer": 94
+        },
+        {
+            "question": "47 + 13",
+            "answer": 60
+        },
+        {
+            "question": "100 + 56",
+            "answer": 156
+        },
+        {
+            "question": "13 + 18",
+            "answer": 31
+        },
+        {
+            "question": "30 + 34",
+            "answer": 64
+        },
+        {
+            "question": "20 + 39",
+            "answer": 59
+        },
+        {
+            "question": "42 + 74",
+            "answer": 116
+        },
+        {
+            "question": "49 + 94",
+            "answer": 143
+        },
+        {
+            "question": "73 + 42",
+            "answer": 115
+        },
+        {
+            "question": "90 + 71",
+            "answer": 161
+        },
+        {
+            "question": "26 + 31",
+            "answer": 57
+        },
+        {
+            "question": "89 + 7",
+            "answer": 96
+        },
+        {
+            "question": "85 + 29",
+            "answer": 114
+        },
+        {
+            "question": "87 + 26",
+            "answer": 113
+        },
+        {
+            "question": "19 + 7",
+            "answer": 26
+        },
+        {
+            "question": "29 + 60",
+            "answer": 89
+        },
+        {
+            "question": "42 + 75",
+            "answer": 117
+        },
+        {
+            "question": "68 + 92",
+            "answer": 160
+        },
+        {
+            "question": "9 + 94",
+            "answer": 103
+        },
+        {
+            "question": "65 + 8",
+            "answer": 73
+        },
+        {
+            "question": "39 + 3",
+            "answer": 42
+        },
+        {
+            "question": "21 + 78",
+            "answer": 99
+        },
+        {
+            "question": "83 + 37",
+            "answer": 120
+        },
+        {
+            "question": "61 + 56",
+            "answer": 117
+        },
+        {
+            "question": "85 + 37",
+            "answer": 122
+        },
+        {
+            "question": "97 + 79",
+            "answer": 176
+        },
+        {
+            "question": "32 + 91",
+            "answer": 123
+        },
+        {
+            "question": "45 + 85",
+            "answer": 130
+        },
+        {
+            "question": "18 + 78",
+            "answer": 96
+        },
+        {
+            "question": "45 + 74",
+            "answer": 119
+        },
+        {
+            "question": "19 + 42",
+            "answer": 61
+        },
+        {
+            "question": "36 + 46",
+            "answer": 82
+        },
+        {
+            "question": "1 + 32",
+            "answer": 33
+        },
+        {
+            "question": "21 + 78",
+            "answer": 99
+        },
+        {
+            "question": "85 + 42",
+            "answer": 127
+        },
+        {
+            "question": "37 + 93",
+            "answer": 130
+        },
+        {
+            "question": "19 + 64",
+            "answer": 83
+        },
+        {
+            "question": "69 + 10",
+            "answer": 79
+        },
+        {
+            "question": "97 + 14",
+            "answer": 111
+        },
+        {
+            "question": "19 + 59",
+            "answer": 78
+        },
+        {
+            "question": "79 + 34",
+            "answer": 113
+        },
+        {
+            "question": "100 + 81",
+            "answer": 181
+        },
+        {
+            "question": "68 + 87",
+            "answer": 155
+        },
+        {
+            "question": "50 + 59",
+            "answer": 109
+        },
+        {
+            "question": "2 + 8",
+            "answer": 10
+        },
+        {
+            "question": "15 + 66",
+            "answer": 81
+        },
+        {
+            "question": "18 + 52",
+            "answer": 70
+        },
+        {
+            "question": "20 + 81",
+            "answer": 101
+        },
+        {
+            "question": "65 + 33",
+            "answer": 98
+        },
+        {
+            "question": "91 + 73",
+            "answer": 164
+        },
+        {
+            "question": "74 + 43",
+            "answer": 117
+        },
+        {
+            "question": "63 + 31",
+            "answer": 94
+        },
+        {
+            "question": "56 + 87",
+            "answer": 143
+        },
+        {
+            "question": "51 + 11",
+            "answer": 62
+        },
+        {
+            "question": "81 + 3",
+            "answer": 84
+        },
+        {
+            "question": "55 + 6",
+            "answer": 61
+        },
+        {
+            "question": "13 + 80",
+            "answer": 93
+        },
+        {
+            "question": "99 + 22",
+            "answer": 121
+        },
+        {
+            "question": "56 + 42",
+            "answer": 98
+        },
+        {
+            "question": "69 + 58",
+            "answer": 127
+        },
+        {
+            "question": "54 + 54",
+            "answer": 108
+        },
+        {
+            "question": "84 + 19",
+            "answer": 103
+        },
+        {
+            "question": "94 + 86",
+            "answer": 180
+        },
+        {
+            "question": "50 + 39",
+            "answer": 89
+        },
+        {
+            "question": "1 + 85",
+            "answer": 86
+        },
+        {
+            "question": "71 + 8",
+            "answer": 79
+        },
+        {
+            "question": "96 + 63",
+            "answer": 159
+        },
+        {
+            "question": "4 + 12",
+            "answer": 16
+        },
+        {
+            "question": "39 + 2",
+            "answer": 41
+        },
+        {
+            "question": "48 + 8",
+            "answer": 56
+        },
+        {
+            "question": "34 + 91",
+            "answer": 125
+        },
+        {
+            "question": "82 + 39",
+            "answer": 121
+        },
+        {
+            "question": "43 + 11",
+            "answer": 54
+        },
+        {
+            "question": "8 + 14",
+            "answer": 22
+        },
+        {
+            "question": "19 + 54",
+            "answer": 73
+        },
+        {
+            "question": "30 + 59",
+            "answer": 89
+        },
+        {
+            "question": "48 + 66",
+            "answer": 114
+        },
+        {
+            "question": "83 + 15",
+            "answer": 98
+        },
+        {
+            "question": "9 + 94",
+            "answer": 103
+        },
+        {
+            "question": "41 + 21",
+            "answer": 62
+        },
+        {
+            "question": "85 + 76",
+            "answer": 161
+        },
+        {
+            "question": "13 + 13",
+            "answer": 26
+        },
+        {
+            "question": "16 + 75",
+            "answer": 91
+        },
+        {
+            "question": "19 + 69",
+            "answer": 88
+        },
+        {
+            "question": "73 + 88",
+            "answer": 161
+        },
+        {
+            "question": "10 + 54",
+            "answer": 64
+        },
+        {
+            "question": "35 + 12",
+            "answer": 47
+        },
+        {
+            "question": "16 + 86",
+            "answer": 102
+        },
+        {
+            "question": "44 + 43",
+            "answer": 87
+        },
+        {
+            "question": "66 + 81",
+            "answer": 147
+        },
+        {
+            "question": "88 + 33",
+            "answer": 121
+        },
+        {
+            "question": "9 + 22",
+            "answer": 31
+        },
+        {
+            "question": "10 + 55",
+            "answer": 65
+        },
+        {
+            "question": "39 + 88",
+            "answer": 127
+        },
+        {
+            "question": "14 + 22",
+            "answer": 36
+        },
+        {
+            "question": "32 + 79",
+            "answer": 111
+        },
+        {
+            "question": "42 + 19",
+            "answer": 61
+        },
+        {
+            "question": "90 + 14",
+            "answer": 104
+        },
+        {
+            "question": "86 + 40",
+            "answer": 126
+        },
+        {
+            "question": "63 + 70",
+            "answer": 133
+        },
+        {
+            "question": "29 + 20",
+            "answer": 49
+        },
+        {
+            "question": "80 + 40",
+            "answer": 120
+        },
+        {
+            "question": "69 + 100",
+            "answer": 169
+        },
+        {
+            "question": "20 + 89",
+            "answer": 109
+        },
+        {
+            "question": "39 + 44",
+            "answer": 83
+        },
+        {
+            "question": "42 + 34",
+            "answer": 76
+        },
+        {
+            "question": "62 + 63",
+            "answer": 125
+        },
+        {
+            "question": "94 + 11",
+            "answer": 105
+        },
+        {
+            "question": "84 + 15",
+            "answer": 99
+        },
+        {
+            "question": "49 + 85",
+            "answer": 134
+        },
+        {
+            "question": "50 + 2",
+            "answer": 52
+        },
+        {
+            "question": "36 + 32",
+            "answer": 68
+        },
+        {
+            "question": "80 + 74",
+            "answer": 154
+        },
+        {
+            "question": "100 + 67",
+            "answer": 167
+        },
+        {
+            "question": "38 + 69",
+            "answer": 107
+        },
+        {
+            "question": "19 + 72",
+            "answer": 91
+        },
+        {
+            "question": "53 + 72",
+            "answer": 125
+        },
+        {
+            "question": "44 + 37",
+            "answer": 81
+        },
+        {
+            "question": "59 + 72",
+            "answer": 131
+        },
+        {
+            "question": "33 + 72",
+            "answer": 105
+        },
+        {
+            "question": "36 + 22",
+            "answer": 58
+        },
+        {
+            "question": "31 + 93",
+            "answer": 124
+        },
+        {
+            "question": "2 + 34",
+            "answer": 36
+        },
+        {
+            "question": "19 + 3",
+            "answer": 22
+        },
+        {
+            "question": "80 + 54",
+            "answer": 134
+        },
+        {
+            "question": "30 + 49",
+            "answer": 79
+        },
+        {
+            "question": "97 + 60",
+            "answer": 157
+        },
+        {
+            "question": "80 + 43",
+            "answer": 123
+        },
+        {
+            "question": "42 + 37",
+            "answer": 79
+        },
+        {
+            "question": "51 + 85",
+            "answer": 136,
+            "test": {
+                "q": "What is the capital city of Germany?",
+                "a": "The capital city of Germany is Berlin."
+            }
+        },
+        {
+            "question": "23 + 84",
+            "answer": 107
+        },
+        {
+            "question": "13 + 9",
+            "answer": 22
+        },
+        {
+            "question": "36 + 60",
+            "answer": 96
+        },
+        {
+            "question": "60 + 3",
+            "answer": 63
+        },
+        {
+            "question": "31 + 16",
+            "answer": 47
+        },
+        {
+            "question": "23 + 35",
+            "answer": 58
+        },
+        {
+            "question": "54 + 4",
+            "answer": 58
+        },
+        {
+            "question": "48 + 45",
+            "answer": 93
+        },
+        {
+            "question": "27 + 34",
+            "answer": 61
+        },
+        {
+            "question": "92 + 54",
+            "answer": 146
+        },
+        {
+            "question": "19 + 25",
+            "answer": 44
+        },
+        {
+            "question": "32 + 58",
+            "answer": 90
+        },
+        {
+            "question": "70 + 25",
+            "answer": 95
+        },
+        {
+            "question": "4 + 38",
+            "answer": 42
+        },
+        {
+            "question": "83 + 44",
+            "answer": 127
+        },
+        {
+            "question": "2 + 7",
+            "answer": 9
+        },
+        {
+            "question": "42 + 87",
+            "answer": 129
+        },
+        {
+            "question": "48 + 3",
+            "answer": 51
+        },
+        {
+            "question": "58 + 49",
+            "answer": 107
+        },
+        {
+            "question": "42 + 2",
+            "answer": 44
+        },
+        {
+            "question": "48 + 8",
+            "answer": 56
+        },
+        {
+            "question": "85 + 64",
+            "answer": 149
+        },
+        {
+            "question": "34 + 32",
+            "answer": 66
+        },
+        {
+            "question": "87 + 21",
+            "answer": 108
+        },
+        {
+            "question": "76 + 56",
+            "answer": 132
+        },
+        {
+            "question": "61 + 62",
+            "answer": 123
+        },
+        {
+            "question": "23 + 7",
+            "answer": 30
+        },
+        {
+            "question": "17 + 68",
+            "answer": 85
+        },
+        {
+            "question": "13 + 24",
+            "answer": 37
+        },
+        {
+            "question": "63 + 84",
+            "answer": 147
+        },
+        {
+            "question": "84 + 93",
+            "answer": 177
+        },
+        {
+            "question": "8 + 93",
+            "answer": 101
+        },
+        {
+            "question": "11 + 73",
+            "answer": 84
+        },
+        {
+            "question": "73 + 76",
+            "answer": 149
+        },
+        {
+            "question": "97 + 54",
+            "answer": 151
+        },
+        {
+            "question": "47 + 87",
+            "answer": 134
+        },
+        {
+            "question": "36 + 30",
+            "answer": 66
+        },
+        {
+            "question": "9 + 5",
+            "answer": 14
+        },
+        {
+            "question": "6 + 81",
+            "answer": 87
+        },
+        {
+            "question": "60 + 94",
+            "answer": 154
+        },
+        {
+            "question": "20 + 75",
+            "answer": 95
+        },
+        {
+            "question": "53 + 57",
+            "answer": 110
+        },
+        {
+            "question": "73 + 93",
+            "answer": 166
+        },
+        {
+            "question": "91 + 1",
+            "answer": 92
+        },
+        {
+            "question": "78 + 34",
+            "answer": 112
+        },
+        {
+            "question": "69 + 68",
+            "answer": 137
+        },
+        {
+            "question": "21 + 40",
+            "answer": 61
+        },
+        {
+            "question": "45 + 16",
+            "answer": 61
+        },
+        {
+            "question": "74 + 1",
+            "answer": 75
+        },
+        {
+            "question": "25 + 37",
+            "answer": 62
+        },
+        {
+            "question": "19 + 15",
+            "answer": 34
+        },
+        {
+            "question": "28 + 58",
+            "answer": 86
+        },
+        {
+            "question": "64 + 8",
+            "answer": 72
+        },
+        {
+            "question": "45 + 27",
+            "answer": 72
+        },
+        {
+            "question": "57 + 47",
+            "answer": 104
+        },
+        {
+            "question": "11 + 59",
+            "answer": 70
+        },
+        {
+            "question": "56 + 25",
+            "answer": 81
+        },
+        {
+            "question": "33 + 24",
+            "answer": 57
+        },
+        {
+            "question": "32 + 63",
+            "answer": 95
+        },
+        {
+            "question": "81 + 45",
+            "answer": 126
+        },
+        {
+            "question": "4 + 15",
+            "answer": 19
+        },
+        {
+            "question": "38 + 92",
+            "answer": 130
+        },
+        {
+            "question": "52 + 54",
+            "answer": 106
+        },
+        {
+            "question": "1 + 2",
+            "answer": 3
+        },
+        {
+            "question": "59 + 100",
+            "answer": 159
+        },
+        {
+            "question": "66 + 17",
+            "answer": 83
+        },
+        {
+            "question": "53 + 84",
+            "answer": 137
+        },
+        {
+            "question": "84 + 27",
+            "answer": 111
+        },
+        {
+            "question": "98 + 11",
+            "answer": 109
+        },
+        {
+            "question": "38 + 59",
+            "answer": 97
+        },
+        {
+            "question": "41 + 47",
+            "answer": 88
+        },
+        {
+            "question": "81 + 69",
+            "answer": 150
+        },
+        {
+            "question": "69 + 50",
+            "answer": 119
+        },
+        {
+            "question": "5 + 83",
+            "answer": 88
+        },
+        {
+            "question": "16 + 57",
+            "answer": 73
+        },
+        {
+            "question": "29 + 73",
+            "answer": 102
+        },
+        {
+            "question": "68 + 70",
+            "answer": 138
+        },
+        {
+            "question": "85 + 86",
+            "answer": 171
+        },
+        {
+            "question": "46 + 2",
+            "answer": 48
+        },
+        {
+            "question": "73 + 1",
+            "answer": 74
+        },
+        {
+            "question": "85 + 13",
+            "answer": 98
+        },
+        {
+            "question": "93 + 25",
+            "answer": 118
+        },
+        {
+            "question": "98 + 15",
+            "answer": 113
+        },
+        {
+            "question": "37 + 78",
+            "answer": 115
+        },
+        {
+            "question": "40 + 44",
+            "answer": 84
+        },
+        {
+            "question": "40 + 46",
+            "answer": 86
+        },
+        {
+            "question": "73 + 26",
+            "answer": 99
+        },
+        {
+            "question": "58 + 46",
+            "answer": 104
+        },
+        {
+            "question": "79 + 65",
+            "answer": 144
+        },
+        {
+            "question": "84 + 68",
+            "answer": 152
+        },
+        {
+            "question": "22 + 30",
+            "answer": 52
+        },
+        {
+            "question": "94 + 80",
+            "answer": 174
+        },
+        {
+            "question": "25 + 78",
+            "answer": 103
+        },
+        {
+            "question": "48 + 52",
+            "answer": 100
+        },
+        {
+            "question": "64 + 49",
+            "answer": 113
+        },
+        {
+            "question": "76 + 6",
+            "answer": 82
+        },
+        {
+            "question": "67 + 80",
+            "answer": 147
+        },
+        {
+            "question": "32 + 38",
+            "answer": 70
+        },
+        {
+            "question": "77 + 12",
+            "answer": 89
+        },
+        {
+            "question": "63 + 55",
+            "answer": 118
+        },
+        {
+            "question": "1 + 44",
+            "answer": 45
+        },
+        {
+            "question": "15 + 36",
+            "answer": 51
+        },
+        {
+            "question": "10 + 10",
+            "answer": 20
+        },
+        {
+            "question": "71 + 83",
+            "answer": 154
+        },
+        {
+            "question": "70 + 57",
+            "answer": 127
+        },
+        {
+            "question": "56 + 36",
+            "answer": 92
+        },
+        {
+            "question": "16 + 27",
+            "answer": 43
+        },
+        {
+            "question": "7 + 4",
+            "answer": 11
+        },
+        {
+            "question": "33 + 24",
+            "answer": 57
+        },
+        {
+            "question": "26 + 98",
+            "answer": 124
+        },
+        {
+            "question": "73 + 34",
+            "answer": 107
+        },
+        {
+            "question": "89 + 16",
+            "answer": 105
+        },
+        {
+            "question": "29 + 89",
+            "answer": 118
+        },
+        {
+            "question": "76 + 2",
+            "answer": 78
+        },
+        {
+            "question": "53 + 4",
+            "answer": 57
+        },
+        {
+            "question": "24 + 82",
+            "answer": 106
+        },
+        {
+            "question": "31 + 98",
+            "answer": 129
+        },
+        {
+            "question": "25 + 55",
+            "answer": 80
+        },
+        {
+            "question": "45 + 70",
+            "answer": 115
+        },
+        {
+            "question": "35 + 16",
+            "answer": 51
+        },
+        {
+            "question": "44 + 27",
+            "answer": 71
+        },
+        {
+            "question": "96 + 65",
+            "answer": 161
+        },
+        {
+            "question": "17 + 32",
+            "answer": 49
+        },
+        {
+            "question": "34 + 55",
+            "answer": 89
+        },
+        {
+            "question": "36 + 33",
+            "answer": 69
+        },
+        {
+            "question": "98 + 31",
+            "answer": 129
+        },
+        {
+            "question": "83 + 41",
+            "answer": 124
+        },
+        {
+            "question": "87 + 84",
+            "answer": 171
+        },
+        {
+            "question": "9 + 59",
+            "answer": 68
+        },
+        {
+            "question": "29 + 2",
+            "answer": 31
+        },
+        {
+            "question": "8 + 48",
+            "answer": 56
+        },
+        {
+            "question": "67 + 45",
+            "answer": 112
+        },
+        {
+            "question": "59 + 83",
+            "answer": 142
+        },
+        {
+            "question": "15 + 99",
+            "answer": 114
+        },
+        {
+            "question": "38 + 57",
+            "answer": 95
+        },
+        {
+            "question": "52 + 57",
+            "answer": 109
+        },
+        {
+            "question": "29 + 49",
+            "answer": 78
+        },
+        {
+            "question": "7 + 74",
+            "answer": 81
+        },
+        {
+            "question": "62 + 23",
+            "answer": 85
+        },
+        {
+            "question": "93 + 90",
+            "answer": 183
+        },
+        {
+            "question": "22 + 81",
+            "answer": 103
+        },
+        {
+            "question": "78 + 58",
+            "answer": 136
+        },
+        {
+            "question": "28 + 93",
+            "answer": 121
+        },
+        {
+            "question": "52 + 80",
+            "answer": 132
+        },
+        {
+            "question": "9 + 62",
+            "answer": 71
+        },
+        {
+            "question": "54 + 89",
+            "answer": 143
+        },
+        {
+            "question": "100 + 82",
+            "answer": 182
+        },
+        {
+            "question": "68 + 11",
+            "answer": 79
+        },
+        {
+            "question": "16 + 98",
+            "answer": 114
+        },
+        {
+            "question": "30 + 100",
+            "answer": 130
+        },
+        {
+            "question": "96 + 87",
+            "answer": 183
+        },
+        {
+            "question": "80 + 8",
+            "answer": 88
+        },
+        {
+            "question": "84 + 62",
+            "answer": 146
+        },
+        {
+            "question": "93 + 23",
+            "answer": 116
+        },
+        {
+            "question": "22 + 31",
+            "answer": 53
+        },
+        {
+            "question": "88 + 50",
+            "answer": 138
+        },
+        {
+            "question": "27 + 59",
+            "answer": 86
+        },
+        {
+            "question": "70 + 20",
+            "answer": 90
+        },
+        {
+            "question": "2 + 49",
+            "answer": 51
+        },
+        {
+            "question": "31 + 2",
+            "answer": 33
+        },
+        {
+            "question": "82 + 12",
+            "answer": 94
+        },
+        {
+            "question": "81 + 71",
+            "answer": 152
+        },
+        {
+            "question": "60 + 81",
+            "answer": 141
+        },
+        {
+            "question": "94 + 38",
+            "answer": 132
+        },
+        {
+            "question": "46 + 81",
+            "answer": 127
+        },
+        {
+            "question": "21 + 24",
+            "answer": 45
+        },
+        {
+            "question": "98 + 72",
+            "answer": 170
+        },
+        {
+            "question": "17 + 1",
+            "answer": 18
+        },
+        {
+            "question": "57 + 68",
+            "answer": 125
+        },
+        {
+            "question": "12 + 99",
+            "answer": 111
+        },
+        {
+            "question": "82 + 53",
+            "answer": 135
+        },
+        {
+            "question": "38 + 20",
+            "answer": 58
+        },
+        {
+            "question": "35 + 66",
+            "answer": 101
+        },
+        {
+            "question": "51 + 75",
+            "answer": 126
+        },
+        {
+            "question": "10 + 74",
+            "answer": 84
+        },
+        {
+            "question": "70 + 24",
+            "answer": 94
+        },
+        {
+            "question": "21 + 43",
+            "answer": 64
+        },
+        {
+            "question": "39 + 1",
+            "answer": 40
+        },
+        {
+            "question": "22 + 2",
+            "answer": 24
+        },
+        {
+            "question": "80 + 78",
+            "answer": 158
+        },
+        {
+            "question": "88 + 53",
+            "answer": 141
+        },
+        {
+            "question": "10 + 83",
+            "answer": 93
+        },
+        {
+            "question": "54 + 79",
+            "answer": 133
+        },
+        {
+            "question": "71 + 47",
+            "answer": 118
+        },
+        {
+            "question": "59 + 12",
+            "answer": 71
+        },
+        {
+            "question": "87 + 38",
+            "answer": 125
+        },
+        {
+            "question": "92 + 55",
+            "answer": 147
+        },
+        {
+            "question": "70 + 13",
+            "answer": 83
+        },
+        {
+            "question": "47 + 91",
+            "answer": 138
+        },
+        {
+            "question": "37 + 6",
+            "answer": 43
+        },
+        {
+            "question": "36 + 93",
+            "answer": 129
+        },
+        {
+            "question": "99 + 70",
+            "answer": 169
+        },
+        {
+            "question": "50 + 45",
+            "answer": 95
+        },
+        {
+            "question": "96 + 93",
+            "answer": 189
+        },
+        {
+            "question": "99 + 73",
+            "answer": 172
+        },
+        {
+            "question": "28 + 61",
+            "answer": 89
+        },
+        {
+            "question": "55 + 44",
+            "answer": 99
+        },
+        {
+            "question": "83 + 11",
+            "answer": 94
+        },
+        {
+            "question": "88 + 87",
+            "answer": 175
+        },
+        {
+            "question": "22 + 35",
+            "answer": 57
+        },
+        {
+            "question": "32 + 13",
+            "answer": 45
+        },
+        {
+            "question": "94 + 95",
+            "answer": 189
+        },
+        {
+            "question": "17 + 11",
+            "answer": 28
+        },
+        {
+            "question": "63 + 21",
+            "answer": 84
+        },
+        {
+            "question": "4 + 85",
+            "answer": 89
+        },
+        {
+            "question": "51 + 93",
+            "answer": 144
+        },
+        {
+            "question": "62 + 36",
+            "answer": 98
+        },
+        {
+            "question": "97 + 79",
+            "answer": 176
+        },
+        {
+            "question": "55 + 53",
+            "answer": 108
+        },
+        {
+            "question": "36 + 11",
+            "answer": 47
+        },
+        {
+            "question": "9 + 5",
+            "answer": 14
+        },
+        {
+            "question": "27 + 41",
+            "answer": 68
+        },
+        {
+            "question": "49 + 57",
+            "answer": 106
+        },
+        {
+            "question": "27 + 75",
+            "answer": 102
+        },
+        {
+            "question": "75 + 75",
+            "answer": 150
+        },
+        {
+            "question": "82 + 74",
+            "answer": 156
+        },
+        {
+            "question": "23 + 59",
+            "answer": 82
+        },
+        {
+            "question": "68 + 51",
+            "answer": 119
+        },
+        {
+            "question": "87 + 19",
+            "answer": 106
+        },
+        {
+            "question": "33 + 86",
+            "answer": 119
+        },
+        {
+            "question": "4 + 94",
+            "answer": 98
+        },
+        {
+            "question": "7 + 33",
+            "answer": 40
+        },
+        {
+            "question": "60 + 69",
+            "answer": 129
+        },
+        {
+            "question": "95 + 90",
+            "answer": 185
+        },
+        {
+            "question": "88 + 92",
+            "answer": 180
+        },
+        {
+            "question": "77 + 76",
+            "answer": 153
+        },
+        {
+            "question": "36 + 43",
+            "answer": 79
+        },
+        {
+            "question": "99 + 77",
+            "answer": 176
+        },
+        {
+            "question": "35 + 100",
+            "answer": 135
+        },
+        {
+            "question": "76 + 65",
+            "answer": 141
+        },
+        {
+            "question": "91 + 32",
+            "answer": 123
+        },
+        {
+            "question": "48 + 11",
+            "answer": 59
+        },
+        {
+            "question": "86 + 95",
+            "answer": 181
+        },
+        {
+            "question": "11 + 76",
+            "answer": 87
+        },
+        {
+            "question": "50 + 39",
+            "answer": 89
+        },
+        {
+            "question": "76 + 49",
+            "answer": 125
+        },
+        {
+            "question": "10 + 59",
+            "answer": 69
+        },
+        {
+            "question": "29 + 30",
+            "answer": 59
+        },
+        {
+            "question": "58 + 56",
+            "answer": 114
+        },
+        {
+            "question": "13 + 68",
+            "answer": 81
+        },
+        {
+            "question": "63 + 84",
+            "answer": 147
+        },
+        {
+            "question": "87 + 48",
+            "answer": 135
+        },
+        {
+            "question": "81 + 31",
+            "answer": 112
+        },
+        {
+            "question": "72 + 38",
+            "answer": 110
+        },
+        {
+            "question": "90 + 9",
+            "answer": 99
+        },
+        {
+            "question": "70 + 96",
+            "answer": 166
+        },
+        {
+            "question": "20 + 81",
+            "answer": 101
+        },
+        {
+            "question": "55 + 18",
+            "answer": 73
+        },
+        {
+            "question": "69 + 85",
+            "answer": 154
+        },
+        {
+            "question": "25 + 97",
+            "answer": 122
+        },
+        {
+            "question": "99 + 74",
+            "answer": 173
+        },
+        {
+            "question": "26 + 97",
+            "answer": 123
+        },
+        {
+            "question": "26 + 66",
+            "answer": 92
+        },
+        {
+            "question": "99 + 45",
+            "answer": 144
+        },
+        {
+            "question": "9 + 76",
+            "answer": 85
+        },
+        {
+            "question": "81 + 81",
+            "answer": 162
+        },
+        {
+            "question": "46 + 78",
+            "answer": 124
+        },
+        {
+            "question": "66 + 34",
+            "answer": 100
+        },
+        {
+            "question": "95 + 14",
+            "answer": 109
+        },
+        {
+            "question": "36 + 33",
+            "answer": 69
+        },
+        {
+            "question": "22 + 47",
+            "answer": 69
+        },
+        {
+            "question": "17 + 62",
+            "answer": 79
+        },
+        {
+            "question": "51 + 51",
+            "answer": 102
+        },
+        {
+            "question": "22 + 33",
+            "answer": 55
+        },
+        {
+            "question": "89 + 56",
+            "answer": 145
+        },
+        {
+            "question": "74 + 34",
+            "answer": 108
+        },
+        {
+            "question": "43 + 73",
+            "answer": 116
+        },
+        {
+            "question": "69 + 16",
+            "answer": 85
+        },
+        {
+            "question": "90 + 17",
+            "answer": 107
+        },
+        {
+            "question": "38 + 51",
+            "answer": 89
+        },
+        {
+            "question": "35 + 59",
+            "answer": 94
+        },
+        {
+            "question": "77 + 78",
+            "answer": 155
+        },
+        {
+            "question": "8 + 23",
+            "answer": 31
+        },
+        {
+            "question": "73 + 43",
+            "answer": 116
+        },
+        {
+            "question": "1 + 35",
+            "answer": 36
+        },
+        {
+            "question": "48 + 8",
+            "answer": 56
+        },
+        {
+            "question": "5 + 17",
+            "answer": 22
+        },
+        {
+            "question": "19 + 64",
+            "answer": 83
+        },
+        {
+            "question": "97 + 69",
+            "answer": 166
+        },
+        {
+            "question": "97 + 87",
+            "answer": 184
+        },
+        {
+            "question": "8 + 34",
+            "answer": 42
+        },
+        {
+            "question": "86 + 13",
+            "answer": 99
+        },
+        {
+            "question": "96 + 59",
+            "answer": 155
+        },
+        {
+            "question": "5 + 27",
+            "answer": 32
+        },
+        {
+            "question": "71 + 74",
+            "answer": 145
+        },
+        {
+            "question": "21 + 70",
+            "answer": 91
+        },
+        {
+            "question": "87 + 30",
+            "answer": 117
+        },
+        {
+            "question": "85 + 55",
+            "answer": 140
+        },
+        {
+            "question": "61 + 55",
+            "answer": 116
+        },
+        {
+            "question": "3 + 69",
+            "answer": 72
+        },
+        {
+            "question": "30 + 87",
+            "answer": 117
+        },
+        {
+            "question": "88 + 84",
+            "answer": 172
+        },
+        {
+            "question": "78 + 70",
+            "answer": 148
+        },
+        {
+            "question": "85 + 54",
+            "answer": 139
+        },
+        {
+            "question": "85 + 81",
+            "answer": 166
+        },
+        {
+            "question": "6 + 64",
+            "answer": 70
+        },
+        {
+            "question": "62 + 2",
+            "answer": 64
+        },
+        {
+            "question": "51 + 43",
+            "answer": 94
+        },
+        {
+            "question": "100 + 77",
+            "answer": 177
+        },
+        {
+            "question": "9 + 17",
+            "answer": 26
+        },
+        {
+            "question": "95 + 32",
+            "answer": 127
+        },
+        {
+            "question": "39 + 40",
+            "answer": 79
+        },
+        {
+            "question": "80 + 83",
+            "answer": 163
+        },
+        {
+            "question": "68 + 35",
+            "answer": 103
+        },
+        {
+            "question": "44 + 6",
+            "answer": 50
+        },
+        {
+            "question": "3 + 23",
+            "answer": 26
+        },
+        {
+            "question": "22 + 35",
+            "answer": 57
+        },
+        {
+            "question": "10 + 84",
+            "answer": 94
+        },
+        {
+            "question": "14 + 58",
+            "answer": 72
+        },
+        {
+            "question": "78 + 10",
+            "answer": 88
+        },
+        {
+            "question": "99 + 91",
+            "answer": 190
+        },
+        {
+            "question": "40 + 5",
+            "answer": 45
+        },
+        {
+            "question": "92 + 99",
+            "answer": 191
+        },
+        {
+            "question": "11 + 46",
+            "answer": 57
+        },
+        {
+            "question": "57 + 12",
+            "answer": 69
+        },
+        {
+            "question": "52 + 16",
+            "answer": 68
+        },
+        {
+            "question": "81 + 92",
+            "answer": 173
+        },
+        {
+            "question": "38 + 32",
+            "answer": 70
+        },
+        {
+            "question": "90 + 2",
+            "answer": 92
+        },
+        {
+            "question": "73 + 44",
+            "answer": 117
+        },
+        {
+            "question": "6 + 63",
+            "answer": 69
+        },
+        {
+            "question": "86 + 58",
+            "answer": 144
+        },
+        {
+            "question": "34 + 63",
+            "answer": 97
+        },
+        {
+            "question": "7 + 96",
+            "answer": 103
+        },
+        {
+            "question": "84 + 59",
+            "answer": 143
+        },
+        {
+            "question": "94 + 67",
+            "answer": 161
+        },
+        {
+            "question": "52 + 27",
+            "answer": 79
+        },
+        {
+            "question": "62 + 52",
+            "answer": 114
+        },
+        {
+            "question": "39 + 80",
+            "answer": 119
+        },
+        {
+            "question": "91 + 64",
+            "answer": 155
+        },
+        {
+            "question": "97 + 80",
+            "answer": 177
+        },
+        {
+            "question": "77 + 24",
+            "answer": 101
+        },
+        {
+            "question": "49 + 19",
+            "answer": 68
+        },
+        {
+            "question": "15 + 37",
+            "answer": 52
+        },
+        {
+            "question": "25 + 78",
+            "answer": 103
+        },
+        {
+            "question": "38 + 3",
+            "answer": 41,
+            "test": {
+                "q": "name of the 2020 USA president",
+                "a": "Donald Trump was the President at the start of 2020 and served until January 20, 2021, when Joe Biden was inaugurated as President."
+            }
+        },
+        {
+            "question": "4 + 20",
+            "answer": 24
+        },
+        {
+            "question": "26 + 11",
+            "answer": 37
+        },
+        {
+            "question": "79 + 77",
+            "answer": 156
+        },
+        {
+            "question": "56 + 35",
+            "answer": 91
+        },
+        {
+            "question": "10 + 45",
+            "answer": 55
+        },
+        {
+            "question": "39 + 53",
+            "answer": 92
+        },
+        {
+            "question": "61 + 39",
+            "answer": 100
+        },
+        {
+            "question": "85 + 71",
+            "answer": 156
+        },
+        {
+            "question": "67 + 80",
+            "answer": 147
+        },
+        {
+            "question": "44 + 9",
+            "answer": 53
+        },
+        {
+            "question": "60 + 71",
+            "answer": 131
+        },
+        {
+            "question": "88 + 7",
+            "answer": 95
+        },
+        {
+            "question": "65 + 87",
+            "answer": 152
+        },
+        {
+            "question": "23 + 68",
+            "answer": 91
+        },
+        {
+            "question": "9 + 55",
+            "answer": 64
+        },
+        {
+            "question": "56 + 13",
+            "answer": 69
+        },
+        {
+            "question": "14 + 92",
+            "answer": 106
+        },
+        {
+            "question": "60 + 50",
+            "answer": 110
+        },
+        {
+            "question": "51 + 74",
+            "answer": 125
+        },
+        {
+            "question": "88 + 82",
+            "answer": 170
+        },
+        {
+            "question": "66 + 99",
+            "answer": 165
+        },
+        {
+            "question": "57 + 84",
+            "answer": 141
+        },
+        {
+            "question": "56 + 94",
+            "answer": 150
+        },
+        {
+            "question": "60 + 49",
+            "answer": 109
+        },
+        {
+            "question": "84 + 28",
+            "answer": 112
+        },
+        {
+            "question": "39 + 93",
+            "answer": 132
+        },
+        {
+            "question": "14 + 98",
+            "answer": 112
+        },
+        {
+            "question": "64 + 65",
+            "answer": 129
+        },
+        {
+            "question": "24 + 74",
+            "answer": 98
+        },
+        {
+            "question": "51 + 11",
+            "answer": 62
+        },
+        {
+            "question": "41 + 22",
+            "answer": 63
+        },
+        {
+            "question": "80 + 70",
+            "answer": 150
+        },
+        {
+            "question": "73 + 57",
+            "answer": 130
+        },
+        {
+            "question": "42 + 37",
+            "answer": 79
+        },
+        {
+            "question": "56 + 95",
+            "answer": 151
+        },
+        {
+            "question": "42 + 82",
+            "answer": 124
+        },
+        {
+            "question": "21 + 46",
+            "answer": 67
+        },
+        {
+            "question": "79 + 51",
+            "answer": 130
+        },
+        {
+            "question": "37 + 55",
+            "answer": 92
+        },
+        {
+            "question": "3 + 38",
+            "answer": 41
+        },
+        {
+            "question": "8 + 25",
+            "answer": 33
+        },
+        {
+            "question": "58 + 87",
+            "answer": 145
+        },
+        {
+            "question": "93 + 71",
+            "answer": 164
+        },
+        {
+            "question": "54 + 94",
+            "answer": 148
+        },
+        {
+            "question": "60 + 27",
+            "answer": 87
+        },
+        {
+            "question": "53 + 30",
+            "answer": 83
+        },
+        {
+            "question": "32 + 88",
+            "answer": 120
+        },
+        {
+            "question": "78 + 48",
+            "answer": 126
+        },
+        {
+            "question": "9 + 31",
+            "answer": 40
+        },
+        {
+            "question": "22 + 42",
+            "answer": 64
+        },
+        {
+            "question": "16 + 34",
+            "answer": 50
+        },
+        {
+            "question": "87 + 76",
+            "answer": 163
+        },
+        {
+            "question": "67 + 53",
+            "answer": 120
+        },
+        {
+            "question": "26 + 50",
+            "answer": 76
+        },
+        {
+            "question": "20 + 46",
+            "answer": 66
+        },
+        {
+            "question": "24 + 72",
+            "answer": 96
+        },
+        {
+            "question": "76 + 74",
+            "answer": 150
+        },
+        {
+            "question": "19 + 49",
+            "answer": 68
+        },
+        {
+            "question": "40 + 93",
+            "answer": 133
+        },
+        {
+            "question": "64 + 60",
+            "answer": 124
+        },
+        {
+            "question": "54 + 17",
+            "answer": 71
+        },
+        {
+            "question": "76 + 26",
+            "answer": 102
+        },
+        {
+            "question": "1 + 56",
+            "answer": 57
+        },
+        {
+            "question": "2 + 86",
+            "answer": 88
+        },
+        {
+            "question": "93 + 86",
+            "answer": 179
+        },
+        {
+            "question": "78 + 40",
+            "answer": 118
+        },
+        {
+            "question": "87 + 9",
+            "answer": 96
+        },
+        {
+            "question": "15 + 44",
+            "answer": 59
+        },
+        {
+            "question": "89 + 99",
+            "answer": 188
+        },
+        {
+            "question": "44 + 46",
+            "answer": 90
+        },
+        {
+            "question": "13 + 20",
+            "answer": 33
+        },
+        {
+            "question": "93 + 79",
+            "answer": 172
+        },
+        {
+            "question": "90 + 55",
+            "answer": 145
+        },
+        {
+            "question": "94 + 79",
+            "answer": 173
+        },
+        {
+            "question": "83 + 8",
+            "answer": 91
+        },
+        {
+            "question": "80 + 66",
+            "answer": 146
+        },
+        {
+            "question": "57 + 74",
+            "answer": 131
+        },
+        {
+            "question": "97 + 100",
+            "answer": 197
+        },
+        {
+            "question": "76 + 39",
+            "answer": 115
+        },
+        {
+            "question": "3 + 71",
+            "answer": 74
+        },
+        {
+            "question": "43 + 72",
+            "answer": 115
+        },
+        {
+            "question": "75 + 59",
+            "answer": 134
+        },
+        {
+            "question": "65 + 43",
+            "answer": 108
+        },
+        {
+            "question": "29 + 17",
+            "answer": 46
+        },
+        {
+            "question": "56 + 47",
+            "answer": 103
+        },
+        {
+            "question": "94 + 41",
+            "answer": 135
+        },
+        {
+            "question": "32 + 11",
+            "answer": 43
+        },
+        {
+            "question": "29 + 92",
+            "answer": 121
+        },
+        {
+            "question": "20 + 98",
+            "answer": 118
+        },
+        {
+            "question": "43 + 34",
+            "answer": 77
+        },
+        {
+            "question": "83 + 7",
+            "answer": 90
+        },
+        {
+            "question": "49 + 38",
+            "answer": 87
+        },
+        {
+            "question": "12 + 1",
+            "answer": 13
+        },
+        {
+            "question": "65 + 10",
+            "answer": 75
+        },
+        {
+            "question": "58 + 93",
+            "answer": 151
+        },
+        {
+            "question": "56 + 76",
+            "answer": 132
+        },
+        {
+            "question": "39 + 88",
+            "answer": 127
+        },
+        {
+            "question": "32 + 50",
+            "answer": 82
+        },
+        {
+            "question": "3 + 23",
+            "answer": 26
+        },
+        {
+            "question": "21 + 16",
+            "answer": 37
+        },
+        {
+            "question": "98 + 98",
+            "answer": 196
+        },
+        {
+            "question": "3 + 100",
+            "answer": 103
+        },
+        {
+            "question": "79 + 90",
+            "answer": 169
+        },
+        {
+            "question": "32 + 97",
+            "answer": 129
+        },
+        {
+            "question": "98 + 11",
+            "answer": 109
+        },
+        {
+            "question": "46 + 88",
+            "answer": 134
+        },
+        {
+            "question": "54 + 53",
+            "answer": 107
+        },
+        {
+            "question": "24 + 61",
+            "answer": 85
+        },
+        {
+            "question": "39 + 82",
+            "answer": 121
+        },
+        {
+            "question": "69 + 48",
+            "answer": 117
+        },
+        {
+            "question": "17 + 7",
+            "answer": 24
+        },
+        {
+            "question": "36 + 18",
+            "answer": 54
+        },
+        {
+            "question": "16 + 32",
+            "answer": 48
+        },
+        {
+            "question": "26 + 65",
+            "answer": 91
+        },
+        {
+            "question": "12 + 24",
+            "answer": 36
+        },
+        {
+            "question": "9 + 89",
+            "answer": 98
+        },
+        {
+            "question": "53 + 6",
+            "answer": 59
+        },
+        {
+            "question": "22 + 73",
+            "answer": 95
+        },
+        {
+            "question": "9 + 7",
+            "answer": 16
+        },
+        {
+            "question": "47 + 1",
+            "answer": 48
+        },
+        {
+            "question": "33 + 99",
+            "answer": 132
+        },
+        {
+            "question": "45 + 59",
+            "answer": 104
+        },
+        {
+            "question": "6 + 49",
+            "answer": 55
+        },
+        {
+            "question": "37 + 93",
+            "answer": 130
+        },
+        {
+            "question": "65 + 58",
+            "answer": 123
+        },
+        {
+            "question": "59 + 59",
+            "answer": 118
+        },
+        {
+            "question": "46 + 18",
+            "answer": 64
+        },
+        {
+            "question": "19 + 12",
+            "answer": 31
+        },
+        {
+            "question": "84 + 79",
+            "answer": 163
+        },
+        {
+            "question": "43 + 66",
+            "answer": 109
+        },
+        {
+            "question": "76 + 94",
+            "answer": 170
+        },
+        {
+            "question": "37 + 57",
+            "answer": 94
+        },
+        {
+            "question": "36 + 40",
+            "answer": 76
+        },
+        {
+            "question": "23 + 97",
+            "answer": 120
+        },
+        {
+            "question": "56 + 68",
+            "answer": 124
+        },
+        {
+            "question": "95 + 21",
+            "answer": 116
+        },
+        {
+            "question": "85 + 60",
+            "answer": 145
+        },
+        {
+            "question": "71 + 70",
+            "answer": 141
+        },
+        {
+            "question": "78 + 47",
+            "answer": 125
+        },
+        {
+            "question": "73 + 66",
+            "answer": 139
+        },
+        {
+            "question": "99 + 39",
+            "answer": 138
+        },
+        {
+            "question": "33 + 9",
+            "answer": 42
+        },
+        {
+            "question": "57 + 99",
+            "answer": 156
+        },
+        {
+            "question": "48 + 9",
+            "answer": 57
+        },
+        {
+            "question": "94 + 77",
+            "answer": 171
+        },
+        {
+            "question": "43 + 24",
+            "answer": 67
+        },
+        {
+            "question": "72 + 36",
+            "answer": 108
+        },
+        {
+            "question": "61 + 74",
+            "answer": 135
+        },
+        {
+            "question": "7 + 100",
+            "answer": 107
+        },
+        {
+            "question": "89 + 67",
+            "answer": 156
+        },
+        {
+            "question": "70 + 21",
+            "answer": 91
+        },
+        {
+            "question": "83 + 66",
+            "answer": 149
+        },
+        {
+            "question": "93 + 18",
+            "answer": 111
+        },
+        {
+            "question": "79 + 89",
+            "answer": 168
+        },
+        {
+            "question": "9 + 29",
+            "answer": 38
+        },
+        {
+            "question": "43 + 86",
+            "answer": 129
+        },
+        {
+            "question": "76 + 77",
+            "answer": 153
+        },
+        {
+            "question": "17 + 49",
+            "answer": 66
+        },
+        {
+            "question": "24 + 90",
+            "answer": 114
+        },
+        {
+            "question": "24 + 35",
+            "answer": 59
+        },
+        {
+            "question": "21 + 60",
+            "answer": 81
+        },
+        {
+            "question": "52 + 8",
+            "answer": 60
+        },
+        {
+            "question": "24 + 75",
+            "answer": 99
+        },
+        {
+            "question": "94 + 77",
+            "answer": 171
+        },
+        {
+            "question": "81 + 5",
+            "answer": 86
+        },
+        {
+            "question": "15 + 90",
+            "answer": 105
+        },
+        {
+            "question": "75 + 78",
+            "answer": 153
+        },
+        {
+            "question": "76 + 68",
+            "answer": 144
+        },
+        {
+            "question": "81 + 6",
+            "answer": 87
+        },
+        {
+            "question": "81 + 29",
+            "answer": 110
+        },
+        {
+            "question": "12 + 98",
+            "answer": 110
+        },
+        {
+            "question": "49 + 80",
+            "answer": 129
+        },
+        {
+            "question": "99 + 89",
+            "answer": 188
+        },
+        {
+            "question": "38 + 55",
+            "answer": 93
+        },
+        {
+            "question": "93 + 80",
+            "answer": 173
+        },
+        {
+            "question": "100 + 33",
+            "answer": 133
+        },
+        {
+            "question": "98 + 37",
+            "answer": 135
+        },
+        {
+            "question": "56 + 75",
+            "answer": 131
+        },
+        {
+            "question": "51 + 87",
+            "answer": 138
+        },
+        {
+            "question": "74 + 60",
+            "answer": 134
+        },
+        {
+            "question": "4 + 3",
+            "answer": 7
+        },
+        {
+            "question": "11 + 79",
+            "answer": 90
+        },
+        {
+            "question": "19 + 69",
+            "answer": 88
+        },
+        {
+            "question": "78 + 76",
+            "answer": 154
+        },
+        {
+            "question": "15 + 76",
+            "answer": 91
+        },
+        {
+            "question": "43 + 10",
+            "answer": 53
+        },
+        {
+            "question": "26 + 47",
+            "answer": 73
+        },
+        {
+            "question": "74 + 58",
+            "answer": 132
+        },
+        {
+            "question": "80 + 57",
+            "answer": 137
+        },
+        {
+            "question": "6 + 66",
+            "answer": 72
+        },
+        {
+            "question": "39 + 36",
+            "answer": 75
+        },
+        {
+            "question": "81 + 88",
+            "answer": 169
+        },
+        {
+            "question": "51 + 1",
+            "answer": 52
+        },
+        {
+            "question": "55 + 58",
+            "answer": 113
+        },
+        {
+            "question": "70 + 18",
+            "answer": 88
+        },
+        {
+            "question": "30 + 45",
+            "answer": 75
+        },
+        {
+            "question": "91 + 50",
+            "answer": 141
+        },
+        {
+            "question": "3 + 98",
+            "answer": 101
+        },
+        {
+            "question": "71 + 57",
+            "answer": 128
+        },
+        {
+            "question": "14 + 75",
+            "answer": 89
+        },
+        {
+            "question": "100 + 97",
+            "answer": 197
+        },
+        {
+            "question": "14 + 55",
+            "answer": 69
+        },
+        {
+            "question": "51 + 22",
+            "answer": 73
+        },
+        {
+            "question": "19 + 20",
+            "answer": 39
+        },
+        {
+            "question": "93 + 4",
+            "answer": 97
+        },
+        {
+            "question": "10 + 2",
+            "answer": 12
+        },
+        {
+            "question": "34 + 54",
+            "answer": 88
+        },
+        {
+            "question": "98 + 14",
+            "answer": 112
+        },
+        {
+            "question": "63 + 49",
+            "answer": 112
+        },
+        {
+            "question": "90 + 89",
+            "answer": 179
+        },
+        {
+            "question": "20 + 72",
+            "answer": 92
+        },
+        {
+            "question": "40 + 2",
+            "answer": 42
+        },
+        {
+            "question": "100 + 46",
+            "answer": 146
+        },
+        {
+            "question": "79 + 81",
+            "answer": 160
+        },
+        {
+            "question": "87 + 5",
+            "answer": 92
+        },
+        {
+            "question": "10 + 97",
+            "answer": 107
+        },
+        {
+            "question": "9 + 66",
+            "answer": 75
+        },
+        {
+            "question": "54 + 20",
+            "answer": 74
+        },
+        {
+            "question": "21 + 83",
+            "answer": 104
+        },
+        {
+            "question": "84 + 94",
+            "answer": 178
+        },
+        {
+            "question": "26 + 82",
+            "answer": 108
+        },
+        {
+            "question": "99 + 13",
+            "answer": 112
+        },
+        {
+            "question": "84 + 6",
+            "answer": 90
+        },
+        {
+            "question": "44 + 21",
+            "answer": 65
+        },
+        {
+            "question": "92 + 58",
+            "answer": 150
+        },
+        {
+            "question": "61 + 49",
+            "answer": 110
+        },
+        {
+            "question": "61 + 95",
+            "answer": 156
+        },
+        {
+            "question": "93 + 12",
+            "answer": 105
+        },
+        {
+            "question": "89 + 67",
+            "answer": 156
+        },
+        {
+            "question": "27 + 26",
+            "answer": 53
+        },
+        {
+            "question": "39 + 19",
+            "answer": 58
+        },
+        {
+            "question": "21 + 75",
+            "answer": 96
+        },
+        {
+            "question": "78 + 16",
+            "answer": 94
+        },
+        {
+            "question": "95 + 78",
+            "answer": 173
+        },
+        {
+            "question": "85 + 8",
+            "answer": 93
+        },
+        {
+            "question": "55 + 86",
+            "answer": 141
+        },
+        {
+            "question": "64 + 3",
+            "answer": 67
+        },
+        {
+            "question": "16 + 48",
+            "answer": 64
+        },
+        {
+            "question": "28 + 60",
+            "answer": 88
+        },
+        {
+            "question": "68 + 77",
+            "answer": 145
+        },
+        {
+            "question": "22 + 12",
+            "answer": 34
+        },
+        {
+            "question": "72 + 78",
+            "answer": 150
+        },
+        {
+            "question": "83 + 85",
+            "answer": 168
+        },
+        {
+            "question": "5 + 66",
+            "answer": 71
+        },
+        {
+            "question": "80 + 63",
+            "answer": 143
+        },
+        {
+            "question": "46 + 57",
+            "answer": 103
+        },
+        {
+            "question": "15 + 18",
+            "answer": 33
+        },
+        {
+            "question": "48 + 41",
+            "answer": 89
+        },
+        {
+            "question": "62 + 53",
+            "answer": 115
+        },
+        {
+            "question": "95 + 77",
+            "answer": 172
+        },
+        {
+            "question": "29 + 83",
+            "answer": 112
+        },
+        {
+            "question": "67 + 46",
+            "answer": 113
+        },
+        {
+            "question": "62 + 39",
+            "answer": 101
+        },
+        {
+            "question": "28 + 86",
+            "answer": 114
+        },
+        {
+            "question": "37 + 16",
+            "answer": 53
+        },
+        {
+            "question": "54 + 36",
+            "answer": 90
+        },
+        {
+            "question": "82 + 32",
+            "answer": 114
+        },
+        {
+            "question": "45 + 4",
+            "answer": 49
+        },
+        {
+            "question": "87 + 65",
+            "answer": 152
+        },
+        {
+            "question": "53 + 45",
+            "answer": 98
+        },
+        {
+            "question": "4 + 45",
+            "answer": 49
+        },
+        {
+            "question": "30 + 27",
+            "answer": 57
+        },
+        {
+            "question": "31 + 19",
+            "answer": 50
+        },
+        {
+            "question": "94 + 40",
+            "answer": 134
+        },
+        {
+            "question": "72 + 97",
+            "answer": 169
+        },
+        {
+            "question": "49 + 41",
+            "answer": 90
+        },
+        {
+            "question": "45 + 14",
+            "answer": 59
+        },
+        {
+            "question": "1 + 69",
+            "answer": 70
+        },
+        {
+            "question": "93 + 30",
+            "answer": 123
+        },
+        {
+            "question": "3 + 79",
+            "answer": 82
+        },
+        {
+            "question": "38 + 22",
+            "answer": 60
+        },
+        {
+            "question": "90 + 66",
+            "answer": 156
+        },
+        {
+            "question": "92 + 69",
+            "answer": 161
+        },
+        {
+            "question": "6 + 48",
+            "answer": 54
+        },
+        {
+            "question": "48 + 54",
+            "answer": 102
+        },
+        {
+            "question": "30 + 93",
+            "answer": 123
+        },
+        {
+            "question": "76 + 99",
+            "answer": 175
+        },
+        {
+            "question": "46 + 38",
+            "answer": 84
+        },
+        {
+            "question": "88 + 58",
+            "answer": 146
+        },
+        {
+            "question": "74 + 43",
+            "answer": 117
+        },
+        {
+            "question": "41 + 67",
+            "answer": 108
+        },
+        {
+            "question": "1 + 2",
+            "answer": 3
+        },
+        {
+            "question": "90 + 63",
+            "answer": 153
+        },
+        {
+            "question": "37 + 8",
+            "answer": 45
+        },
+        {
+            "question": "52 + 91",
+            "answer": 143
+        },
+        {
+            "question": "84 + 86",
+            "answer": 170
+        },
+        {
+            "question": "33 + 49",
+            "answer": 82
+        },
+        {
+            "question": "40 + 59",
+            "answer": 99
+        },
+        {
+            "question": "56 + 55",
+            "answer": 111
+        },
+        {
+            "question": "47 + 10",
+            "answer": 57
+        },
+        {
+            "question": "48 + 41",
+            "answer": 89
+        },
+        {
+            "question": "27 + 53",
+            "answer": 80
+        },
+        {
+            "question": "57 + 54",
+            "answer": 111
+        },
+        {
+            "question": "20 + 88",
+            "answer": 108
+        },
+        {
+            "question": "93 + 46",
+            "answer": 139
+        },
+        {
+            "question": "93 + 68",
+            "answer": 161
+        },
+        {
+            "question": "68 + 34",
+            "answer": 102
+        },
+        {
+            "question": "2 + 95",
+            "answer": 97
+        },
+        {
+            "question": "4 + 72",
+            "answer": 76
+        },
+        {
+            "question": "84 + 88",
+            "answer": 172
+        },
+        {
+            "question": "3 + 78",
+            "answer": 81
+        },
+        {
+            "question": "64 + 52",
+            "answer": 116
+        },
+        {
+            "question": "55 + 74",
+            "answer": 129
+        },
+        {
+            "question": "39 + 55",
+            "answer": 94
+        },
+        {
+            "question": "15 + 18",
+            "answer": 33
+        },
+        {
+            "question": "50 + 17",
+            "answer": 67
+        },
+        {
+            "question": "91 + 3",
+            "answer": 94
+        },
+        {
+            "question": "84 + 87",
+            "answer": 171
+        },
+        {
+            "question": "25 + 48",
+            "answer": 73
+        },
+        {
+            "question": "9 + 65",
+            "answer": 74
+        },
+        {
+            "question": "15 + 69",
+            "answer": 84
+        },
+        {
+            "question": "94 + 76",
+            "answer": 170
+        },
+        {
+            "question": "64 + 86",
+            "answer": 150
+        },
+        {
+            "question": "57 + 100",
+            "answer": 157
+        },
+        {
+            "question": "42 + 33",
+            "answer": 75
+        },
+        {
+            "question": "1 + 22",
+            "answer": 23
+        },
+        {
+            "question": "29 + 40",
+            "answer": 69
+        },
+        {
+            "question": "77 + 23",
+            "answer": 100
+        },
+        {
+            "question": "48 + 62",
+            "answer": 110
+        },
+        {
+            "question": "16 + 66",
+            "answer": 82
+        },
+        {
+            "question": "93 + 29",
+            "answer": 122
+        },
+        {
+            "question": "54 + 25",
+            "answer": 79
+        },
+        {
+            "question": "64 + 88",
+            "answer": 152
+        },
+        {
+            "question": "82 + 89",
+            "answer": 171
+        },
+        {
+            "question": "13 + 83",
+            "answer": 96
+        },
+        {
+            "question": "69 + 88",
+            "answer": 157
+        },
+        {
+            "question": "91 + 46",
+            "answer": 137
+        },
+        {
+            "question": "67 + 43",
+            "answer": 110
+        },
+        {
+            "question": "34 + 99",
+            "answer": 133
+        },
+        {
+            "question": "2 + 8",
+            "answer": 10
+        },
+        {
+            "question": "66 + 96",
+            "answer": 162
+        },
+        {
+            "question": "67 + 2",
+            "answer": 69
+        },
+        {
+            "question": "64 + 53",
+            "answer": 117
+        },
+        {
+            "question": "64 + 9",
+            "answer": 73
+        },
+        {
+            "question": "86 + 56",
+            "answer": 142
+        },
+        {
+            "question": "50 + 21",
+            "answer": 71
+        },
+        {
+            "question": "17 + 71",
+            "answer": 88
+        },
+        {
+            "question": "17 + 93",
+            "answer": 110
+        },
+        {
+            "question": "85 + 37",
+            "answer": 122
+        },
+        {
+            "question": "96 + 57",
+            "answer": 153
+        },
+        {
+            "question": "39 + 93",
+            "answer": 132
+        },
+        {
+            "question": "88 + 82",
+            "answer": 170
+        },
+        {
+            "question": "57 + 57",
+            "answer": 114
+        },
+        {
+            "question": "68 + 70",
+            "answer": 138
+        },
+        {
+            "question": "80 + 7",
+            "answer": 87
+        },
+        {
+            "question": "56 + 51",
+            "answer": 107
+        },
+        {
+            "question": "44 + 77",
+            "answer": 121
+        },
+        {
+            "question": "75 + 38",
+            "answer": 113
+        },
+        {
+            "question": "60 + 12",
+            "answer": 72
+        },
+        {
+            "question": "19 + 80",
+            "answer": 99
+        },
+        {
+            "question": "41 + 49",
+            "answer": 90
+        },
+        {
+            "question": "77 + 9",
+            "answer": 86
+        },
+        {
+            "question": "100 + 16",
+            "answer": 116
+        },
+        {
+            "question": "71 + 61",
+            "answer": 132
+        },
+        {
+            "question": "3 + 48",
+            "answer": 51
+        },
+        {
+            "question": "9 + 79",
+            "answer": 88
+        },
+        {
+            "question": "97 + 29",
+            "answer": 126
+        },
+        {
+            "question": "31 + 18",
+            "answer": 49
+        },
+        {
+            "question": "58 + 7",
+            "answer": 65
+        },
+        {
+            "question": "8 + 66",
+            "answer": 74
+        },
+        {
+            "question": "98 + 83",
+            "answer": 181
+        },
+        {
+            "question": "48 + 32",
+            "answer": 80
+        },
+        {
+            "question": "7 + 71",
+            "answer": 78
+        },
+        {
+            "question": "68 + 91",
+            "answer": 159
+        },
+        {
+            "question": "9 + 75",
+            "answer": 84
+        },
+        {
+            "question": "88 + 22",
+            "answer": 110
+        },
+        {
+            "question": "37 + 25",
+            "answer": 62
+        },
+        {
+            "question": "48 + 49",
+            "answer": 97
+        },
+        {
+            "question": "50 + 40",
+            "answer": 90
+        },
+        {
+            "question": "74 + 97",
+            "answer": 171
+        },
+        {
+            "question": "45 + 94",
+            "answer": 139
+        },
+        {
+            "question": "88 + 69",
+            "answer": 157
+        },
+        {
+            "question": "55 + 11",
+            "answer": 66
+        },
+        {
+            "question": "97 + 90",
+            "answer": 187
+        },
+        {
+            "question": "86 + 18",
+            "answer": 104
+        },
+        {
+            "question": "91 + 7",
+            "answer": 98
+        },
+        {
+            "question": "37 + 15",
+            "answer": 52
+        },
+        {
+            "question": "23 + 8",
+            "answer": 31
+        },
+        {
+            "question": "81 + 55",
+            "answer": 136
+        },
+        {
+            "question": "66 + 8",
+            "answer": 74
+        },
+        {
+            "question": "14 + 85",
+            "answer": 99
+        },
+        {
+            "question": "9 + 18",
+            "answer": 27
+        },
+        {
+            "question": "100 + 87",
+            "answer": 187
+        },
+        {
+            "question": "90 + 94",
+            "answer": 184
+        },
+        {
+            "question": "66 + 87",
+            "answer": 153
+        },
+        {
+            "question": "63 + 80",
+            "answer": 143
+        },
+        {
+            "question": "35 + 16",
+            "answer": 51
+        },
+        {
+            "question": "66 + 61",
+            "answer": 127
+        },
+        {
+            "question": "93 + 58",
+            "answer": 151
+        },
+        {
+            "question": "18 + 56",
+            "answer": 74
+        },
+        {
+            "question": "92 + 49",
+            "answer": 141
+        },
+        {
+            "question": "6 + 5",
+            "answer": 11
+        },
+        {
+            "question": "21 + 95",
+            "answer": 116
+        },
+        {
+            "question": "95 + 85",
+            "answer": 180
+        },
+        {
+            "question": "18 + 43",
+            "answer": 61
+        },
+        {
+            "question": "72 + 41",
+            "answer": 113
+        },
+        {
+            "question": "38 + 59",
+            "answer": 97
+        },
+        {
+            "question": "1 + 54",
+            "answer": 55
+        },
+        {
+            "question": "81 + 87",
+            "answer": 168
+        },
+        {
+            "question": "98 + 26",
+            "answer": 124
+        },
+        {
+            "question": "96 + 14",
+            "answer": 110
+        },
+        {
+            "question": "93 + 35",
+            "answer": 128
+        },
+        {
+            "question": "1 + 13",
+            "answer": 14
+        },
+        {
+            "question": "18 + 41",
+            "answer": 59
+        },
+        {
+            "question": "41 + 87",
+            "answer": 128
+        },
+        {
+            "question": "72 + 32",
+            "answer": 104
+        },
+        {
+            "question": "51 + 65",
+            "answer": 116
+        },
+        {
+            "question": "83 + 92",
+            "answer": 175
+        },
+        {
+            "question": "58 + 89",
+            "answer": 147
+        },
+        {
+            "question": "70 + 7",
+            "answer": 77
+        },
+        {
+            "question": "2 + 82",
+            "answer": 84
+        },
+        {
+            "question": "88 + 89",
+            "answer": 177
+        },
+        {
+            "question": "32 + 50",
+            "answer": 82
+        },
+        {
+            "question": "90 + 37",
+            "answer": 127
+        },
+        {
+            "question": "53 + 86",
+            "answer": 139
+        },
+        {
+            "question": "78 + 43",
+            "answer": 121
+        },
+        {
+            "question": "14 + 67",
+            "answer": 81
+        },
+        {
+            "question": "8 + 60",
+            "answer": 68
+        },
+        {
+            "question": "95 + 53",
+            "answer": 148
+        },
+        {
+            "question": "27 + 32",
+            "answer": 59
+        },
+        {
+            "question": "42 + 25",
+            "answer": 67
+        },
+        {
+            "question": "78 + 66",
+            "answer": 144
+        },
+        {
+            "question": "87 + 82",
+            "answer": 169
+        },
+        {
+            "question": "67 + 55",
+            "answer": 122
+        },
+        {
+            "question": "9 + 14",
+            "answer": 23
+        },
+        {
+            "question": "34 + 78",
+            "answer": 112
+        },
+        {
+            "question": "61 + 21",
+            "answer": 82
+        },
+        {
+            "question": "18 + 32",
+            "answer": 50
+        },
+        {
+            "question": "36 + 21",
+            "answer": 57
+        },
+        {
+            "question": "26 + 3",
+            "answer": 29
+        },
+        {
+            "question": "34 + 49",
+            "answer": 83
+        },
+        {
+            "question": "75 + 18",
+            "answer": 93
+        },
+        {
+            "question": "85 + 97",
+            "answer": 182
+        },
+        {
+            "question": "47 + 26",
+            "answer": 73
+        },
+        {
+            "question": "42 + 48",
+            "answer": 90
+        },
+        {
+            "question": "79 + 82",
+            "answer": 161
+        },
+        {
+            "question": "57 + 26",
+            "answer": 83
+        },
+        {
+            "question": "51 + 44",
+            "answer": 95
+        },
+        {
+            "question": "23 + 21",
+            "answer": 44
+        },
+        {
+            "question": "90 + 53",
+            "answer": 143
+        },
+        {
+            "question": "19 + 21",
+            "answer": 40
+        },
+        {
+            "question": "70 + 91",
+            "answer": 161
+        },
+        {
+            "question": "41 + 27",
+            "answer": 68
+        },
+        {
+            "question": "92 + 22",
+            "answer": 114
+        },
+        {
+            "question": "98 + 87",
+            "answer": 185
+        },
+        {
+            "question": "13 + 1",
+            "answer": 14
+        },
+        {
+            "question": "81 + 36",
+            "answer": 117
+        },
+        {
+            "question": "7 + 21",
+            "answer": 28
+        },
+        {
+            "question": "37 + 27",
+            "answer": 64
+        },
+        {
+            "question": "14 + 95",
+            "answer": 109
+        },
+        {
+            "question": "75 + 67",
+            "answer": 142
+        },
+        {
+            "question": "65 + 40",
+            "answer": 105
+        },
+        {
+            "question": "11 + 98",
+            "answer": 109
+        },
+        {
+            "question": "52 + 51",
+            "answer": 103
+        },
+        {
+            "question": "27 + 40",
+            "answer": 67
+        },
+        {
+            "question": "6 + 69",
+            "answer": 75
+        },
+        {
+            "question": "48 + 82",
+            "answer": 130
+        },
+        {
+            "question": "95 + 59",
+            "answer": 154
+        },
+        {
+            "question": "93 + 23",
+            "answer": 116
+        },
+        {
+            "question": "49 + 21",
+            "answer": 70
+        },
+        {
+            "question": "94 + 76",
+            "answer": 170
+        },
+        {
+            "question": "93 + 40",
+            "answer": 133
+        },
+        {
+            "question": "79 + 45",
+            "answer": 124
+        },
+        {
+            "question": "28 + 72",
+            "answer": 100
+        },
+        {
+            "question": "55 + 76",
+            "answer": 131
+        },
+        {
+            "question": "73 + 98",
+            "answer": 171
+        },
+        {
+            "question": "35 + 87",
+            "answer": 122
+        },
+        {
+            "question": "31 + 43",
+            "answer": 74
+        },
+        {
+            "question": "34 + 85",
+            "answer": 119
+        },
+        {
+            "question": "8 + 84",
+            "answer": 92
+        },
+        {
+            "question": "73 + 76",
+            "answer": 149
+        },
+        {
+            "question": "68 + 92",
+            "answer": 160
+        },
+        {
+            "question": "61 + 2",
+            "answer": 63
+        },
+        {
+            "question": "40 + 85",
+            "answer": 125
+        },
+        {
+            "question": "22 + 76",
+            "answer": 98
+        },
+        {
+            "question": "6 + 63",
+            "answer": 69
+        },
+        {
+            "question": "33 + 77",
+            "answer": 110
+        },
+        {
+            "question": "28 + 56",
+            "answer": 84
+        },
+        {
+            "question": "47 + 88",
+            "answer": 135
+        },
+        {
+            "question": "14 + 71",
+            "answer": 85
+        },
+        {
+            "question": "50 + 82",
+            "answer": 132
+        },
+        {
+            "question": "66 + 87",
+            "answer": 153
+        },
+        {
+            "question": "88 + 65",
+            "answer": 153
+        },
+        {
+            "question": "76 + 17",
+            "answer": 93
+        },
+        {
+            "question": "55 + 100",
+            "answer": 155
+        },
+        {
+            "question": "36 + 32",
+            "answer": 68
+        },
+        {
+            "question": "8 + 91",
+            "answer": 99
+        },
+        {
+            "question": "18 + 88",
+            "answer": 106
+        },
+        {
+            "question": "7 + 31",
+            "answer": 38
+        },
+        {
+            "question": "34 + 27",
+            "answer": 61
+        },
+        {
+            "question": "49 + 24",
+            "answer": 73
+        },
+        {
+            "question": "48 + 84",
+            "answer": 132
+        },
+        {
+            "question": "49 + 33",
+            "answer": 82
+        },
+        {
+            "question": "62 + 7",
+            "answer": 69
+        },
+        {
+            "question": "32 + 34",
+            "answer": 66
+        },
+        {
+            "question": "18 + 72",
+            "answer": 90
+        },
+        {
+            "question": "96 + 50",
+            "answer": 146
+        },
+        {
+            "question": "14 + 44",
+            "answer": 58
+        },
+        {
+            "question": "70 + 42",
+            "answer": 112
+        },
+        {
+            "question": "53 + 84",
+            "answer": 137
+        },
+        {
+            "question": "46 + 21",
+            "answer": 67
+        },
+        {
+            "question": "42 + 22",
+            "answer": 64
+        },
+        {
+            "question": "25 + 42",
+            "answer": 67
+        },
+        {
+            "question": "18 + 88",
+            "answer": 106
+        },
+        {
+            "question": "50 + 15",
+            "answer": 65
+        },
+        {
+            "question": "39 + 25",
+            "answer": 64
+        },
+        {
+            "question": "53 + 94",
+            "answer": 147
+        },
+        {
+            "question": "78 + 84",
+            "answer": 162
+        },
+        {
+            "question": "18 + 85",
+            "answer": 103
+        },
+        {
+            "question": "79 + 59",
+            "answer": 138
+        },
+        {
+            "question": "95 + 23",
+            "answer": 118
+        },
+        {
+            "question": "2 + 62",
+            "answer": 64
+        },
+        {
+            "question": "66 + 10",
+            "answer": 76
+        },
+        {
+            "question": "4 + 90",
+            "answer": 94
+        },
+        {
+            "question": "77 + 61",
+            "answer": 138
+        },
+        {
+            "question": "87 + 51",
+            "answer": 138
+        },
+        {
+            "question": "3 + 85",
+            "answer": 88
+        },
+        {
+            "question": "70 + 18",
+            "answer": 88
+        },
+        {
+            "question": "38 + 53",
+            "answer": 91
+        },
+        {
+            "question": "31 + 49",
+            "answer": 80
+        },
+        {
+            "question": "50 + 48",
+            "answer": 98
+        },
+        {
+            "question": "64 + 67",
+            "answer": 131
+        },
+        {
+            "question": "93 + 13",
+            "answer": 106
+        },
+        {
+            "question": "66 + 90",
+            "answer": 156
+        },
+        {
+            "question": "63 + 5",
+            "answer": 68
+        },
+        {
+            "question": "56 + 40",
+            "answer": 96
+        },
+        {
+            "question": "5 + 27",
+            "answer": 32
+        },
+        {
+            "question": "44 + 69",
+            "answer": 113
+        },
+        {
+            "question": "42 + 34",
+            "answer": 76
+        },
+        {
+            "question": "41 + 87",
+            "answer": 128
+        },
+        {
+            "question": "38 + 82",
+            "answer": 120
+        },
+        {
+            "question": "19 + 15",
+            "answer": 34
+        },
+        {
+            "question": "91 + 62",
+            "answer": 153
+        },
+        {
+            "question": "15 + 10",
+            "answer": 25
+        },
+        {
+            "question": "47 + 80",
+            "answer": 127
+        },
+        {
+            "question": "96 + 78",
+            "answer": 174
+        },
+        {
+            "question": "14 + 94",
+            "answer": 108
+        },
+        {
+            "question": "75 + 56",
+            "answer": 131
+        },
+        {
+            "question": "1 + 58",
+            "answer": 59
+        },
+        {
+            "question": "44 + 41",
+            "answer": 85
+        },
+        {
+            "question": "82 + 96",
+            "answer": 178
+        },
+        {
+            "question": "34 + 15",
+            "answer": 49
+        },
+        {
+            "question": "43 + 31",
+            "answer": 74
+        },
+        {
+            "question": "23 + 94",
+            "answer": 117
+        },
+        {
+            "question": "33 + 12",
+            "answer": 45
+        },
+        {
+            "question": "29 + 83",
+            "answer": 112
+        },
+        {
+            "question": "76 + 81",
+            "answer": 157
+        },
+        {
+            "question": "72 + 59",
+            "answer": 131
+        },
+        {
+            "question": "83 + 13",
+            "answer": 96
+        },
+        {
+            "question": "88 + 69",
+            "answer": 157
+        },
+        {
+            "question": "86 + 67",
+            "answer": 153
+        },
+        {
+            "question": "81 + 18",
+            "answer": 99
+        },
+        {
+            "question": "47 + 8",
+            "answer": 55
+        },
+        {
+            "question": "32 + 48",
+            "answer": 80
+        },
+        {
+            "question": "12 + 23",
+            "answer": 35
+        },
+        {
+            "question": "25 + 15",
+            "answer": 40
+        },
+        {
+            "question": "93 + 84",
+            "answer": 177
+        },
+        {
+            "question": "48 + 98",
+            "answer": 146
+        },
+        {
+            "question": "56 + 79",
+            "answer": 135
+        },
+        {
+            "question": "25 + 66",
+            "answer": 91
+        },
+        {
+            "question": "59 + 91",
+            "answer": 150
+        },
+        {
+            "question": "31 + 64",
+            "answer": 95
+        },
+        {
+            "question": "36 + 52",
+            "answer": 88
+        },
+        {
+            "question": "78 + 5",
+            "answer": 83
+        },
+        {
+            "question": "69 + 36",
+            "answer": 105
+        },
+        {
+            "question": "41 + 96",
+            "answer": 137
+        },
+        {
+            "question": "60 + 12",
+            "answer": 72
+        },
+        {
+            "question": "8 + 5",
+            "answer": 13
+        },
+        {
+            "question": "39 + 42",
+            "answer": 81
+        },
+        {
+            "question": "32 + 45",
+            "answer": 77
+        },
+        {
+            "question": "21 + 18",
+            "answer": 39
+        },
+        {
+            "question": "32 + 31",
+            "answer": 63
+        },
+        {
+            "question": "29 + 8",
+            "answer": 37
+        },
+        {
+            "question": "18 + 75",
+            "answer": 93
+        },
+        {
+            "question": "29 + 18",
+            "answer": 47
+        },
+        {
+            "question": "18 + 87",
+            "answer": 105
+        },
+        {
+            "question": "19 + 83",
+            "answer": 102
+        },
+        {
+            "question": "94 + 87",
+            "answer": 181
+        },
+        {
+            "question": "25 + 36",
+            "answer": 61
+        },
+        {
+            "question": "42 + 74",
+            "answer": 116
+        },
+        {
+            "question": "85 + 25",
+            "answer": 110
+        },
+        {
+            "question": "79 + 58",
+            "answer": 137
+        },
+        {
+            "question": "16 + 59",
+            "answer": 75
+        },
+        {
+            "question": "54 + 25",
+            "answer": 79
+        },
+        {
+            "question": "38 + 55",
+            "answer": 93
+        },
+        {
+            "question": "40 + 100",
+            "answer": 140
+        },
+        {
+            "question": "42 + 78",
+            "answer": 120
+        },
+        {
+            "question": "7 + 3",
+            "answer": 10
+        },
+        {
+            "question": "37 + 90",
+            "answer": 127
+        },
+        {
+            "question": "48 + 45",
+            "answer": 93
+        },
+        {
+            "question": "5 + 89",
+            "answer": 94
+        },
+        {
+            "question": "78 + 98",
+            "answer": 176
+        },
+        {
+            "question": "29 + 31",
+            "answer": 60
+        },
+        {
+            "question": "55 + 96",
+            "answer": 151
+        },
+        {
+            "question": "100 + 20",
+            "answer": 120
+        },
+        {
+            "question": "34 + 19",
+            "answer": 53
+        },
+        {
+            "question": "71 + 86",
+            "answer": 157
+        },
+        {
+            "question": "91 + 31",
+            "answer": 122
+        },
+        {
+            "question": "37 + 75",
+            "answer": 112
+        },
+        {
+            "question": "50 + 33",
+            "answer": 83
+        },
+        {
+            "question": "19 + 62",
+            "answer": 81
+        },
+        {
+            "question": "18 + 58",
+            "answer": 76
+        },
+        {
+            "question": "25 + 42",
+            "answer": 67
+        },
+        {
+            "question": "75 + 46",
+            "answer": 121
+        },
+        {
+            "question": "9 + 36",
+            "answer": 45
+        },
+        {
+            "question": "69 + 14",
+            "answer": 83
+        },
+        {
+            "question": "52 + 36",
+            "answer": 88
+        },
+        {
+            "question": "24 + 24",
+            "answer": 48
+        },
+        {
+            "question": "87 + 12",
+            "answer": 99
+        },
+        {
+            "question": "30 + 62",
+            "answer": 92
+        },
+        {
+            "question": "53 + 82",
+            "answer": 135
+        },
+        {
+            "question": "56 + 94",
+            "answer": 150
+        },
+        {
+            "question": "100 + 92",
+            "answer": 192
+        },
+        {
+            "question": "98 + 85",
+            "answer": 183
+        },
+        {
+            "question": "60 + 95",
+            "answer": 155
+        },
+        {
+            "question": "15 + 66",
+            "answer": 81
+        },
+        {
+            "question": "93 + 16",
+            "answer": 109
+        },
+        {
+            "question": "72 + 15",
+            "answer": 87
+        },
+        {
+            "question": "20 + 60",
+            "answer": 80
+        },
+        {
+            "question": "89 + 40",
+            "answer": 129
+        },
+        {
+            "question": "45 + 54",
+            "answer": 99
+        },
+        {
+            "question": "30 + 15",
+            "answer": 45
+        },
+        {
+            "question": "48 + 34",
+            "answer": 82
+        },
+        {
+            "question": "74 + 34",
+            "answer": 108
+        },
+        {
+            "question": "94 + 56",
+            "answer": 150
+        },
+        {
+            "question": "64 + 62",
+            "answer": 126
+        },
+        {
+            "question": "5 + 92",
+            "answer": 97
+        },
+        {
+            "question": "25 + 79",
+            "answer": 104
+        },
+        {
+            "question": "2 + 71",
+            "answer": 73
+        },
+        {
+            "question": "42 + 89",
+            "answer": 131
+        },
+        {
+            "question": "2 + 83",
+            "answer": 85
+        },
+        {
+            "question": "32 + 6",
+            "answer": 38
+        },
+        {
+            "question": "57 + 78",
+            "answer": 135
+        },
+        {
+            "question": "31 + 84",
+            "answer": 115
+        },
+        {
+            "question": "39 + 45",
+            "answer": 84
+        },
+        {
+            "question": "15 + 15",
+            "answer": 30
+        },
+        {
+            "question": "89 + 84",
+            "answer": 173
+        },
+        {
+            "question": "58 + 2",
+            "answer": 60
+        },
+        {
+            "question": "26 + 4",
+            "answer": 30
+        },
+        {
+            "question": "56 + 19",
+            "answer": 75
+        },
+        {
+            "question": "5 + 12",
+            "answer": 17
+        },
+        {
+            "question": "2 + 26",
+            "answer": 28
+        },
+        {
+            "question": "100 + 69",
+            "answer": 169
+        },
+        {
+            "question": "89 + 72",
+            "answer": 161
+        },
+        {
+            "question": "22 + 67",
+            "answer": 89
+        },
+        {
+            "question": "88 + 64",
+            "answer": 152
+        },
+        {
+            "question": "29 + 1",
+            "answer": 30
+        },
+        {
+            "question": "99 + 63",
+            "answer": 162
+        },
+        {
+            "question": "97 + 48",
+            "answer": 145
+        },
+        {
+            "question": "50 + 64",
+            "answer": 114
+        },
+        {
+            "question": "15 + 42",
+            "answer": 57
+        },
+        {
+            "question": "73 + 57",
+            "answer": 130
+        },
+        {
+            "question": "10 + 19",
+            "answer": 29
+        },
+        {
+            "question": "96 + 77",
+            "answer": 173
+        },
+        {
+            "question": "13 + 57",
+            "answer": 70
+        },
+        {
+            "question": "85 + 52",
+            "answer": 137
+        },
+        {
+            "question": "58 + 2",
+            "answer": 60
+        },
+        {
+            "question": "74 + 20",
+            "answer": 94
+        },
+        {
+            "question": "8 + 24",
+            "answer": 32
+        },
+        {
+            "question": "71 + 20",
+            "answer": 91
+        },
+        {
+            "question": "45 + 84",
+            "answer": 129
+        },
+        {
+            "question": "96 + 18",
+            "answer": 114
+        },
+        {
+            "question": "11 + 89",
+            "answer": 100
+        },
+        {
+            "question": "12 + 19",
+            "answer": 31
+        },
+        {
+            "question": "81 + 19",
+            "answer": 100
+        },
+        {
+            "question": "26 + 76",
+            "answer": 102
+        },
+        {
+            "question": "7 + 63",
+            "answer": 70
+        },
+        {
+            "question": "32 + 39",
+            "answer": 71
+        },
+        {
+            "question": "54 + 57",
+            "answer": 111
+        },
+        {
+            "question": "83 + 38",
+            "answer": 121
+        },
+        {
+            "question": "98 + 12",
+            "answer": 110
+        },
+        {
+            "question": "32 + 51",
+            "answer": 83
+        },
+        {
+            "question": "1 + 24",
+            "answer": 25
+        },
+        {
+            "question": "8 + 2",
+            "answer": 10
+        },
+        {
+            "question": "77 + 73",
+            "answer": 150
+        },
+        {
+            "question": "5 + 33",
+            "answer": 38
+        },
+        {
+            "question": "6 + 12",
+            "answer": 18
+        },
+        {
+            "question": "80 + 21",
+            "answer": 101
+        },
+        {
+            "question": "86 + 70",
+            "answer": 156
+        },
+        {
+            "question": "59 + 38",
+            "answer": 97
+        },
+        {
+            "question": "62 + 74",
+            "answer": 136
+        },
+        {
+            "question": "86 + 46",
+            "answer": 132
+        },
+        {
+            "question": "64 + 80",
+            "answer": 144
+        },
+        {
+            "question": "8 + 66",
+            "answer": 74
+        },
+        {
+            "question": "14 + 9",
+            "answer": 23
+        },
+        {
+            "question": "78 + 78",
+            "answer": 156
+        },
+        {
+            "question": "40 + 79",
+            "answer": 119
+        },
+        {
+            "question": "9 + 11",
+            "answer": 20
+        },
+        {
+            "question": "2 + 49",
+            "answer": 51
+        },
+        {
+            "question": "1 + 35",
+            "answer": 36
+        },
+        {
+            "question": "7 + 98",
+            "answer": 105
+        },
+        {
+            "question": "78 + 39",
+            "answer": 117
+        },
+        {
+            "question": "33 + 78",
+            "answer": 111
+        },
+        {
+            "question": "97 + 16",
+            "answer": 113
+        },
+        {
+            "question": "79 + 75",
+            "answer": 154
+        },
+        {
+            "question": "28 + 89",
+            "answer": 117
+        },
+        {
+            "question": "96 + 17",
+            "answer": 113
+        },
+        {
+            "question": "58 + 54",
+            "answer": 112
+        },
+        {
+            "question": "58 + 11",
+            "answer": 69
+        },
+        {
+            "question": "72 + 32",
+            "answer": 104
+        },
+        {
+            "question": "12 + 46",
+            "answer": 58
+        },
+        {
+            "question": "48 + 98",
+            "answer": 146
+        },
+        {
+            "question": "30 + 1",
+            "answer": 31
+        },
+        {
+            "question": "35 + 99",
+            "answer": 134
+        },
+        {
+            "question": "70 + 23",
+            "answer": 93
+        },
+        {
+            "question": "1 + 75",
+            "answer": 76
+        },
+        {
+            "question": "69 + 30",
+            "answer": 99
+        },
+        {
+            "question": "74 + 24",
+            "answer": 98
+        },
+        {
+            "question": "64 + 54",
+            "answer": 118
+        },
+        {
+            "question": "13 + 41",
+            "answer": 54
+        },
+        {
+            "question": "78 + 33",
+            "answer": 111
+        },
+        {
+            "question": "61 + 82",
+            "answer": 143
+        },
+        {
+            "question": "47 + 37",
+            "answer": 84
+        },
+        {
+            "question": "82 + 84",
+            "answer": 166
+        },
+        {
+            "question": "77 + 67",
+            "answer": 144
+        },
+        {
+            "question": "44 + 96",
+            "answer": 140
+        },
+        {
+            "question": "35 + 94",
+            "answer": 129
+        },
+        {
+            "question": "15 + 25",
+            "answer": 40
+        },
+        {
+            "question": "97 + 34",
+            "answer": 131
+        },
+        {
+            "question": "16 + 35",
+            "answer": 51
+        },
+        {
+            "question": "47 + 85",
+            "answer": 132
+        },
+        {
+            "question": "6 + 81",
+            "answer": 87
+        },
+        {
+            "question": "92 + 68",
+            "answer": 160
+        },
+        {
+            "question": "99 + 60",
+            "answer": 159
+        },
+        {
+            "question": "54 + 42",
+            "answer": 96
+        },
+        {
+            "question": "70 + 55",
+            "answer": 125
+        },
+        {
+            "question": "87 + 81",
+            "answer": 168
+        },
+        {
+            "question": "60 + 88",
+            "answer": 148
+        },
+        {
+            "question": "71 + 1",
+            "answer": 72
+        },
+        {
+            "question": "71 + 66",
+            "answer": 137
+        },
+        {
+            "question": "57 + 42",
+            "answer": 99
+        },
+        {
+            "question": "5 + 97",
+            "answer": 102
+        },
+        {
+            "question": "29 + 54",
+            "answer": 83
+        },
+        {
+            "question": "45 + 58",
+            "answer": 103
+        },
+        {
+            "question": "45 + 3",
+            "answer": 48
+        },
+        {
+            "question": "19 + 44",
+            "answer": 63
+        },
+        {
+            "question": "59 + 58",
+            "answer": 117
+        },
+        {
+            "question": "76 + 39",
+            "answer": 115
+        },
+        {
+            "question": "72 + 32",
+            "answer": 104
+        },
+        {
+            "question": "97 + 39",
+            "answer": 136
+        },
+        {
+            "question": "23 + 93",
+            "answer": 116
+        },
+        {
+            "question": "28 + 73",
+            "answer": 101
+        },
+        {
+            "question": "1 + 76",
+            "answer": 77
+        },
+        {
+            "question": "81 + 7",
+            "answer": 88
+        },
+        {
+            "question": "29 + 80",
+            "answer": 109
+        },
+        {
+            "question": "33 + 41",
+            "answer": 74
+        },
+        {
+            "question": "55 + 57",
+            "answer": 112
+        },
+        {
+            "question": "47 + 71",
+            "answer": 118
+        },
+        {
+            "question": "36 + 9",
+            "answer": 45
+        },
+        {
+            "question": "15 + 37",
+            "answer": 52
+        },
+        {
+            "question": "35 + 22",
+            "answer": 57
+        },
+        {
+            "question": "61 + 63",
+            "answer": 124
+        },
+        {
+            "question": "31 + 26",
+            "answer": 57
+        },
+        {
+            "question": "20 + 62",
+            "answer": 82
+        },
+        {
+            "question": "39 + 74",
+            "answer": 113
+        },
+        {
+            "question": "72 + 41",
+            "answer": 113
+        },
+        {
+            "question": "36 + 73",
+            "answer": 109
+        },
+        {
+            "question": "69 + 19",
+            "answer": 88
+        },
+        {
+            "question": "23 + 12",
+            "answer": 35
+        },
+        {
+            "question": "51 + 68",
+            "answer": 119
+        },
+        {
+            "question": "88 + 17",
+            "answer": 105
+        },
+        {
+            "question": "32 + 31",
+            "answer": 63
+        },
+        {
+            "question": "3 + 20",
+            "answer": 23
+        },
+        {
+            "question": "5 + 55",
+            "answer": 60
+        },
+        {
+            "question": "2 + 64",
+            "answer": 66
+        },
+        {
+            "question": "66 + 39",
+            "answer": 105
+        },
+        {
+            "question": "26 + 23",
+            "answer": 49
+        },
+        {
+            "question": "51 + 61",
+            "answer": 112
+        },
+        {
+            "question": "11 + 25",
+            "answer": 36
+        },
+        {
+            "question": "2 + 60",
+            "answer": 62
+        },
+        {
+            "question": "12 + 57",
+            "answer": 69
+        },
+        {
+            "question": "79 + 100",
+            "answer": 179
+        },
+        {
+            "question": "61 + 97",
+            "answer": 158
+        },
+        {
+            "question": "78 + 31",
+            "answer": 109
+        },
+        {
+            "question": "44 + 28",
+            "answer": 72
+        },
+        {
+            "question": "46 + 33",
+            "answer": 79
+        },
+        {
+            "question": "65 + 60",
+            "answer": 125
+        },
+        {
+            "question": "1 + 64",
+            "answer": 65
+        },
+        {
+            "question": "53 + 2",
+            "answer": 55
+        },
+        {
+            "question": "43 + 31",
+            "answer": 74
+        },
+        {
+            "question": "14 + 73",
+            "answer": 87
+        },
+        {
+            "question": "79 + 23",
+            "answer": 102
+        },
+        {
+            "question": "71 + 23",
+            "answer": 94
+        },
+        {
+            "question": "62 + 34",
+            "answer": 96
+        },
+        {
+            "question": "40 + 74",
+            "answer": 114
+        },
+        {
+            "question": "62 + 20",
+            "answer": 82
+        },
+        {
+            "question": "74 + 67",
+            "answer": 141
+        },
+        {
+            "question": "74 + 68",
+            "answer": 142
+        },
+        {
+            "question": "50 + 87",
+            "answer": 137
+        },
+        {
+            "question": "82 + 98",
+            "answer": 180
+        },
+        {
+            "question": "22 + 86",
+            "answer": 108
+        },
+        {
+            "question": "75 + 38",
+            "answer": 113
+        },
+        {
+            "question": "25 + 75",
+            "answer": 100
+        },
+        {
+            "question": "58 + 72",
+            "answer": 130
+        },
+        {
+            "question": "48 + 21",
+            "answer": 69
+        },
+        {
+            "question": "15 + 52",
+            "answer": 67
+        },
+        {
+            "question": "9 + 21",
+            "answer": 30
+        },
+        {
+            "question": "20 + 44",
+            "answer": 64
+        },
+        {
+            "question": "46 + 58",
+            "answer": 104
+        }
+    ]
+}
