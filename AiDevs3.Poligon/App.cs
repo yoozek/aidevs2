@@ -39,9 +39,13 @@ public class App(IServiceScopeFactory scopeFactory)
 
     private static async Task RunTask(string taskName, IServiceScope container)
     {
-        var taskType = Type.GetType($"AiDevs3.Poligon.Tasks.{taskName}");
-        if (container.ServiceProvider.GetService(taskType ?? throw new InvalidOperationException()) is PoligonTask
-            taskInstance)
+        var taskType = Assembly.GetExecutingAssembly().GetTypes()
+            .FirstOrDefault(t => t.Name == taskName && t.IsSubclassOf(typeof(PoligonTask)));
+            
+        if (taskType == null)
+            throw new InvalidOperationException($"Nie znaleziono typu '{taskName}'.");
+            
+        if (container.ServiceProvider.GetService(taskType) is PoligonTask taskInstance)
             await taskInstance.Run();
         else
             throw new InvalidOperationException($"Nie można uruchomić '{taskName}'.");
